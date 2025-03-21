@@ -17,8 +17,23 @@ jobs:
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
         
+      - name: List Files Before Build
+        run: ls -la
+        
+      - name: Check next.config.mjs
+        run: cat next.config.mjs
+        
       - name: Build
         run: npm run build
+        
+      - name: List Files After Build
+        run: ls -la
+        
+      - name: Check if out directory exists
+        run: ls -la out || echo "out directory does not exist"
+        
+      - name: Create out directory if it doesn't exist
+        run: mkdir -p out
         
       - name: Create CNAME file
         run: echo "patricio.pantaleo.ar" > out/CNAME
