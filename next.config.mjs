@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Añadir estas dos líneas para corregir las rutas de los recursos estáticos
+  // Cambiado de './' a '/' para solucionar el error de next/font
   basePath: '',
-  assetPrefix: './',
+  assetPrefix: '/',
   images: {
     unoptimized: true,
   },
