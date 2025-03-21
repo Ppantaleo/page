@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Esta línea es crucial para generar archivos estáticos
+  output: 'export',
+  // Añadir estas dos líneas para corregir las rutas de los recursos estáticos
+  basePath: '',
+  assetPrefix: './',
+  images: {
+    unoptimized: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
   },
   experimental: {
     webpackBuildWorker: true,
