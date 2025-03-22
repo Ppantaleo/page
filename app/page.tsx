@@ -154,7 +154,7 @@ export default function Home() {
               </div>
 
               {/* Academic Profile Links Box */}
-              <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-lg">
+              <div className="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-lg mt-6 mx-auto md:absolute md:-bottom-6 md:-right-6 md:mt-0">
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -162,7 +162,14 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-sm text-slate-500 dark:text-slate-400">ORCID</div>
-                      <div className="text-sm font-medium text-slate-800 dark:text-white">0000-0002-8104-8975</div>
+                      <a 
+                        href="https://orcid.org/0000-0002-8104-8975" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-sm font-medium text-slate-800 dark:text-white hover:underline"
+                      >
+                        0000-0002-8104-8975
+                      </a>
                     </div>
                   </div>
 
