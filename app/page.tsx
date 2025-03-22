@@ -310,6 +310,7 @@ export default function Home() {
             <InterestCard icon={<Sparkles className="w-6 h-6" />} title="Meditation" />
             <InterestCard icon={<BookMarked className="w-6 h-6" />} title="Religions" />
             <InterestCard icon={<Footprints className="w-6 h-6" />} title="Philosophy" />
+            <InterestCard icon={<CircleDashed className="w-6 h-6" />} title="Basquet" />
           </div>
 
           <div className="mt-16 max-w-2xl mx-auto text-center">
