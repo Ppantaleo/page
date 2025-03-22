@@ -109,20 +109,13 @@ export default function Home() {
               <h2 className="text-3xl font-serif mb-6 text-slate-800 dark:text-white">Biography</h2>
               <div className="space-y-4 text-slate-600 dark:text-slate-300">
                 <p>
-                  I was trained in the humanities. That marks my vision of the world. Later, I created companies,
-                  supported academic publishing houses around the world, and became an expert in free software and
-                  metadata for the sector.
+                  I was trained in the humanities. That marks my vision of the world. Later, I created companies, supported academic publishers in different parts of Latin America and Spain and became passionate about free software and metadata for the sector.
                 </p>
                 <p>
-                  Patricio Pantaleo is a Professor and Bachelor of History, with a Master's degree in Philosophy,
-                  Religion, and Contemporary Culture. Born in the province of Córdoba, Argentina, he holds a diploma in
-                  Online Scientific Journal Management from Universidad de Ciencias Empresariales y Sociales (UCES) in
-                  Argentina (2022) and is an expert in Research Support Services.
+                  I am a professor and graduate in History, with a master's degree in Philosophy, Religion and Contemporary Culture. I was born in the province of Cordoba, Argentina, and recently completed a diploma in Management of Online Scientific Journals by the University of Business and Social Sciences (UCES) of Argentina (2022) and received the title of expert in Research Support Services by the University Pablo de Olavide, Spain (2024).
                 </p>
                 <p>
-                  Currently, Patricio is the Director of Paideia Studio, a sponsor of Crossref, where he brings his
-                  extensive experience in metadata management and persistent identifiers for academic content to the
-                  forefront.
+                  Currently, I am Director of Paideia Studio, sponsor of Crossref, where I bring my expertise in metadata management and persistent identifiers for academic content.
                 </p>
               </div>
 
