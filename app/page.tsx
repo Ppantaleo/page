@@ -308,7 +308,7 @@ export default function Home() {
 
           <div className="mt-16 max-w-2xl mx-auto text-center">
             <p className="text-slate-600 dark:text-slate-300">
-              Beyond my professional endeavors, I cultivate a balanced life through these pursuits. They inform my
+               Beyond my professional endeavors, I strive for balance in life through these activities. They inform my
               worldview and enrich my understanding of humanity, complementing my academic work in meaningful ways.
             </p>
           </div>
