@@ -260,8 +260,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ProjectCard
-              title="LatarXiv"
-              description="Developed the preprint server LatarXiv, enhancing the accessibility of academic research across Latin America."
+              title="LatArXiv"
+              description="Developed the preprint server LatArXiv, enhancing the accessibility of academic research across Latin America."
               tags={["Preprints", "Open Access", "Research"]}
             />
 
