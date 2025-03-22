@@ -14,7 +14,11 @@ export const metadata: Metadata = {
   title: "Patricio Pantaleo - Digital Humanities & Academic Publishing",
   description:
     "Portfolio of Patricio Pantaleo, expert in digital humanities, academic publishing, and metadata management.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+  }
 }
 
 export default function RootLayout({
@@ -26,6 +30,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link href="https://fonts.cdnfonts.com/css/tan-pearl" rel="stylesheet" />
+        <link rel="icon" href="/images/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body className={`${montserrat.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
@@ -36,7 +42,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
