@@ -388,7 +388,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-slate-900 text-white">
+     <footer className="py-12 bg-slate-900 text-white">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
@@ -403,7 +403,6 @@ export default function Home() {
               </div>
               <p className="mt-2 text-slate-400">Digital Humanities & Academic Publishing</p>
             </div>
-
             <div className="flex space-x-6">
               <Link
                 href="https://www.linkedin.com/in/patricio-pantaleo"
@@ -434,9 +433,30 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
           <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-            © {new Date().getFullYear()} Patricio Pantaleo. All rights reserved.
+            <div className="mb-2">
+              © {new Date().getFullYear()} Patricio Pantaleo
+              <span className="mx-1">·</span>
+              <a 
+                href="https://github.com/Ppantaleo/page/blob/main/LICENSE" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white transition-colors"
+              >
+                GPL-3.0 License
+              </a>
+            </div>
+            <div>
+              <a 
+                href="https://github.com/Ppantaleo/page" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white transition-colors flex items-center justify-center gap-1"
+              >
+                <Github className="w-4 h-4" />
+                <span>Source Code</span>
+              </a>
+            </div>
           </div>
         </div>
       </footer>
