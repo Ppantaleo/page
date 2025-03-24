@@ -89,10 +89,13 @@ export default function Home() {
               </Link>
             </div>
 
-            <button className="group flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:gap-4 transition-all tracking-wider text-sm">
-              EXPLORE MY WORK
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <a 
+                href="#about" 
+                className="group flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:gap-4 transition-all tracking-wider text-sm cursor-pointer"
+              >
+                EXPLORE MY WORK
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
           </div>
         </div>
 
