@@ -68,7 +68,7 @@ export default function Home() {
                 <Linkedin className="w-5 h-5 text-slate-700 dark:text-slate-300" />
               </Link>
               <Link
-                href="mailto:patricio@paideiastudio.net"
+                href="mailto:patricio@pantaleo.ar"
                 className="p-2 bg-white dark:bg-slate-800 rounded-full shadow-md hover:shadow-lg transition-all"
               >
                 <Mail className="w-5 h-5 text-slate-700 dark:text-slate-300" />
@@ -415,7 +415,7 @@ export default function Home() {
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="mailto:patricio@paideiastudio.net"
+                href="mailto:patricio@pantaleo.ar"
                 className="text-slate-400 hover:text-white transition-colors"
               >
                 <Mail className="w-5 h-5" />
