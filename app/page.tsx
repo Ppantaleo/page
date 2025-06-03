@@ -20,6 +20,7 @@ import {
   Swords,
   XIcon as Yin,
   ExternalLink,
+  Download,
 } from "lucide-react"
 
 export default function Home() {
@@ -127,6 +128,29 @@ export default function Home() {
                 <span>Córdoba, Argentina</span>
               </div>
             </div>
+
+            {/* CV Download Section */}
+              <div className="mt-8">
+                <h3 className="text-lg font-serif mb-4 text-slate-700 dark:text-slate-200">Download CV</h3>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  
+                    href="/cv/patricio-pantaleo-cv-english.pdf"
+                    download
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm"
+                  >
+                    <Download className="w-4 h-4" />
+                    CV in English
+                  </a>
+                  
+                    href="/cv/patricio-pantaleo-cv-spanish.pdf"
+                    download
+                    className="flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm"
+                  >
+                    <Download className="w-4 h-4" />
+                    CV en Español
+                  </a>
+                </div>
+              </div>
 
             <div className="relative">
               <div className="aspect-square bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden relative">
