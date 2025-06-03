@@ -330,7 +330,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
               <Link
-                href="mailto:patricio@paideiastudio.net"
+                href="mailto:patricio@pantaleo.ar"
                 className="flex items-center gap-3 bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-all text-slate-700 dark:text-white"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
@@ -338,7 +338,7 @@ export default function Home() {
                 </div>
                 <div className="text-left">
                   <div className="text-sm text-slate-500 dark:text-slate-400">Email</div>
-                  <div className="font-medium">patricio@paideiastudio.net</div>
+                  <div className="font-medium">patricio@pantaleo.ar</div>
                 </div>
               </Link>
 
