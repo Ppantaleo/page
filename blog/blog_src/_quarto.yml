@@ -6,8 +6,12 @@ website:
   title: "Patricio Pantaleo's Blog"
   description: "Digital Humanities & Academic Publishing"
   site-url: "https://patricio.pantaleo.ar/blog"
-  favicon: public/images/logo.png
+  favicon: logo.png
   navbar:
+    logo: logo.png
+    logo-alt: "Patricio Pantaleo"
+    logo-href: "https://patricio.pantaleo.ar/"
+    title: false
     background: "#ffffff"
     foreground: "#333333"
     right:
