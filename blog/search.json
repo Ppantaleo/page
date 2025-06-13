@@ -4,13 +4,41 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Work in Progress\n\n\n\nnews\n\n\nupdates\n\n\n\n\n\n\n\nPatricio Pantaleo\n\n\nJun 13, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Authorship and Contribution in the Age of AI: Notes on the Current Debate\n\n\n\nauthorship\n\n\nethics\n\n\n\nA reflection on the concept of authorship in academic research. International criteria (ICMJE, CRediT), common conflicts, and key ethical guidelines are analyzed to support…\n\n\n\nPatricio Iván Pantaleo\n\n\nJun 13, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Work in Progress",
+    "objectID": "posts/autorship-AI/index.html",
+    "href": "posts/autorship-AI/index.html",
+    "title": "Authorship and Contribution in the Age of AI: Notes on the Current Debate",
     "section": "",
-    "text": "Photo by Etienne Girardet on Unsplash\n\n\nWelcome! I’m Patricio Pantaleo, a researcher and developer working at the intersection of science, open access, and web technologies.\nThis blog is currently under preparation — I’m setting things up to share updates, ideas, and experiments related to my work and interests.\nStay tuned, and feel free to explore my main site in the meantime."
+    "text": "Photo by Etienne Girardet on Unsplash\nAuthorship in scholarly articles is not a mere recognition of participation, but a key component of academic and scientific ethics. This post synthesizes international criteria and essential reflections on what it truly means to sign as an author of an academic work."
+  },
+  {
+    "objectID": "posts/autorship-AI/index.html#what-is-authorship",
+    "href": "posts/autorship-AI/index.html#what-is-authorship",
+    "title": "Authorship and Contribution in the Age of AI: Notes on the Current Debate",
+    "section": "What is authorship?",
+    "text": "What is authorship?\nAuthorship is commonly understood as the “status of being an author,” according to the most general definition by the Royal Spanish Academy (Real Academia Española (n.d.)). However, in academic and scientific contexts, this notion requires both normative and ethical clarification."
+  },
+  {
+    "objectID": "posts/autorship-AI/index.html#international-criteria-icmje-and-credit",
+    "href": "posts/autorship-AI/index.html#international-criteria-icmje-and-credit",
+    "title": "Authorship and Contribution in the Age of AI: Notes on the Current Debate",
+    "section": "International Criteria: ICMJE and CRediT",
+    "text": "International Criteria: ICMJE and CRediT\nThe International Committee of Medical Journal Editors (ICMJE) proposes four criteria that must be met simultaneously to justify authorship (ICMJE (n.d.)):\n\nSubstantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data.\nDrafting the article or revising it critically for important intellectual content.\nFinal approval of the version to be published.\nAccountability for all aspects of the work, ensuring that questions related to the accuracy or integrity are appropriately investigated and resolved.\n\nComplementing this definition, the CRediT taxonomy (CRediT – Contributor Roles Taxonomy (n.d.)) identifies 14 specific contributor roles, allowing a more granular attribution of individual contributions to scholarly work."
+  },
+  {
+    "objectID": "posts/autorship-AI/index.html#ethics-and-misconduct",
+    "href": "posts/autorship-AI/index.html#ethics-and-misconduct",
+    "title": "Authorship and Contribution in the Age of AI: Notes on the Current Debate",
+    "section": "Ethics and Misconduct",
+    "text": "Ethics and Misconduct\nCommon authorship-related misconduct includes honorary authorship (adding someone who did not contribute) and ghost authorship (omitting someone who did contribute). Both practices breach the principles of scientific integrity (Codina (2024)).\nMoreover, authorship disputes are frequent, especially among early-career researchers. The Committee on Publication Ethics (COPE) offers a guide for handling authorship conflicts, emphasizing the importance of early agreements, transparent communication, and institutional protocols for conflict resolution (Committee on Publication Ethics (2018))."
+  },
+  {
+    "objectID": "posts/autorship-AI/index.html#conclusion",
+    "href": "posts/autorship-AI/index.html#conclusion",
+    "title": "Authorship and Contribution in the Age of AI: Notes on the Current Debate",
+    "section": "Conclusion",
+    "text": "Conclusion\nSigning a paper is neither a formality nor a courtesy—it is an ethical statement. Adopting the ICMJE and CRediT frameworks ensures fair recognition of actual contributions and helps prevent misconduct that undermines scientific trust."
   }
 ]

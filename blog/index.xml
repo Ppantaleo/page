@@ -12,9 +12,9 @@
 <generator>quarto-1.6.42</generator>
 <lastBuildDate>Fri, 13 Jun 2025 03:00:00 GMT</lastBuildDate>
 <item>
-  <title>Work in Progress</title>
-  <dc:creator>Patricio Pantaleo</dc:creator>
-  <link>https://patricio.pantaleo.ar/blog/posts/welcome/</link>
+  <title>Authorship and Contribution in the Age of AI: Notes on the Current Debate</title>
+  <dc:creator>Patricio Iván Pantaleo</dc:creator>
+  <link>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</link>
   <description><![CDATA[ 
 
 
@@ -22,23 +22,74 @@
 
 
 <div class="figure">
-<img src="https://patricio.pantaleo.ar/blog/posts/welcome/post.jpg" class="img-fluid quarto-figure quarto-figure-center">
+<img src="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" class="img-fluid quarto-figure quarto-figure-center">
 <p style="text-align: center; font-size: 0.8em;">
 Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on <a href="https://unsplash.com/">Unsplash</a>
 </p>
 </div>
-<p>Welcome! I’m <strong>Patricio Pantaleo</strong>, a researcher and developer working at the intersection of science, open access, and web technologies.</p>
-<p>This blog is currently under preparation — I’m setting things up to share updates, ideas, and experiments related to my work and interests.</p>
-<p>Stay tuned, and feel free to explore my <a href="https://patricio.pantaleo.ar">main site</a> in the meantime.</p>
+<p>Authorship in scholarly articles is not a mere recognition of participation, but a key component of academic and scientific ethics. This post synthesizes international criteria and essential reflections on what it truly means to sign as an author of an academic work.</p>
+<section id="what-is-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-authorship">What is authorship?</h2>
+<p>Authorship is commonly understood as the “status of being an author,” according to the most general definition by the Royal Spanish Academy (<span class="citation" data-cites="rae_autoria">Real Academia Española (n.d.)</span>). However, in academic and scientific contexts, this notion requires both normative and ethical clarification.</p>
+</section>
+<section id="international-criteria-icmje-and-credit" class="level2">
+<h2 class="anchored" data-anchor-id="international-criteria-icmje-and-credit">International Criteria: ICMJE and CRediT</h2>
+<p>The International Committee of Medical Journal Editors (ICMJE) proposes four criteria that must be met simultaneously to justify authorship (<span class="citation" data-cites="icmje_defining">ICMJE (n.d.)</span>):</p>
+<ol type="1">
+<li>Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data.</li>
+<li>Drafting the article or revising it critically for important intellectual content.</li>
+<li>Final approval of the version to be published.</li>
+<li>Accountability for all aspects of the work, ensuring that questions related to the accuracy or integrity are appropriately investigated and resolved.</li>
+</ol>
+<p>Complementing this definition, the CRediT taxonomy (<span class="citation" data-cites="credit_niso"><em>CRediT – Contributor Roles Taxonomy</em> (n.d.)</span>) identifies 14 specific contributor roles, allowing a more granular attribution of individual contributions to scholarly work.</p>
+</section>
+<section id="ethics-and-misconduct" class="level2">
+<h2 class="anchored" data-anchor-id="ethics-and-misconduct">Ethics and Misconduct</h2>
+<p>Common authorship-related misconduct includes <strong>honorary authorship</strong> (adding someone who did not contribute) and <strong>ghost authorship</strong> (omitting someone who did contribute). Both practices breach the principles of scientific integrity (<span class="citation" data-cites="codina_etica">Codina (2024)</span>).</p>
+<p>Moreover, authorship disputes are frequent, especially among early-career researchers. The Committee on Publication Ethics (COPE) offers a guide for handling authorship conflicts, emphasizing the importance of early agreements, transparent communication, and institutional protocols for conflict resolution (<span class="citation" data-cites="cope_disputes">Committee on Publication Ethics (2018)</span>).</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Signing a paper is neither a formality nor a courtesy—it is an ethical statement. Adopting the ICMJE and CRediT frameworks ensures fair recognition of actual contributions and helps prevent misconduct that undermines scientific trust.</p>
 
 
 
- ]]></description>
-  <category>news</category>
-  <category>updates</category>
-  <guid>https://patricio.pantaleo.ar/blog/posts/welcome/</guid>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2">
+<div id="ref-codina_etica" class="csl-entry">
+Codina, L. (2024). <em>Ética y artículos científicos: Aspectos clave</em>. <a href="https://www.lluiscodina.com/etica-articulos-cientificos/">https://www.lluiscodina.com/etica-articulos-cientificos/</a>
+</div>
+<div id="ref-cope_disputes" class="csl-entry">
+Committee on Publication Ethics. (2018). <em>How to handle authorship disputes: A guide for new researchers</em>. <a href="https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers" class="uri">https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers</a>.
+</div>
+<div id="ref-credit_niso" class="csl-entry">
+<em>CRediT – contributor roles taxonomy</em>. (n.d.). <a href="https://credit.niso.org/" class="uri">https://credit.niso.org/</a>.
+</div>
+<div id="ref-icmje_defining" class="csl-entry">
+ICMJE. (n.d.). <em>Defining the role of authors and contributors</em>. <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html" class="uri">https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html</a>.
+</div>
+<div id="ref-rae_autoria" class="csl-entry">
+Real Academia Española. (n.d.). <em>Autoría</em>. <a href="https://www.rae.es/diccionario-estudiante/autor%C3%ADa" class="uri">https://www.rae.es/diccionario-estudiante/autor%C3%ADa</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>© 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+</div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{pantaleo2025,
+  author = {Pantaleo, Patricio Iván},
+  title = {Authorship and {Contribution} in the {Age} of {AI:} {Notes}
+    on the {Current} {Debate}},
+  date = {2025-06-13},
+  url = {https://patricio.pantaleo.ar/blog/posts/autorship-AI},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-pantaleo2025" class="csl-entry quarto-appendix-citeas">
+Pantaleo, P. I. (2025, June 13). <em>Authorship and Contribution in the
+Age of AI: Notes on the Current Debate</em> [Online post]. <a href="https://patricio.pantaleo.ar/blog/posts/autorship-AI">https://patricio.pantaleo.ar/blog/posts/autorship-AI</a>
+</div></div></section></div> ]]></description>
+  <category>authorship</category>
+  <category>ethics</category>
+  <guid>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</guid>
   <pubDate>Fri, 13 Jun 2025 03:00:00 GMT</pubDate>
-  <media:content url="https://patricio.pantaleo.ar/blog/posts/welcome/post.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
