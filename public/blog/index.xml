@@ -12,13 +12,31 @@
 <generator>quarto-1.6.42</generator>
 <lastBuildDate>Fri, 13 Jun 2025 03:00:00 GMT</lastBuildDate>
 <item>
-  <title></title>
+  <title>Work in Progress</title>
   <dc:creator>Patricio Pantaleo</dc:creator>
-  <link>https://patricio.pantaleo.ar/blog/posts/welcome/index.pdf</link>
-  <description><![CDATA[ undefined ]]></description>
+  <link>https://patricio.pantaleo.ar/blog/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="figure">
+<img src="https://patricio.pantaleo.ar/blog/posts/welcome/post.jpg" class="img-fluid quarto-figure quarto-figure-center">
+<p style="text-align: center; font-size: 0.8em;">
+Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on <a href="https://unsplash.com/">Unsplash</a>
+</p>
+</div>
+<p>Welcome! I’m <strong>Patricio Pantaleo</strong>, a researcher and developer working at the intersection of science, open access, and web technologies.</p>
+<p>This blog is currently under preparation — I’m setting things up to share updates, ideas, and experiments related to my work and interests.</p>
+<p>Stay tuned, and feel free to explore my <a href="https://patricio.pantaleo.ar">main site</a> in the meantime.</p>
+
+
+
+ ]]></description>
   <category>news</category>
   <category>updates</category>
-  <guid>https://patricio.pantaleo.ar/blog/posts/welcome/index.pdf</guid>
+  <guid>https://patricio.pantaleo.ar/blog/posts/welcome/</guid>
   <pubDate>Fri, 13 Jun 2025 03:00:00 GMT</pubDate>
   <media:content url="https://patricio.pantaleo.ar/blog/posts/welcome/post.jpg" medium="image" type="image/jpeg"/>
 </item>
