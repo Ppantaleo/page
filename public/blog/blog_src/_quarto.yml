@@ -9,20 +9,15 @@ website:
   navbar:
     background: "#ffffff"
     foreground: "#333333"
-    left:
-      - text: "Home"
-        href: /
-      - text: "Blog"
-        href: /blog
-      - text: "About"
-        href: /#about
     right:
-      - icon: github
-        href: https://github.com/Ppantaleo
-      - icon: linkedin
-        href: https://linkedin.com/in/patriciospantaleo
-      - icon: envelope
-        href: mailto:contact@patricio.pantaleo.ar
+      - text: "Home"
+        href: https://patricio.pantaleo.ar/
+      - text: "Blog"
+        href: https://patricio.pantaleo.ar/blog
+      - text: "About"
+        href: https://patricio.pantaleo.ar/#about
+      - text: "Contact"
+        href: https://patricio.pantaleo.ar/#contact
 
 page-footer:
     background: "#f8f9fa"
