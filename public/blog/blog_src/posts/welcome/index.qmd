@@ -13,6 +13,7 @@ sharing: [twitter, facebook, linkedin]
 format:
   html: default
   pdf:
+    documentclass: scrartcl
     toc: true
     number-sections: false
     fontsize: 11pt
