@@ -7,11 +7,11 @@ image: "post.jpg"
 image-alt: "Photo collage of a woman's legs and shoes"
 image-credit: '<a href="https://unsplash.com/es/@etiennegirardet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Etienne Girardet</a> on <a href="https://unsplash.com/es/fotos/un-collage-de-fotos-de-las-piernas-y-los-zapatos-de-una-mujer-rJLkXd3uC-c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 
-favicon: /public/images/logo.png
 downloads: [pdf]
 sharing: [twitter, facebook, linkedin]
 
 format:
+  html: default
   pdf:
     toc: true
     number-sections: false
