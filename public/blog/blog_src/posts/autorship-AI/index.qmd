@@ -1,0 +1,83 @@
+---
+title: "Authorship and Contribution in the Age of AI: Notes on the Current Debate"
+author:
+  - name: Patricio Iván Pantaleo
+    orcid: 0000-0002-8104-8975
+    role: Author
+    roles:
+      - conceptualization: lead
+      - writing: lead
+      - investigation: lead
+
+date: "2025-06-13"
+categories: [authorship, ethics]
+bibliography: post.bib
+csl: ../../apa.csl
+
+description: |
+  A reflection on the concept of authorship in academic research. 
+  International criteria (ICMJE, CRediT), common conflicts, and key ethical guidelines are analyzed to support fair recognition of scholarly contributions.
+
+image: "post.jpg"
+image-alt: "Photo collage of a woman's legs and shoes"
+image-credit: '<a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on <a href="https://unsplash.com/">Unsplash</a>'
+
+downloads: [pdf]
+sharing: [twitter, facebook, linkedin]
+
+license: "CC BY"
+copyright: >
+  © 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+
+citation:
+  type: post
+  title: "Authorship and Contribution in the Age of AI: Notes on the Current Debate"
+  author:
+    - family: Pantaleo
+      given: Patricio Iván
+      orcid: 0000-0002-8104-8975
+  url: https://patricio.pantaleo.ar/blog/posts/autorship-AI
+
+format:
+  html: default
+  pdf:
+    documentclass: scrartcl
+    toc: true
+    number-sections: false
+    fontsize: 11pt
+lang: en
+---
+
+:::{.figure}
+![](post.jpg){fig-align="center"}
+<p style="text-align: center; font-size: 0.8em;">
+Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on <a href="https://unsplash.com/">Unsplash</a>
+</p>
+:::
+
+Authorship in scholarly articles is not a mere recognition of participation, but a key component of academic and scientific ethics. This post synthesizes international criteria and essential reflections on what it truly means to sign as an author of an academic work.
+
+## What is authorship?
+
+Authorship is commonly understood as the "status of being an author," according to the most general definition by the Royal Spanish Academy (@rae_autoria). However, in academic and scientific contexts, this notion requires both normative and ethical clarification.
+
+## International Criteria: ICMJE and CRediT
+
+The International Committee of Medical Journal Editors (ICMJE) proposes four criteria that must be met simultaneously to justify authorship (@icmje_defining):
+
+1. Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data.
+2. Drafting the article or revising it critically for important intellectual content.
+3. Final approval of the version to be published.
+4. Accountability for all aspects of the work, ensuring that questions related to the accuracy or integrity are appropriately investigated and resolved.
+
+Complementing this definition, the CRediT taxonomy (@credit_niso) identifies 14 specific contributor roles, allowing a more granular attribution of individual contributions to scholarly work.
+
+## Ethics and Misconduct
+
+Common authorship-related misconduct includes **honorary authorship** (adding someone who did not contribute) and **ghost authorship** (omitting someone who did contribute). Both practices breach the principles of scientific integrity (@codina_etica).
+
+Moreover, authorship disputes are frequent, especially among early-career researchers. The Committee on Publication Ethics (COPE) offers a guide for handling authorship conflicts, emphasizing the importance of early agreements, transparent communication, and institutional protocols for conflict resolution (@cope_disputes).
+
+## Conclusion
+
+Signing a paper is neither a formality nor a courtesy—it is an ethical statement. Adopting the ICMJE and CRediT frameworks ensures fair recognition of actual contributions and helps prevent misconduct that undermines scientific trust.

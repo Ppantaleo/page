@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Patricio Iván Pantaleo">
+<meta name="dcterms.date" content="2025-06-13">
+<meta name="description" content="A reflection on the concept of authorship in academic research. International criteria (ICMJE, CRediT), common conflicts, and key ethical guidelines are analyzed to support fair recognition of scholarly contributions.">
 
-<title>Blog – Patricio Pantaleo’s Blog</title>
+<title>Authorship and Contribution in the Age of AI: Notes on the Current Debate – Patricio Pantaleo’s Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +23,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./https://patricio.pantaleo.ar/images/logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8449530ea0812a04e2c7d1326c75c5db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../https://patricio.pantaleo.ar/images/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8449530ea0812a04e2c7d1326c75c5db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,68 +90,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Patricio Pantaleo's Blog" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -139,7 +102,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Patricio Pantaleo’s Blog</span>
     </a>
   </div>
@@ -166,7 +129,7 @@ window.Quarto = {
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -180,77 +143,127 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Authorship and Contribution in the Age of AI: Notes on the Current Debate</h1>
+                  <div>
+        <div class="description">
+          <p>A reflection on the concept of authorship in academic research. International criteria (ICMJE, CRediT), common conflicts, and key ethical guidelines are analyzed to support fair recognition of scholarly contributions.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">authorship</div>
+                <div class="quarto-category">ethics</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Patricio Iván Pantaleo <a href="https://orcid.org/0000-0002-8104-8975" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 13, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YXV0aG9yc2hpcA==">authorship <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXRoaWNz">ethics <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-authorship" id="toc-what-is-authorship" class="nav-link active" data-scroll-target="#what-is-authorship">What is authorship?</a></li>
+  <li><a href="#international-criteria-icmje-and-credit" id="toc-international-criteria-icmje-and-credit" class="nav-link" data-scroll-target="#international-criteria-icmje-and-credit">International Criteria: ICMJE and CRediT</a></li>
+  <li><a href="#ethics-and-misconduct" id="toc-ethics-and-misconduct" class="nav-link" data-scroll-target="#ethics-and-misconduct">Ethics and Misconduct</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YXV0aG9yc2hpcCUyQ2V0aGljcw==" data-listing-date-sort="1749783600000" data-listing-file-modified-sort="1749829662278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
-<a href="./posts/autorship-AI/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/autorship-AI/post.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Photo collage of a woman&amp;#039;s legs and shoes">
+<div class="figure">
+<img src="post.jpg" class="img-fluid quarto-figure quarto-figure-center">
+<p style="text-align: center; font-size: 0.8em;">
+Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on <a href="https://unsplash.com/">Unsplash</a>
 </p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Authorship and Contribution in the Age of AI: Notes on the Current Debate
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0aG9yc2hpcA=='); return false;">
-authorship
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZXRoaWNz'); return false;">
-ethics
+<p>Authorship in scholarly articles is not a mere recognition of participation, but a key component of academic and scientific ethics. This post synthesizes international criteria and essential reflections on what it truly means to sign as an author of an academic work.</p>
+<section id="what-is-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-authorship">What is authorship?</h2>
+<p>Authorship is commonly understood as the “status of being an author,” according to the most general definition by the Royal Spanish Academy (<span class="citation" data-cites="rae_autoria">Real Academia Española (<a href="#ref-rae_autoria" role="doc-biblioref">n.d.</a>)</span>). However, in academic and scientific contexts, this notion requires both normative and ethical clarification.</p>
+</section>
+<section id="international-criteria-icmje-and-credit" class="level2">
+<h2 class="anchored" data-anchor-id="international-criteria-icmje-and-credit">International Criteria: ICMJE and CRediT</h2>
+<p>The International Committee of Medical Journal Editors (ICMJE) proposes four criteria that must be met simultaneously to justify authorship (<span class="citation" data-cites="icmje_defining">ICMJE (<a href="#ref-icmje_defining" role="doc-biblioref">n.d.</a>)</span>):</p>
+<ol type="1">
+<li>Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data.</li>
+<li>Drafting the article or revising it critically for important intellectual content.</li>
+<li>Final approval of the version to be published.</li>
+<li>Accountability for all aspects of the work, ensuring that questions related to the accuracy or integrity are appropriately investigated and resolved.</li>
+</ol>
+<p>Complementing this definition, the CRediT taxonomy (<span class="citation" data-cites="credit_niso"><em>CRediT – Contributor Roles Taxonomy</em> (<a href="#ref-credit_niso" role="doc-biblioref">n.d.</a>)</span>) identifies 14 specific contributor roles, allowing a more granular attribution of individual contributions to scholarly work.</p>
+</section>
+<section id="ethics-and-misconduct" class="level2">
+<h2 class="anchored" data-anchor-id="ethics-and-misconduct">Ethics and Misconduct</h2>
+<p>Common authorship-related misconduct includes <strong>honorary authorship</strong> (adding someone who did not contribute) and <strong>ghost authorship</strong> (omitting someone who did contribute). Both practices breach the principles of scientific integrity (<span class="citation" data-cites="codina_etica">Codina (<a href="#ref-codina_etica" role="doc-biblioref">2024</a>)</span>).</p>
+<p>Moreover, authorship disputes are frequent, especially among early-career researchers. The Committee on Publication Ethics (COPE) offers a guide for handling authorship conflicts, emphasizing the importance of early agreements, transparent communication, and institutional protocols for conflict resolution (<span class="citation" data-cites="cope_disputes">Committee on Publication Ethics (<a href="#ref-cope_disputes" role="doc-biblioref">2018</a>)</span>).</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Signing a paper is neither a formality nor a courtesy—it is an ethical statement. Adopting the ICMJE and CRediT frameworks ensures fair recognition of actual contributions and helps prevent misconduct that undermines scientific trust.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-codina_etica" class="csl-entry" role="listitem">
+Codina, L. (2024). <em>Ética y artículos científicos: Aspectos clave</em>. <a href="https://www.lluiscodina.com/etica-articulos-cientificos/">https://www.lluiscodina.com/etica-articulos-cientificos/</a>
 </div>
+<div id="ref-cope_disputes" class="csl-entry" role="listitem">
+Committee on Publication Ethics. (2018). <em>How to handle authorship disputes: A guide for new researchers</em>. <a href="https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers" class="uri">https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers</a>.
 </div>
-<div class="card-text listing-description">
-A reflection on the concept of authorship in academic research. International criteria (ICMJE, CRediT), common conflicts, and key ethical guidelines are analyzed to support…
+<div id="ref-credit_niso" class="csl-entry" role="listitem">
+<em>CRediT – contributor roles taxonomy</em>. (n.d.). <a href="https://credit.niso.org/" class="uri">https://credit.niso.org/</a>.
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Patricio Iván Pantaleo
+<div id="ref-icmje_defining" class="csl-entry" role="listitem">
+ICMJE. (n.d.). <em>Defining the role of authors and contributors</em>. <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html" class="uri">https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html</a>.
 </div>
-<div class="listing-date">
-Jun 13, 2025
+<div id="ref-rae_autoria" class="csl-entry" role="listitem">
+Real Academia Española. (n.d.). <em>Autoría</em>. <a href="https://www.rae.es/diccionario-estudiante/autor%C3%ADa" class="uri">https://www.rae.es/diccionario-estudiante/autor%C3%ADa</a>.
 </div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>© 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+</div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{pantaleo2025,
+  author = {Pantaleo, Patricio Iván},
+  title = {Authorship and {Contribution} in the {Age} of {AI:} {Notes}
+    on the {Current} {Debate}},
+  date = {2025-06-13},
+  url = {https://patricio.pantaleo.ar/blog/posts/autorship-AI},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-pantaleo2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Pantaleo, P. I. (2025, June 13). <em>Authorship and Contribution in the
+Age of AI: Notes on the Current Debate</em> [Online post]. <a href="https://patricio.pantaleo.ar/blog/posts/autorship-AI">https://patricio.pantaleo.ar/blog/posts/autorship-AI</a>
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
