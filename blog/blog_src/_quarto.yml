@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: .. # output to the parent directory
 
 website:
   title: "Patricio Pantaleo's Blog"
