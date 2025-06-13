@@ -1,195 +1,297 @@
-/* Estilos adicionales para complementar el SCSS */
+/* Estilos adicionales para complementar el SCSS y replicar tu sitio principal */
 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles for accessibility */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid #2c3e50;
-  outline-offset: 2px;
+/* Reset completo para coherencia */
+* {
+  box-sizing: border-box;
 }
 
-/* Skip to main content link */
-.skip-link {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  background: #2c3e50;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  z-index: 1000;
-  border-radius: 0 0 0.25rem 0;
-}
-
-.skip-link:focus {
-  top: 0;
-}
-
-/* Enhanced readability */
-.quarto-container main {
-  max-width: 65ch;
+/* Layout principal idéntico a tu sitio */
+.quarto-container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* Image optimization */
-img {
-  height: auto;
-  border-radius: 0.5rem;
-}
-
-.listing-item img {
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-/* Enhanced typography for reading */
-.quarto-container p {
-  text-align: justify;
-  hyphens: auto;
-  word-wrap: break-word;
-}
-
-/* Code syntax highlighting improvements */
-.sourceCode {
-  background: #f8f9fa !important;
-  border: 1px solid #e9ecef;
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-
-/* Callout boxes */
-.callout {
-  border-left: 4px solid;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  border-radius: 0.25rem;
-  background: rgba(0,0,0,0.02);
-}
-
-.callout-note {
-  border-left-color: #3498db;
-}
-
-.callout-warning {
-  border-left-color: #f39c12;
-}
-
-.callout-important {
-  border-left-color: #e74c3c;
-}
-
-.callout-tip {
-  border-left-color: #27ae60;
-}
-
-/* Search functionality */
-.aa-input-container {
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.aa-input-search {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-
-/* Loading states */
-.loading {
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-/* Print optimizations */
-@media print {
-  .quarto-container {
-    max-width: none;
-  }
-  
-  a[href]:after {
-    content: " (" attr(href) ")";
-    font-size: 0.8em;
-    color: #666;
-  }
-  
-  img {
-    max-width: 100% !important;
-    page-break-inside: avoid;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    page-break-after: avoid;
-  }
-  
-  blockquote, pre {
-    page-break-inside: avoid;
-  }
-}
-
-/* Dark mode support (if implemented) */
-@media (prefers-color-scheme: dark) {
-  /* This would be implemented if you decide to add dark mode support */
-}
-
-/* Reduced motion for accessibility */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  
-  html {
-    scroll-behavior: auto;
-  }
-}
-
-/* Mobile-first responsive design */
-@media (max-width: 576px) {
-  .quarto-container {
-    padding: 0 1rem;
-  }
-  
-  .listing-item {
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-  
-  h1 {
-    font-size: 1.75rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  .quarto-title-block {
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-/* Medium screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .quarto-container {
     padding: 0 2rem;
   }
 }
 
-/* Large screens */
-@media (min-width: 1200px) {
-  .quarto-container {
-    max-width: 1200px;
+/* Navbar sticky como tu sitio principal */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Logo idéntico al de tu sitio principal */
+.navbar-brand img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.25rem;
+  transition: opacity 0.15s ease;
+}
+
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+
+/* Navegación con el mismo estilo */
+.navbar-nav .nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #111827;
+}
+
+/* Título de página centralizado como tu sitio */
+.quarto-title-block {
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+  background: none;
+  border: none;
+}
+
+.quarto-title-block .quarto-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+  letter-spacing: 0 !important;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .quarto-title-block .quarto-title {
+    font-size: 2.25rem;
   }
-}/* css styles */
+}
+
+/* Descripción con el mismo estilo que tu sitio */
+.quarto-title-block .description,
+.quarto-title-block p {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Específicamente para el div de descripción */
+div.description {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto 2rem auto;
+}
+
+/* Cards de posts minimalistas */
+.quarto-listing .listing-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.15s ease;
+  box-shadow: none;
+}
+
+.quarto-listing .listing-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Tipografía de títulos en cards */
+.listing-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.listing-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.listing-title a:hover {
+  color: #6b7280;
+}
+
+/* Metadatos */
+.listing-date {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.listing-description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Categorías */
+.listing-categories .listing-category {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Controles de filtrado */
+.listing-controls {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Input de búsqueda */
+input[type="search"] {
+  font-family: 'Inter', sans-serif;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background: #ffffff;
+  color: #111827;
+}
+
+input[type="search"]:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-color: #3b82f6;
+}
+
+/* Select de ordenamiento */
+select {
+  font-family: 'Inter', sans-serif;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Footer minimalista */
+.nav-footer {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.nav-footer-center {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive mobile-first */
+@media (max-width: 640px) {
+  .quarto-container {
+    padding: 0 1rem;
+  }
+  
+  .navbar {
+    padding: 0.75rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .quarto-title-block {
+    padding: 2rem 0 1.5rem 0;
+  }
+  
+  .quarto-listing .listing-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .listing-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Estados de focus para accesibilidad */
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Mejoras de performance */
+.listing-item {
+  will-change: transform;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .listing-controls,
+  .nav-footer {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  .quarto-container {
+    max-width: none;
+    padding: 0;
+  }
+}
