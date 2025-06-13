@@ -1,12 +1,15 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2025-06-10"
-categories: [news]
+title: "Work in Progress"
+author: "Patricio Pantaleo"
+date: "2025-06-13"
+categories: [news, updates]
+image: "post.jpg"
+image-alt: "Photo collage of a woman's legs and shoes"
+image-credit: '<a href="https://unsplash.com/es/@etiennegirardet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Etienne Girardet</a> on <a href="https://unsplash.com/es/fotos/un-collage-de-fotos-de-las-piernas-y-los-zapatos-de-una-mujer-rJLkXd3uC-c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 ---
 
-This is the first post in a Quarto blog. Welcome!
+Welcome! I'm **Patricio Pantaleo**, a researcher and developer working at the intersection of science, open access, and web technologies.  
 
-![](thumbnail.jpg)
+This blog is currently under preparation — I'm setting things up to share updates, ideas, and experiments related to my work and interests.
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+Stay tuned, and feel free to explore my [main site](https://patricio.pantaleo.ar) in the meantime.

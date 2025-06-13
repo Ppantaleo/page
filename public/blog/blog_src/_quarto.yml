@@ -18,6 +18,8 @@ website:
         href: https://patricio.pantaleo.ar/#about
       - text: "Contact"
         href: https://patricio.pantaleo.ar/#contact
+      - icon: rss
+        href: index.xml
 
 page-footer:
     background: "#f8f9fa"
@@ -29,6 +31,9 @@ format:
   html:
     theme: 
       - cosmo
+      - custom.scss
+    dark: 
+      - darkly
       - custom.scss
     css: styles.css
     toc: true
