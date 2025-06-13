@@ -1,0 +1,50 @@
+project:
+  type: website
+
+website:
+  title: "Patricio Pantaleo's Blog"
+  description: "Digital Humanities & Academic Publishing"
+  site-url: "https://patricio.pantaleo.ar/blog"
+  navbar:
+    background: "#ffffff"
+    foreground: "#333333"
+    left:
+      - text: "Home"
+        href: /
+      - text: "Blog"
+        href: /blog
+      - text: "About"
+        href: /#about
+    right:
+      - icon: github
+        href: https://github.com/Ppantaleo
+      - icon: linkedin
+        href: https://linkedin.com/in/patriciospantaleo
+      - icon: envelope
+        href: mailto:contact@patricio.pantaleo.ar
+
+page-footer:
+    background: "#f8f9fa"
+    foreground: "#6c757d"
+    center: |
+      © 2025 Patricio Pantaleo. Digital Humanities Expert & Academic Publishing Specialist.
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: true
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    fontsize: 1.1em
+    linestretch: 1.7
+
+execute:
+  freeze: auto

@@ -1,0 +1,195 @@
+/* Estilos adicionales para complementar el SCSS */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #2c3e50;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #2c3e50;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0 0 0.25rem 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Enhanced readability */
+.quarto-container main {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+/* Image optimization */
+img {
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.listing-item img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced typography for reading */
+.quarto-container p {
+  text-align: justify;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+/* Code syntax highlighting improvements */
+.sourceCode {
+  background: #f8f9fa !important;
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Callout boxes */
+.callout {
+  border-left: 4px solid;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0.25rem;
+  background: rgba(0,0,0,0.02);
+}
+
+.callout-note {
+  border-left-color: #3498db;
+}
+
+.callout-warning {
+  border-left-color: #f39c12;
+}
+
+.callout-important {
+  border-left-color: #e74c3c;
+}
+
+.callout-tip {
+  border-left-color: #27ae60;
+}
+
+/* Search functionality */
+.aa-input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.aa-input-search {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Print optimizations */
+@media print {
+  .quarto-container {
+    max-width: none;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  blockquote, pre {
+    page-break-inside: avoid;
+  }
+}
+
+/* Dark mode support (if implemented) */
+@media (prefers-color-scheme: dark) {
+  /* This would be implemented if you decide to add dark mode support */
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 576px) {
+  .quarto-container {
+    padding: 0 1rem;
+  }
+  
+  .listing-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .quarto-title-block {
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quarto-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .quarto-container {
+    max-width: 1200px;
+  }
+}/* css styles */
