@@ -11,7 +11,7 @@ author:
 
 date: "2025-06-13"
 categories: [posts, scholarly-publishing]
-tags: [authorship, ethics]
+keywords: [authorship, ethics, AI]
 bibliography: post.bib
 csl: ../../apa.csl
 

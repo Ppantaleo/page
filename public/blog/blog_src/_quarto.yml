@@ -47,6 +47,7 @@ format:
       margin-width: 300px
     fontsize: 1.1em
     linestretch: 1.7
+    include-in-header: "header.html"
 
 execute:
   freeze: auto
