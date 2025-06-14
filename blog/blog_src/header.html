@@ -7,3 +7,16 @@
 
   gtag('config', 'G-1CK9XW12H5');
 </script>
+
+<script>
+// Mover el footer fuera del contenedor de Quarto
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('.nav-footer');
+    const quartoContent = document.querySelector('#quarto-content');
+    
+    if (footer && quartoContent) {
+        // Mover el footer después del contenedor de Quarto
+        quartoContent.parentNode.insertBefore(footer, quartoContent.nextSibling);
+    }
+});
+</script>

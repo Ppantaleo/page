@@ -11,6 +11,7 @@ website:
     logo: logo.png
     logo-alt: "Patricio Pantaleo"
     logo-href: "https://patricio.pantaleo.ar/"
+    toggle-position: right
     title: false
     background: "#ffffff"
     foreground: "#333333"
@@ -25,12 +26,6 @@ website:
         href: https://patricio.pantaleo.ar/#contact
       - icon: rss
         href: index.xml
-
-page-footer:
-    background: "#f8f9fa"
-    foreground: "#6c757d"
-    center: |
-      © 2025 Patricio Pantaleo. Digital Humanities Expert & Academic Publishing Specialist.
 
 format:
   html:
@@ -52,6 +47,7 @@ format:
     fontsize: 1.1em
     linestretch: 1.7
     include-in-header: "header.html"
+    include-after-body: footer.html
 
 execute:
   freeze: auto
