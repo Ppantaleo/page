@@ -788,15 +788,6 @@ body footer:not(.nav-footer) {
   display: none !important;
 }
 
-// Asegurar que el cuerpo tenga la posición correcta
-html, body {
-  overflow-x: hidden !important;
-}
-
-body {
-  position: relative !important;
-}
-
 // Fix específico para Quarto
 #quarto-content {
   position: relative !important;
