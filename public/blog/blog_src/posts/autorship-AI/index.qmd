@@ -29,6 +29,7 @@ sharing: [twitter, facebook, linkedin]
 license: "CC BY"
 copyright: >
   © 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+doi: 10.62059/9x4p2w
 
 citation:
   type: post
@@ -38,6 +39,7 @@ citation:
       given: Patricio Iván
       orcid: 0000-0002-8104-8975
   url: https://patricio.pantaleo.ar/blog/posts/autorship-AI
+  doi: 10.62059/9x4p2w
 
 format:
   html: default
