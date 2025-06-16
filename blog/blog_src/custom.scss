@@ -3,6 +3,7 @@
 // Importar las mismas fuentes que tu sitio principal
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tan+Pearl:wght@400;600;700&display=swap');
 
 // Paleta de colores basada en tu sitio principal
 $white: #ffffff;
@@ -67,15 +68,6 @@ h1, h2, h3, h4, h5, h6 {
   color: $text-primary;
   margin: 0 0 1rem 0;
   letter-spacing: -0.025em;
-}
-
-h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  letter-spacing: 0 !important;
-  @media (max-width: 768px) {
-    font-size: 1.875rem;
-  }
 }
 
 h2 {
@@ -235,7 +227,7 @@ a {
 .navbar .navbar-nav .nav-link {
   color: #475569 !important; /* text-slate-600 */
   font-weight: 400 !important;
-  font-size: 0.875rem !important; /* text-sm */
+  font-size: 14px!important; /* text-sm */
   text-transform: uppercase !important;
   letter-spacing: 0.05em !important; /* tracking-wider */
   transition: color 0.15s ease !important;
@@ -395,7 +387,7 @@ body {
     align-items: center !important;
     
     .quarto-category {
-      background: $gray-100 !important;
+      background: $gray-50 !important;
       color: $text-secondary !important;
       padding: 0.25rem 0.75rem !important;
       border-radius: 1rem !important;
@@ -421,7 +413,6 @@ body {
 div.keywords,
 .keywords {
   text-align: center !important;
-  margin: 1.5rem 0 !important;
   background: $gray-50 !important;
   padding: 1rem !important;
   border-radius: $border-radius !important;
