@@ -272,6 +272,11 @@ a {
   display: none !important;
 }
 
+.navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .navbar .navbar-toggler:hover {
   background-color: #f1f5f9 !important; /* hover:bg-slate-100 */
 }
@@ -295,36 +300,6 @@ a {
 /* Espaciado para compensar navbar fijo */
 body {
   padding-top: 4rem !important; /* pt-16 */
-}
-
-/* Modo oscuro */
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    background-color: rgba(15, 23, 42, 0.8) !important;
-    border-bottom-color: #334155 !important; /* dark:border-slate-800 */
-  }
-  
-  .navbar .navbar-brand {
-    color: #f8fafc !important; /* dark:text-white */
-  }
-  
-  .navbar .navbar-nav .nav-link {
-    color: #cbd5e1 !important; /* dark:text-slate-300 */
-  }
-  
-  .navbar .navbar-nav .nav-link:hover,
-  .navbar .navbar-nav .nav-link:focus,
-  .navbar .navbar-nav .nav-link.active {
-    color: #f8fafc !important; /* dark:hover:text-white */
-  }
-  
-  .navbar .navbar-toggler {
-    color: #cbd5e1 !important; /* dark:text-slate-300 */
-  }
-  
-  .navbar .navbar-toggler:hover {
-    background-color: #1e293b !important; /* dark:hover:bg-slate-800 */
-  }
 }
 
 /* Responsive ajustes */
