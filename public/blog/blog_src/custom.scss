@@ -142,7 +142,7 @@ a {
   left: 0 !important;
   right: 0 !important;
   z-index: 50 !important;
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: #f3f3f4eb !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-bottom: 1px solid #e2e8f0 !important; /* border-slate-200 */
@@ -200,7 +200,6 @@ a {
   width: auto !important;
   max-height: none !important;
   max-width: none !important;
-  border-radius: 0.25rem !important;
   transition: all 0.15s ease !important;
   outline: none !important; /* SIN OUTLINE EN LA IMAGEN */
   border: none !important; /* SIN BORDER EN LA IMAGEN */
@@ -293,7 +292,18 @@ a {
   }
   
   .navbar .navbar-nav {
-    display: none !important; /* Ocultar navegación en móvil */
+  display: flex !important;
+  flex-direction: column !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: #ffffff !important;
+  backdrop-filter: blur(12px) !important;
+  padding: 0.5rem !important;
+  gap: 0.5rem !important;
+  border-top: 1px solid #e2e8f0 !important;
+  align-items: flex-start !important;
   }
 }
 
@@ -329,7 +339,7 @@ body {
   text-align: center;
   padding: 3rem 0 2rem 0;
   border: none;
-  background: none;
+  background: #f3f3f4eb;
   
   .quarto-title {
     font-size: 3rem;
@@ -341,6 +351,10 @@ body {
     @media (max-width: 768px) {
       font-size: 2.25rem;
     }
+  }
+
+  .quarto-title-banner {
+    background-color: #f3f3f4eb !important;
   }
   
   .quarto-title-meta {
@@ -692,8 +706,6 @@ blockquote {
       }
     }
   }
-  
-  // ELIMINADO: .footer-title ya no se usa
   
   .footer-description {
     color: #94a3b8 !important;

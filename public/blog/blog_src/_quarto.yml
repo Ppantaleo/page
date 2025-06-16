@@ -13,7 +13,7 @@ website:
     logo-href: "https://patricio.pantaleo.ar/"
     toggle-position: right
     title: false
-    background: "#ffffff"
+    background: "#f3f3f4eb"
     foreground: "#333333"
     right:
       - text: "Home"
