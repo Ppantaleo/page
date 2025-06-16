@@ -45,6 +45,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <NavLink href="#about" label="ABOUT" />
+            <NavLink href="https://patricio.pantaleo.ar/blog" label="BLOG" />
             <NavLink href="#skills" label="SKILLS" />
             <NavLink href="#projects" label="PROJECTS" />
             <NavLink href="#interests" label="INTERESTS" />
