@@ -16,12 +16,10 @@ website:
     background: "#f3f3f4eb"
     foreground: "#333333"
     right:
-      - text: "Home"
-        href: https://patricio.pantaleo.ar/
+      - text: "About"
+        href: https://patricio.pantaleo.ar
       - text: "Blog"
         href: https://patricio.pantaleo.ar/blog
-      - text: "About"
-        href: https://patricio.pantaleo.ar/#about
       - text: "Contact"
         href: https://patricio.pantaleo.ar/#contact
       - icon: rss
