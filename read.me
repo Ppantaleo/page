@@ -1,0 +1,183 @@
+# Patricio Pantaleo - Personal Website & Blog
+
+Este repositorio contiene el sitio web personal y blog de Patricio Pantaleo, especialista en Humanidades Digitales y Publicación Académica.
+
+## 📋 Descripción del Proyecto
+
+El proyecto combina dos tecnologías principales:
+
+1. **Sitio Principal**: Aplicación Next.js con TypeScript y Tailwind CSS
+2. **Blog**: Generado con Quarto desde archivos fuente y compilado a HTML estático
+
+## 🏗️ Arquitectura
+
+```
+├── app/                    # Aplicación Next.js principal
+├── components/             # Componentes React reutilizables
+├── public/
+│   ├── blog/              # ✅ OUTPUT del proyecto Quarto (HTML compilado)
+│   └── images/            # Imágenes del sitio principal
+├── public/blog/blog_src/  # 📝 FUENTES del blog en Quarto
+│   ├── posts/             # Posts del blog (.qmd)
+│   ├── _quarto.yml        # Configuración de Quarto
+│   └── custom.scss        # Estilos personalizados
+└── ...
+```
+
+## 🚀 Tecnologías Utilizadas
+
+### Sitio Principal (Next.js)
+- **Framework**: Next.js 15 con App Router
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS + shadcn/ui
+- **Deployment**: Exportación estática para GitHub Pages
+- **Fuentes**: Montserrat (sans-serif) + Tan Pearl (serif)
+
+### Blog (Quarto)
+- **Generador**: Quarto (sistema de publicación científica)
+- **Formato fuente**: Archivos `.qmd` (Quarto Markdown)
+- **Output**: HTML estático en `public/blog/`
+- **Estilos**: SCSS personalizado que replica el diseño del sitio principal
+
+## 🛠️ Instalación y Desarrollo
+
+### Prerrequisitos
+- Node.js 18+
+- Quarto CLI (para el blog)
+
+### Configuración Inicial
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/Ppantaleo/page.git
+cd page
+
+# Instalar dependencias
+npm install
+```
+
+### Desarrollo del Sitio Principal
+
+```bash
+# Servidor de desarrollo
+npm run dev
+
+# Build para producción
+npm run build
+```
+
+### Desarrollo del Blog
+
+```bash
+# Navegar al directorio del blog
+cd public/blog/blog_src
+
+# Renderizar el blog (output a public/blog/)
+quarto render
+
+# Servidor de desarrollo para el blog
+quarto preview
+```
+
+## 📝 Gestión de Contenido
+
+### Crear un Nuevo Post
+
+1. Crear archivo `.qmd` en `public/blog/blog_src/posts/nombre-post/`
+2. Incluir metadatos YAML en el frontmatter:
+
+```yaml
+---
+title: "Título del Post"
+author: "Patricio Iván Pantaleo"
+date: "2025-06-16"
+categories: [posts, categoria]
+description: "Descripción del post"
+---
+```
+
+3. Escribir contenido en Markdown
+4. Renderizar con `quarto render`
+
+### Estructura de un Post
+
+```
+posts/nombre-post/
+├── index.qmd          # Contenido principal
+├── post.jpg           # Imagen destacada
+├── post.bib           # Referencias (opcional)
+└── archivos/          # Recursos adicionales
+```
+
+## 🎨 Personalización de Estilos
+
+### Sitio Principal
+- Configuración en `tailwind.config.ts`
+- Colores y variables CSS en `app/globals.css`
+- Componentes en `components/ui/`
+
+### Blog
+- Estilos principales en `public/blog/blog_src/custom.scss`
+- Variables SCSS que replican el diseño del sitio principal
+- Footer y header personalizados en `footer.html` y `header.html`
+
+## 🚀 Deployment
+
+El sitio se despliega automáticamente en GitHub Pages mediante GitHub Actions:
+
+1. **Trigger**: Push a la rama `main`
+2. **Build**: Next.js exporta estático + Quarto ya renderizado
+3. **Deploy**: Archivos estáticos a `gh-pages`
+4. **URL**: https://patricio.pantaleo.ar
+
+### Configuración de Deployment
+
+```yaml
+# .github/workflows/build-and-deploy.yml
+- name: Build
+  run: npm run build
+- name: Create CNAME
+  run: echo "patricio.pantaleo.ar" > out/CNAME
+```
+
+## 📁 Estructura de Archivos Clave
+
+```
+├── app/
+│   ├── layout.tsx         # Layout principal con metadatos
+│   ├── page.tsx           # Página de inicio
+│   └── globals.css        # Estilos globales
+├── components/
+│   ├── header.tsx         # Navegación principal
+│   └── ui/                # Componentes shadcn/ui
+├── public/
+│   ├── blog/              # Blog compilado (NO EDITAR)
+│   │   ├── index.html     # Lista de posts
+│   │   └── posts/         # Posts individuales
+│   └── blog/blog_src/     # Fuentes del blog (EDITAR AQUÍ)
+├── next.config.mjs        # Configuración Next.js para export
+└── package.json           # Dependencias y scripts
+```
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia GPL-3.0. Ver [LICENSE](LICENSE) para más detalles.
+
+## 🤝 Contribución
+
+1. Fork del proyecto
+2. Crear feature branch (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit cambios (`git commit -am 'Agregar nueva funcionalidad'`)
+4. Push al branch (`git push origin feature/nueva-funcionalidad`)
+5. Crear Pull Request
+
+## 📧 Contacto
+
+- **Autor**: Patricio Iván Pantaleo
+- **Email**: patricio@pantaleo.ar
+- **Website**: https://patricio.pantaleo.ar
+- **ORCID**: [0000-0002-8104-8975](https://orcid.org/0000-0002-8104-8975)
+
+---
+
+**Nota**: El blog se genera con Quarto desde `public/blog/blog_src/` y el output se coloca en `public/blog/`. No editar directamente los archivos HTML del blog.
