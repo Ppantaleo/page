@@ -144,7 +144,9 @@ a {
 /* Container del navbar */
 .navbar .container-fluid {
   max-width: 1200px !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
+  margin-left: 7rem !important;
+  margin-right: 0rem !important;
   padding: 0 0rem !important;
   display: flex !important;
   align-items: center !important;
@@ -307,6 +309,7 @@ body {
 @media (max-width: 768px) {
   .navbar .container-fluid {
     padding: 0 1rem !important;
+    margin: 0 auto !important;
   }
   
   .navbar .navbar-nav .nav-link {
@@ -450,6 +453,15 @@ div.keywords,
     border: 1px solid $border-color !important;
     font-family: $font-family-sans-serif !important;
   }
+}
+
+.doi::before {
+  content: "DOI: ";
+  font-weight: 500;
+}
+
+.doi {
+  font-size: .875rem !important;
 }
 
 // Listing de posts (tarjetas)
@@ -652,29 +664,19 @@ blockquote {
     @media (max-width: 768px) {
       flex-direction: column !important;
       gap: 0.5rem !important;
-      align-items: center !important; // Solo en móviles centrar
     }
     
     @media (max-width: 480px) {
       flex-direction: column !important;
       gap: 0.5rem !important;
-      align-items: center !important;
     }
     
     img {
-      height: 2.5rem !important;
+      height: 40px !important;
       width: auto !important;
       margin: 0 !important;
       flex-shrink: 0 !important;
       display: block !important;
-      
-      @media (max-width: 768px) {
-        height: 2rem !important;
-      }
-      
-      @media (max-width: 480px) {
-        height: 1.75rem !important;
-      }
     }
     
     // Contenedor del texto (solo descripción) - IZQUIERDA en desktop
