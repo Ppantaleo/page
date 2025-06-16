@@ -95,6 +95,7 @@ export default function Header() {
           <div className="container mx-auto px-6 py-4">
             <nav className="flex flex-col space-y-4">
               <MobileNavLink href="#about" label="ABOUT" onClick={closeMenu} />
+              <MobileNavLink href="https://patricio.pantaleo.ar/blog" label="BLOG" onClick={closeMenu} />
               <MobileNavLink href="#skills" label="SKILLS" onClick={closeMenu} />
               <MobileNavLink href="#projects" label="PROJECTS" onClick={closeMenu} />
               <MobileNavLink href="#interests" label="INTERESTS" onClick={closeMenu} />
