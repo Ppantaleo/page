@@ -464,6 +464,10 @@ div.keywords,
   font-size: .875rem !important;
 }
 
+.citation a {
+  color: $text-primary;
+}
+
 // Listing de posts (tarjetas)
 .quarto-listing {
   .listing-item {

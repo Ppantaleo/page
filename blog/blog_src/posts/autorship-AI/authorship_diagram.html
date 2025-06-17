@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos clave en autoría académica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 10px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            color: #495057;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                padding: 40px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d3436;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+            line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.8em;
+                margin-bottom: 40px;
+            }
+        }
+
+        .icmje-criteria {
+            background: linear-gradient(135deg, rgba(179, 217, 255, 0.2), rgba(153, 204, 255, 0.1));
+            border: 3px solid #99ccff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        @media (min-width: 768px) {
+            .icmje-criteria {
+                border-radius: 20px;
+                padding: 30px;
+                margin: 30px 0;
+            }
+        }
+
+        .criteria-title {
+            color: #2980b9;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        @media (min-width: 768px) {
+            .criteria-title {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .criteria-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        @media (min-width: 640px) {
+            .criteria-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .criteria-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .criteria-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        @media (min-width: 768px) {
+            .criteria-item {
+                border-radius: 15px;
+                padding: 20px;
+                border-left-width: 6px;
+            }
+        }
+
+        .criteria-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .criteria-number {
+            font-weight: 700;
+            color: #3498db;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .criteria-title-item {
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 8px;
+        }
+
+        .criteria-description {
+            font-size: 14px;
+            color: #636e72;
+            line-height: 1.4;
+        }
+
+        /* Table Styles */
+        .authorship-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .authorship-table thead {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .authorship-table th {
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .authorship-table tbody tr {
+            border-bottom: 1px solid #e9ecef;
+            transition: background-color 0.2s ease;
+        }
+
+        .authorship-table tbody tr:hover {
+            background-color: rgba(102, 126, 234, 0.05);
+        }
+
+        .authorship-table td {
+            padding: 18px 15px;
+            vertical-align: top;
+        }
+
+        .concept-name {
+            font-weight: 600;
+            color: #2d3436;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .concept-category {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .ethical {
+            background: linear-gradient(135deg, #ffb3b3, #ff9999);
+            color: #2d3436;
+        }
+
+        .roles {
+            background: linear-gradient(135deg, #b3d9ff, #99ccff);
+            color: #2d3436;
+        }
+
+        .process {
+            background: linear-gradient(135deg, #d4ffb3, #c2ff99);
+            color: #2d3436;
+        }
+
+        .technical {
+            background: linear-gradient(135deg, #ffcc99, #ffb366);
+            color: #2d3436;
+        }
+
+        .governance {
+            background: linear-gradient(135deg, #e6b3ff, #d966ff);
+            color: #2d3436;
+        }
+
+        .concept-description {
+            font-size: 13px;
+            color: #636e72;
+            line-height: 1.4;
+        }
+
+        .relationship-column {
+            font-size: 13px;
+            color: #495057;
+            line-height: 1.4;
+        }
+
+        /* Disputes Section */
+        .disputes-section {
+            background: linear-gradient(135deg, rgba(255, 179, 179, 0.15), rgba(255, 153, 153, 0.1));
+            border: 3px solid #ffb3b3;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .section-title {
+            color: #2d3436;
+            font-weight: 600;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .disputes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+        }
+
+        .dispute-type {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .dispute-header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .dispute-interpretation {
+            background: linear-gradient(135deg, #b3d9ff, #99ccff);
+        }
+
+        .dispute-misconduct {
+            background: linear-gradient(135deg, #ffb3b3, #ff9999);
+        }
+
+        .dispute-icon {
+            font-size: 24px;
+        }
+
+        .dispute-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #2d3436;
+        }
+
+        .dispute-content {
+            padding: 0 20px 20px 20px;
+        }
+
+        .dispute-description {
+            font-size: 14px;
+            color: #636e72;
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .action-item {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: rgba(116, 185, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #74b9ff;
+            font-size: 13px;
+            line-height: 1.3;
+        }
+
+        /* Responsive CRediT Section */
+        .credit-section {
+            background: linear-gradient(135deg, rgba(212, 255, 179, 0.15), rgba(194, 255, 153, 0.1));
+            border: 3px solid #d4ffb3;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        @media (min-width: 768px) {
+            .credit-section {
+                border-radius: 20px;
+                padding: 30px;
+                margin: 40px 0;
+            }
+        }
+
+        .credit-subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #636e72;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .credit-subtitle {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .credit-link {
+            color: #00b894;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .credit-link {
+                margin-left: 10px;
+            }
+        }
+
+        .credit-link:hover {
+            text-decoration: underline;
+        }
+
+        .credit-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 640px) {
+            .credit-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .credit-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .credit-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .credit-role {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 3px solid #00b894;
+            transition: transform 0.2s ease;
+        }
+
+        @media (min-width: 768px) {
+            .credit-role {
+                border-radius: 12px;
+                padding: 15px;
+                border-left-width: 4px;
+            }
+        }
+
+        .credit-role:hover {
+            transform: translateY(-2px);
+        }
+
+        .role-name {
+            font-weight: 600;
+            font-size: 12px;
+            color: #2d3436;
+            margin-bottom: 3px;
+            line-height: 1.3;
+        }
+
+        @media (min-width: 768px) {
+            .role-name {
+                font-size: 13px;
+                margin-bottom: 4px;
+            }
+        }
+
+        .role-desc {
+            font-size: 11px;
+            color: #636e72;
+            line-height: 1.3;
+        }
+
+        @media (min-width: 768px) {
+            .role-desc {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conceptos Clave en Autoría Académica</h1>
+        
+        <div class="icmje-criteria">
+            <div class="criteria-title">Criterios ICMJE para Autoría (deben cumplirse todos simultáneamente)</div>
+            <div class="criteria-grid">
+                <div class="criteria-item">
+                    <div class="criteria-number">1.</div>
+                    <div class="criteria-title-item">Contribuciones sustanciales</div>
+                    <div class="criteria-description">A la concepción o diseño del trabajo; o la adquisición, análisis o interpretación de datos</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="criteria-number">2.</div>
+                    <div class="criteria-title-item">Redacción del trabajo</div>
+                    <div class="criteria-description">O revisión crítica del mismo para contenido intelectual importante</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="criteria-number">3.</div>
+                    <div class="criteria-title-item">Aprobación final</div>
+                    <div class="criteria-description">De la versión a ser publicada</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="criteria-number">4.</div>
+                    <div class="criteria-title-item">Responsabilidad</div>
+                    <div class="criteria-description">Por todos los aspectos del trabajo, asegurando investigación apropiada de precisión e integridad</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Table -->
+        <div class="table-container">
+            <table class="authorship-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Concepto</th>
+                    <th style="width: 40%;">Descripción</th>
+                    <th style="width: 35%;">Relación con Autoría Académica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="concept-name">Autores Regalo</div>
+                        <span class="concept-category ethical">Problemas Éticos</span>
+                    </td>
+                    <td class="concept-description">
+                        Personas incluidas sin contribución significativa según criterios ICMJE. Frecuentemente figuras senior añadidas por conveniencia política.
+                    </td>
+                    <td class="relationship-column">
+                        Viola los criterios de autoría al incluir nombres que no cumplieron los 4 requisitos ICMJE. Afecta la integridad de la publicación científica.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Autores Fantasma</div>
+                        <span class="concept-category ethical">Problemas Éticos</span>
+                    </td>
+                    <td class="concept-description">
+                        Contribuyentes significativos omitidos o escritores profesionales no reconocidos. Viola principios de transparencia.
+                    </td>
+                    <td class="relationship-column">
+                        Omite autores que sí cumplen criterios ICMJE. Puede ocultar conflictos de interés y afectar la credibilidad de la investigación.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Autoría Grupal</div>
+                        <span class="concept-category ethical">Problemas Éticos</span>
+                    </td>
+                    <td class="concept-description">
+                        Uso de nombres grupales. Problemas de indexación en bases de datos como Medline.
+                    </td>
+                    <td class="relationship-column">
+                        Alternativa para grandes colaboraciones. Requiere listar contribuyentes individuales para transparencia y accountability.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Primer Autor</div>
+                        <span class="concept-category roles">Roles y Jerarquías</span>
+                    </td>
+                    <td class="concept-description">
+                        Generalmente quien hizo la mayor contribución. Se usa en citas como 'Smith et al.'
+                    </td>
+                    <td class="relationship-column">
+                        Reconocimiento de la contribución principal. Debe cumplir todos los criterios ICMJE y tener la mayor participación en el trabajo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Último Autor</div>
+                        <span class="concept-category roles">Roles y Jerarquías</span>
+                    </td>
+                    <td class="concept-description">
+                        Frecuentemente miembro senior con experiencia y orientación. Interpretación variable entre disciplinas.
+                    </td>
+                    <td class="relationship-column">
+                        Rol de supervisión y liderazgo. Debe cumplir criterios ICMJE especialmente en diseño, interpretación y revisión crítica.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Agradecimientos</div>
+                        <span class="concept-category process">Procesos</span>
+                    </td>
+                    <td class="concept-description">
+                        Contribuciones valiosas que no ameritan autoría plena. Deben especificar la naturaleza de la contribución.
+                    </td>
+                    <td class="relationship-column">
+                        Reconoce contribuciones importantes que no cumplen todos los criterios ICMJE. Mantiene transparencia sin inflar autoría.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Orden de Autores</div>
+                        <span class="concept-category process">Procesos</span>
+                    </td>
+                    <td class="concept-description">
+                        Decisión conjunta de coautores. Debe tomarse antes de iniciar la redacción.
+                    </td>
+                    <td class="relationship-column">
+                        Refleja nivel de contribución y responsabilidad. Debe acordarse transparentemente basado en participación real en el trabajo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Declaración de Contribuciones</div>
+                        <span class="concept-category technical">Aspectos Técnicos</span>
+                    </td>
+                    <td class="concept-description">
+                        Descripción específica de lo que cada autor contribuyó. Información para verificar criterios ICMJE.
+                    </td>
+                    <td class="relationship-column">
+                        Herramienta de verificación que asegura que cada autor cumple los 4 criterios ICMJE. Aumenta transparencia y accountability.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Autor Corresponsal</div>
+                        <span class="concept-category technical">Aspectos Técnicos</span>
+                    </td>
+                    <td class="concept-description">
+                        Maneja comunicación editorial. Rol administrativo, no jerárquico.
+                    </td>
+                    <td class="relationship-column">
+                        Responsable de la comunicación durante revisión y publicación. No implica mayor contribución científica que otros autores.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Número de Autores</div>
+                        <span class="concept-category technical">Aspectos Técnicos</span>
+                    </td>
+                    <td class="concept-description">
+                        Sin reglas fijas. Bases de datos modernas listan todos los autores.
+                    </td>
+                    <td class="relationship-column">
+                        Debe reflejar solo personas que cumplen criterios ICMJE. Cantidad determinada por colaboración real, no convenios artificiales.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Garante</div>
+                        <span class="concept-category governance">Gobernanza</span>
+                    </td>
+                    <td class="concept-description">
+                        Asume responsabilidad por la integridad completa del trabajo desde concepción hasta publicación.
+                    </td>
+                    <td class="relationship-column">
+                        Rol de accountability máximo. Garantiza que todos los aspectos del trabajo cumplen estándares éticos y científicos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="concept-name">Apelaciones</div>
+                        <span class="concept-category governance">Gobernanza</span>
+                    </td>
+                    <td class="concept-description">
+                        Mecanismo para disputas de autoría. Editores reacios a involucrarse en omisiones.
+                    </td>
+                    <td class="relationship-column">
+                        Proceso para resolver conflictos sobre cumplimiento de criterios ICMJE. Protege integridad del sistema de autoría.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <!-- Disputes Section -->
+        <div class="disputes-section">
+            <div class="section-title">Manejo de Disputas de Autoría</div>
+            <div class="disputes-grid">
+                <div class="dispute-type">
+                    <div class="dispute-header dispute-interpretation">
+                        <div class="dispute-icon">⚖️</div>
+                        <div class="dispute-title">Disputas (Interpretación)</div>
+                    </div>
+                    <div class="dispute-content">
+                        <div class="dispute-description">
+                            Cuestiones de interpretación sobre si una contribución fue "sustancial" o no
+                        </div>
+                        <div class="dispute-actions">
+                            <div class="action-item">💬 Negociar con las personas involucradas</div>
+                            <div class="action-item">📋 Presentar evidencia (cuadernos de laboratorio, manuscritos, criterios ICMJE)</div>
+                            <div class="action-item">📈 Apelar a autoridades superiores solo en casos excepcionales</div>
+                            <div class="action-item">🔔 Informar al supervisor sobre intenciones de apelación</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dispute-type">
+                    <div class="dispute-header dispute-misconduct">
+                        <div class="dispute-icon">🚨</div>
+                        <div class="dispute-title">Mala Conducta (Violación ética)</div>
+                    </div>
+                    <div class="dispute-content">
+                        <div class="dispute-description">
+                            Propuestas que contravienen directamente las recomendaciones ICMJE
+                        </div>
+                        <div class="dispute-actions">
+                            <div class="action-item">📢 Explicar que la lista propuesta contraviene recomendaciones editoriales</div>
+                            <div class="action-item">📊 Mantenerse factual y evitar respuestas emocionales</div>
+                            <div class="action-item">⚠️ Señalar riesgo de rechazo editorial por mala conducta</div>
+                            <div class="action-item">📝 Documentar inmediatamente la reunión y archivar notas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CRediT Roles Section -->
+        <div class="credit-section">
+            <div class="section-title">Taxonomía CRediT - Roles de Contribución</div>
+            <div class="credit-subtitle">
+                Sistema estandarizado para describir contribuciones específicas a publicaciones científicas
+                <a href="https://credit.niso.org/" target="_blank" class="credit-link">🔗 credit.niso.org</a>
+            </div>
+            <div class="credit-grid">
+                <div class="credit-role">
+                    <div class="role-name">Conceptualización</div>
+                    <div class="role-desc">Ideas, formulación de objetivos y metas de investigación</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Curación de datos</div>
+                    <div class="role-desc">Actividades de gestión para anotar, depurar y mantener datos</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Análisis formal</div>
+                    <div class="role-desc">Aplicación de técnicas estadísticas, matemáticas y computacionales</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Adquisición de financiamiento</div>
+                    <div class="role-desc">Adquisición del soporte financiero para el proyecto</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Investigación</div>
+                    <div class="role-desc">Conducción del proceso de investigación y experimentación</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Metodología</div>
+                    <div class="role-desc">Desarrollo o diseño de metodología y creación de modelos</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Administración del proyecto</div>
+                    <div class="role-desc">Gestión y coordinación de la planificación y ejecución</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Recursos</div>
+                    <div class="role-desc">Provisión de materiales de estudio, reactivos, pacientes, etc.</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Software</div>
+                    <div class="role-desc">Programación, desarrollo de software y algoritmos</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Supervisión</div>
+                    <div class="role-desc">Responsabilidad de supervisión y liderazgo del equipo</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Validación</div>
+                    <div class="role-desc">Verificación de reproducibilidad y replicación de resultados</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Visualización</div>
+                    <div class="role-desc">Preparación, creación y presentación del trabajo publicado</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Redacción - borrador original</div>
+                    <div class="role-desc">Preparación, creación y presentación del trabajo publicado</div>
+                </div>
+                <div class="credit-role">
+                    <div class="role-name">Redacción - revisión y edición</div>
+                    <div class="role-desc">Preparación del manuscrito publicado por el equipo original</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
