@@ -29,10 +29,24 @@ Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on
 </p>
 </div>
 <p>La autoría en artículos académicos no es un mero reconocimiento de participación, sino un componente clave de la ética académica y científica. Este post sintetiza criterios internacionales y reflexiones esenciales sobre lo que realmente significa firmar como autor de un trabajo académico en la era de la inteligencia artificial, con el objetivo de contribuir a delinear acciones y normas para la utilización de IA en el ámbito académico y científico.</p>
-<p>Asi mismo, se plantean los interrogantes básicos de utilización e implementación con el fin de ampliar la dimensión crítica con la que se aborda actualmente. Problemas como reproducción, invensión, verborragia argumentativa, entre otros, son prácticas implícitas en los distintos modelos de IA, propios de una concatenación de datos sin autoconciencia.</p>
+<p>Asi mismo, se plantean los interrogantes básicos de utilización e implementación con el fin de ampliar la dimensión crítica con la que se aborda actualmente. Problemas como reproducción, invensión, verborragia argumentativa, entre otros, son prácticas implícitas en los distintos modelos de IA, propios de una <strong>concatenación de datos sin autoconciencia</strong>.</p>
 <section id="qué-es-la-autoría" class="level2">
 <h2 class="anchored" data-anchor-id="qué-es-la-autoría">¿Qué es la autoría?</h2>
-<p>Según la Real Academia Española, la autoría se define comúnmente como la “cualidad de autor” <span class="citation" data-cites="rae_autoria">(Real Academia Española, 2024)</span>. Sin embargo, en contextos académicos y científicos, esta noción requiere clarificación tanto normativa como ética, especialmente en un mundo donde la colaboración multidisciplinaria y las herramientas de inteligencia artificial están transformando la producción científica.</p>
+<p>Según la Real Academia Española, la autoría se define comúnmente como la “cualidad de autor” y autor es la persona que es “causa de algo” <span class="citation" data-cites="rae_autoria">(Real Academia Española, 2025)</span>. La palabra “autor” proviene del latín auctor, -óris, que significaba ‘creador’, ‘fuente histórica’ e ‘instigador’. Este término latino deriva del verbo augére (‘aumentar’, ‘hacer progresar’), por lo que originalmente designaba a quien hacía crecer o promovía algo.</p>
+<p>La palabra se documenta en español desde 1155 <span class="citation" data-cites="corominas1984diccionario">(Corominas &amp; Pascual, 1984)</span> y evolucionó semánticamente desde la idea de “quien hace crecer” hasta “creador de una obra”. Esta misma raíz latina generó otras palabras como “autoridad”, “autorizar” y “otorgar”, todas relacionadas con los conceptos de origen, crecimiento y responsabilidad.</p>
+<p>Por su parte, la palabra griega ποιητής refiere al que “crea” o “el que hace”, y si esa creación es por técnica o por inspiración era el debate platónico <span class="citation" data-cites="platon2022ion">(Platón, 2022)</span>. Así, hasta nuestros días, ¿Qué es la autoría? o por relación ¿Qué es ser autor? son problemas nodales que anteceden a IA y es necesario así reconocerlos. Sin embargo, ésta presenta nuevas dimensiones y posiblidades de análisis. <span class="citation" data-cites="foucault1994autor">Foucault (1994)</span> sostiene en una de sus conferencias en el 22 de febrero de 1969:</p>
+<blockquote class="blockquote">
+<p>Cómo se individualizó el autor en una cultura como la nuestra, qué estatuto se le dio, a partir de qué momento, por ejemplo, empezaron a hacerse investigaciones de autenticidad y de atribución, en qué sistema de valoración quedó atrapado, en qué momento se comenzó a contar la vida ya no de los héroes sino de los autores, cómo se instauró esa categoría fundamental de la crítica: “El hombre-y-la obra”, todo esto merecería sin duda alguna ser analizado. (p.&nbsp;54)</p>
+</blockquote>
+<p>“Qué importa quien habla, dijo alguien, qué importa quien habla” es la pregunta nodal de la argumentación que Foucault retoma de Beckett. ¿Dónde está el autor? Es inevitable encontrarlo:</p>
+<blockquote class="blockquote">
+<p>En la escritura no se trata de la manifestación o de la exaltación del gesto de escribir; no se trata de la sujeción de un sujeto a un lenguaje; se trata de la apertura de un espacio en donde el sujeto escritor no deja de desaparecer. <span class="citation" data-cites="foucault1994autor">(Foucault, 1994, p. 55)</span></p>
+</blockquote>
+<p>Preguntándose hasta donde llega la obra de un autor, Foucault reflexiona acertadamente. Algo, que es sumamente importante retomar hoy en día: ¿Hasta dónde llega la obra de un autor? Si media la IA, voluntaria o involuntariamente en el proceso de investigación, de escritura, de creación ¿Quién es el autor?:</p>
+<blockquote class="blockquote">
+<p>Mas supongamos que tuviéramos que ver con un autor: ¿todo lo que escribió o dijo, todo lo que dejó tras él forma parte de su obra? Problema a la vez teórico y técnico. Cuando se emprende la publicación de las obras de Nietzsche, por ejemplo, ¿en dónde hay que detenerse? Hay qué publicar todo, ciertamente, pero ¿qué quiere decir este “todo”? Todo lo que el propio Nietzschte publicó, de acuerdo. ¿Los borradores de sus obras? Ciertamente. ¿Los proyectos de aforismos? Sí. ¿También los tachones, las notas al pie de los cuadernos? Sí. Pero cuando en el interior de un cuaderno lleno de aforismos se encuentra una referencia, la indicación de una cita o de una dirección, una cuenta de la lavandería: ¿obra o no obra? ¿Y por qué no? Y esto indefinidamente. <span class="citation" data-cites="foucault1994autor">(Foucault, 1994, pp. 56–57)</span></p>
+</blockquote>
+<p><strong>¿Obra o no obra?</strong> ¿Es lícito utilizar IA en la escritura académica? A estas altunas, mejor dicho: ¿De qué forma es lícito utilizar IA en la escritura académica?</p>
 </section>
 <section id="criterios-internacionales-icmje-y-credit" class="level2">
 <h2 class="anchored" data-anchor-id="criterios-internacionales-icmje-y-credit">Criterios Internacionales: ICMJE y CRediT</h2>
@@ -45,25 +59,80 @@ Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on
 <li><strong>Aprobación final</strong> de la versión a ser publicada</li>
 <li><strong>Responsabilidad</strong> por todos los aspectos del trabajo, asegurando que las preguntas relacionadas con la precisión o integridad de cualquier parte del trabajo sean apropiadamente investigadas y resueltas</li>
 </ol>
-<p>Estos criterios establecen que todos aquellos designados como autores deben cumplir los cuatro criterios para la autoría, y todos los que cumplan los cuatro criterios deben ser identificados como autores.</p>
+<p>Estos criterios establecen que todos aquellos designados como autores deben cumplir los cuatro criterios para la autoría, y todos los que cumplan los cuatro criterios deben ser identificados como autores.Todos aquellos que no cumplan con los cuatro criterios no deben figurar como autores, pero sí deben ser reconocidos según <span class="citation" data-cites="icmje_defining">International Committee of Medical Journal Editors (2023)</span>. Sobre el uso de IA dice específicamente el documento citado:</p>
+<blockquote class="blockquote">
+<p>At submission, the journal should require authors to disclose whether they used artificial intelligence (AI)-assisted technologies (such as Large Language Models [LLMs], chatbots, or image creators) in the production of submitted work. Authors who use such technology should describe, in both the cover letter and the submitted work in the appropriate section if applicable, how they used it. For example, if AI was used for writing assistance, describe this in the acknowledgment section (see Section II.A.3). If AI was used for data collection, analysis, or figure generation, authors should describe this use in the methods (see Section IV.A.3.d). Chatbots (such as ChatGPT) should not be listed as authors because they cannot be responsible for the accuracy, integrity, and originality of the work, and these responsibilities are required for authorship (see Section II.A.1). Therefore, humans are responsible for any submitted material that included the use of AI-assisted technologies. Authors should carefully review and edit the result because AI can generate authoritative-sounding output that can be incorrect, incomplete, or biased. Authors should not list AI and AI-assisted technologies as an author or co-author, nor cite AI as an author. Authors should be able to assert that there is no plagiarism in their paper, including in text and images produced by the AI. Humans must ensure there is appropriate attribution of all quoted material, including full citations. <span class="citation" data-cites="icmje_defining">(@ International Committee of Medical Journal Editors, 2023)</span></p>
+</blockquote>
+<p>Como bien se dice, el fundamento de por qué la IA no puede ser autor es porque no cumple uno de los criterios de autoría definidos anteriormente: no es sujeto de responsabilidades.</p>
 </section>
 <section id="la-taxonomía-credit" class="level3">
 <h3 class="anchored" data-anchor-id="la-taxonomía-credit">La Taxonomía CRediT</h3>
 <p>Complementando esta definición, la taxonomía CRediT es una taxonomía comunitaria de 14 roles que puede usarse para describir los tipos clave de contribuciones típicamente hechas a la producción y publicación de resultados de investigación como artículos de investigación. Esta taxonomía permite una atribución más granular de contribuciones individuales al trabajo académico <span class="citation" data-cites="credit_niso">(CRediT, 2022)</span>.</p>
-<p>Los 14 roles de CRediT incluyen desde la conceptualización hasta la curación de datos, proporcionando un framework para reconocer diferentes tipos de contribuciones más allá de la autoría tradicional.</p>
+<p>Los 14 roles de CRediT incluyen desde la conceptualización hasta la curación de datos, proporcionando un framework para reconocer diferentes tipos de contribuciones más allá de la autoría tradicional y pueden aplicarse tanto a autores como a colaboradores según la definición de <span class="citation" data-cites="icmje_defining">International Committee of Medical Journal Editors (2023)</span>.</p>
 </section>
 </section>
-<section id="ética-y-conducta-inadecuada" class="level2">
-<h2 class="anchored" data-anchor-id="ética-y-conducta-inadecuada">Ética y Conducta Inadecuada</h2>
-<p>Las conductas inadecuadas relacionadas con la autoría incluyen la <strong>autoría honoraria</strong> (agregar a alguien que no contribuyó) y la <strong>autoría fantasma</strong> (omitir a alguien que sí contribuyó). Ambas prácticas quebrantan los principios de integridad científica <span class="citation" data-cites="codina_etica">(Codina, 2023)</span>.</p>
-<p>Además, las disputas de autoría son frecuentes, especialmente entre investigadores en etapas tempranas de su carrera. El Committee on Publication Ethics (COPE) ofrece una guía específica para manejar conflictos de autoría <span class="citation" data-cites="albert_wager_2003">(Albert &amp; Wager, 2003)</span>, enfatizando la importancia de acuerdos tempranos, comunicación transparente y protocolos institucionales para la resolución de conflictos. Esta guía establece que los autores deben discutir la autoría al planificar la investigación, acordar la autoría por escrito y revisar estos acuerdos durante el desarrollo del trabajo, manejando los desacuerdos de manera desapasionada y basada en hechos.</p>
+<section id="conceptos-clave-en-autoría-académica" class="level2">
+<h2 class="anchored" data-anchor-id="conceptos-clave-en-autoría-académica">Conceptos clave en autoría académica</h2>
+<p>La autoría en publicaciones científicas representa uno de los aspectos más complejos y controvertidos del proceso editorial, requiriendo una comprensión clara de las responsabilidades, jerarquías y prácticas éticas involucradas. Retomando lo esbozado <span class="citation" data-cites="icmje_defining">International Committee of Medical Journal Editors (2023)</span>, COPE define una serie de conceptos claves para la autoría académica <span class="citation" data-cites="albert_wager_2003">(Albert &amp; Wager, 2003)</span></p>
+<section id="jerarquías-y-orden-de-autores" class="level3">
+<h3 class="anchored" data-anchor-id="jerarquías-y-orden-de-autores">Jerarquías y orden de autores</h3>
+<p>El orden de autores transmite información crucial sobre las contribuciones relativas al trabajo de investigación. El primer autor tradicionalmente se considera quien realizó la mayor contribución y frecuentemente es el investigador principal responsable de la ejecución del estudio y la redacción inicial del manuscrito. Esta posición es particularmente valorada dado que las citas académicas típicamente se refieren a los estudios por el apellido del primer autor seguido de “et al.”</p>
+<p>La posición del último autor presenta mayor variabilidad interpretativa entre disciplinas; comúnmente se asigna a un miembro senior del equipo que proporcionó supervisión, experiencia metodológica o recursos institucionales, aunque los cínicos a menudo sospechan que puede tratarse de autoría honoraria.</p>
+</section>
+<section id="prácticas-problemáticas-en-autoría" class="level3">
+<h3 class="anchored" data-anchor-id="prácticas-problemáticas-en-autoría">Prácticas problemáticas en autoría</h3>
+<p>Las conductas inadecuadas relacionadas con la autoría incluyen la <strong>autoría honoraria</strong> (agregar a alguien que no contribuyó) y la <strong>autoría fantasma</strong> (omitir a alguien que sí contribuyó). Ambas prácticas quebrantan los principios de integridad científica <span class="citation" data-cites="codina_etica">(Codina, 2023)</span>. <span class="citation" data-cites="albert_wager_2003">Albert &amp; Wager (2003)</span> sostiene al respecto de autoría fantasma y autoría honoraria.</p>
+<p><strong>La autoría fantasma</strong> incluye tanto a escritores profesionales (frecuentemente contratados por sponsors comerciales) cuya participación no se reconoce, como a investigadores que realizaron contribuciones significativas pero fueron omitidos de la lista de autores. Esta práctica representa un conflicto de intereses potencial y viola los principios de transparencia científica.</p>
+<p><strong>La autoría honoraria</strong> involucra la inclusión de personas que no cumplieron los criterios ICMJE, típicamente figuras de autoridad académica o administrativa cuya inclusión busca obtener favor político o prestigio institucional. Otra variante incluye acuerdos recíprocos entre colegas para incluirse mutuamente en publicaciones independientemente de sus contribuciones reales.</p>
+</section>
+<section id="responsabilidades-y-garantías" class="level3">
+<h3 class="anchored" data-anchor-id="responsabilidades-y-garantías">Responsabilidades y garantías</h3>
+<p>Reconociendo la creciente especialización en investigación contemporánea, las directrices ICMJE han introducido el concepto de <strong>“garante”</strong> - uno o más autores que asumen responsabilidad por la integridad completa del trabajo desde su concepción hasta la publicación final. Esta figura reconoce que puede ser irrazonable esperar que cada autor comprenda profundamente todos los aspectos técnicos del estudio (por ejemplo, que un radiólogo explique métodos estadísticos complejos), pero mantiene la accountability general del proyecto.</p>
+<p>El <strong>autor corresponsal</strong>, aunque desempeña un rol administrativo de comunicación con editores y lectores, no debe equipararse automáticamente con jerarquía académica.</p>
+</section>
+<section id="decisiones-procesales-y-reconocimientos" class="level3">
+<h3 class="anchored" data-anchor-id="decisiones-procesales-y-reconocimientos">Decisiones procesales y reconocimientos</h3>
+<p>Las decisiones sobre orden de autores requieren negociación explícita entre colaboradores, idealmente antes de iniciar la redacción del manuscrito. Algunos grupos optan por ordenamiento alfabético cuando las contribuciones son equivalentes, práctica que debe comunicarse claramente al editor.</p>
+<p>Las contribuciones que no ameritan autoría plena deben reconocerse apropiadamente en los <strong>agradecimientos</strong>, especificando la naturaleza exacta de la contribución realizada. Las revistas estadounidenses frecuentemente requieren consentimiento firmado de las personas reconocidas en esta sección.</p>
+</section>
+<section id="implicaciones-contemporáneas" class="level3">
+<h3 class="anchored" data-anchor-id="implicaciones-contemporáneas">Implicaciones contemporáneas</h3>
+<p>La ausencia de límites en el número de autores en bases de datos modernas ha eliminado presiones históricas para restringir las listas, pero la inclusión de múltiples autores incrementa significativamente los tiempos de preparación, revisión y finalización de manuscritos.</p>
+<p>La <strong>autoría grupal</strong> presenta desafíos particulares en la indexación de bases de datos, donde el primer nombre en listas alfabéticas puede convertirse erróneamente en primer autor por defecto. Estas consideraciones subrayan la importancia de planificación anticipada y comunicación explícita en equipos de investigación colaborativos.</p>
+</section>
+<section id="principales-nociones-de-autoría-académica" class="level3">
+<h3 class="anchored" data-anchor-id="principales-nociones-de-autoría-académica">Principales nociones de autoría académica</h3>
+<div id="fig-authorship" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="authorship_diagram.html" width="100%" height="1200px" style="border:none; border-radius:10px;">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Fuente: Patricio Pantaleo
+</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="la-inteligencia-artificial-y-la-autoría" class="level2">
 <h2 class="anchored" data-anchor-id="la-inteligencia-artificial-y-la-autoría">La Inteligencia Artificial y la Autoría</h2>
-<p>En la era de la inteligencia artificial, las principales editoriales han establecido políticas claras sobre el uso de IA en la investigación académica:</p>
+<p>El problema de autoría especificamente relacionado con la IA implica cuestiones complejas. Un análisis reciente reveló que al menos el 1% de los artículos científicos publicados en 2023 —aproximadamente 60,000 papers— mostraron signos del uso de modelos de lenguaje como ChatGPT <span class="citation" data-cites="stokelwalker2024chatbots gray2024">(Stokel-Walker, 2024; <strong>gray2024?</strong>)</span>, una cifra que según los expertos representa apenas “la punta del iceberg” de un fenómeno mucho más amplio.</p>
+<p>La evidencia de este uso va desde casos flagrantes —como la inclusión accidental de frases como “certainly, here is a possible introduction for your topic” en papers publicados por Elsevier <span class="citation" data-cites="stokelwalker2024chatbots">(Stokel-Walker, 2024)</span>— hasta patrones más sutiles pero reveladores en el uso del lenguaje científico. Palabras como “delve” experimentaron un aumento del 654% en la base de datos PubMed entre 2020 y 2023, mientras que términos como “commendable” y “meticulous” mostraron incrementos similares <span class="citation" data-cites="stokelwalker2024chatbots">(Stokel-Walker, 2024)</span>, sugiriendo un cambio fundamental en el léxico de la escritura académica. Esta tendencia refleja una realidad compleja en el mundo académico contemporáneo. En un contexto donde los investigadores operan bajo la presión del “publish or perish”, muchos recurren a estas herramientas como asistentes de escritura o para superar barreras idiomáticas. Sin embargo, lo que comenzó como apoyo gramatical está evolucionando hacia usos más problemáticos: desde la generación de figuras científicas hasta la posible automatización del proceso de revisión por pares <span class="citation" data-cites="liang2024monitoring">(Liang et al., 2024)</span>.</p>
+<p>El fenómeno plantea interrogantes fundamentales sobre la integridad científica, especialmente considerando que estos modelos son propensos a “alucinaciones” —inventar referencias bibliográficas inexistentes— y que los detectores automáticos de contenido generado por IA resultan herramientas no confiables <span class="citation" data-cites="stokelwalker2024chatbots">(Stokel-Walker, 2024)</span>. Los siguientes gráficos (Figure&nbsp;2) extraídos de <span class="citation" data-cites="stokelwalker2024chatbots">Stokel-Walker (2024)</span> muestran el aumento de uso de palabras claves relacionadas con la redacción realizada por IA.</p>
+<div id="fig-trends" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://patricio.pantaleo.ar/blog/posts/autorship-AI/gf1.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Suspicius Trends in Word Usage. Amanda Montañez; Source: Andrew Gray. <span class="citation" data-cites="stokelwalker2024chatbots">Stokel-Walker (2024)</span>
+</figcaption>
+</figure>
+</div>
 <section id="políticas-editoriales-sobre-ia" class="level3">
 <h3 class="anchored" data-anchor-id="políticas-editoriales-sobre-ia">Políticas Editoriales sobre IA</h3>
-<p>Las principales editoriales académicas han desarrollado marcos normativos específicos para el uso de inteligencia artificial en la investigación y publicación científica:</p>
+<p>En este contexto, algunas de las principales editoriales a nivel mundial han definido criterios de uso y autoría relacionadas con la IA. A continuación se presenta una síntesis de las principales políticas editoriales:</p>
 <p><strong>Cambridge University Press &amp; Assessment</strong> <span class="citation" data-cites="cambridge_ai">(Cambridge University Press &amp; Assessment, 2024)</span>: Establece que las herramientas de IA deben declararse explícitamente y su uso debe explicarse detalladamente en el manuscrito. La editorial es categórica al afirmar que estas herramientas no califican para autoría debido a su incapacidad fundamental para asumir responsabilidad ética, legal y académica por el contenido producido.</p>
 <p><strong>Elsevier</strong> <span class="citation" data-cites="elsevier_ai">(Elsevier, 2024)</span>: Las herramientas de IA y tecnologías asistidas por IA no califican para autoría bajo la política de autoría de Elsevier. Los autores que utilicen estas herramientas durante el proceso de escritura del manuscrito deben declarar su uso en una sección separada del manuscrito, promoviendo la transparencia entre autores, lectores, revisores y editores.</p>
 <p><strong>Springer Nature</strong> <span class="citation" data-cites="springer_ai">(Springer Nature, 2024)</span>: Los Modelos de Lenguaje Grande (LLMs), como ChatGPT, no satisfacen actualmente los criterios de autoría de la editorial. La política enfatiza que una atribución de autoría conlleva responsabilidad por el trabajo, responsabilidad que no puede aplicarse efectivamente a los LLMs. El uso de estas herramientas debe documentarse apropiadamente en la sección de Métodos o en una parte alternativa adecuada del manuscrito.</p>
@@ -75,10 +144,6 @@ Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on
 <h3 class="anchored" data-anchor-id="consenso-sobre-ia-y-autoría">Consenso sobre IA y Autoría</h3>
 <p>Las herramientas de IA no pueden cumplir los requisitos para la autoría ya que no pueden asumir responsabilidad por el trabajo enviado. Como entidades no legales, no pueden afirmar la presencia o ausencia de conflictos de interés ni manejar acuerdos de derechos de autor y licencias <span class="citation" data-cites="cope_ai">(Committee on Publication Ethics, 2024)</span>. Los autores que usan herramientas de IA deben ser transparentes al divulgar cómo se usó la herramienta de IA y qué herramienta se usó. Los autores son completamente responsables del contenido de su manuscrito, incluso aquellas partes producidas por una herramienta de IA.</p>
 </section>
-</section>
-<section id="tendencias-en-coautoría" class="level2">
-<h2 class="anchored" data-anchor-id="tendencias-en-coautoría">Tendencias en Coautoría</h2>
-<p>La colaboración académica ha evolucionado significativamente. En contextos actuales de investigación cada vez más profesionalizada y menos “artesanal”, publicar en solitario tiene cada vez menos sentido. Los datos muestran que el número promedio de autores por artículo varía considerablemente por disciplina: mientras que en Física el valor más frecuente es de 4 autores, en Comunicación oscila entre 1-2 autores <span class="citation" data-cites="codina_etica">(Codina, 2023)</span>.</p>
 </section>
 <section id="mejores-prácticas-para-la-determinación-de-autoría" class="level2">
 <h2 class="anchored" data-anchor-id="mejores-prácticas-para-la-determinación-de-autoría">Mejores Prácticas para la Determinación de Autoría</h2>
@@ -94,11 +159,36 @@ Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on
 <h3 class="anchored" data-anchor-id="transparencia-en-contribuciones">Transparencia en Contribuciones</h3>
 <p>Los autores deben describir claramente qué contribuyó cada autor al proyecto de investigación. Los agradecimientos pueden ser aceptables para una revista cuando las contribuciones no constituyen autoría, y las personas no deben agregarse como autores si no han contribuido significativamente al proyecto.</p>
 </section>
+<section id="declaración-de-uso" class="level3">
+<h3 class="anchored" data-anchor-id="declaración-de-uso">Declaración de uso</h3>
+<p>Actualmente, es recomendable introducir en los artículos o redacciones, una declaración de uso de IA así como comúnmente se incluyen declaraciones de conflictos de intereses, de disponibilidad de datos o financiamiento <span class="citation" data-cites="sampaio2024">(Sampaio et al., 2024)</span>. Acorde avanza el desarrollo de IA y la integración con los motores de búsqueda esto es primordial ya que no solo evidencia la utilización o no en alguna parte de la eleboración del artículo de algún modelo de IA sino, y sobre todo, de la conciencia del investigador en la utilización de las herramientas digitales disponibles hoy en día. Es primordial que las personas que redactan artículos académicos estén atentas a la diferenciación de resultados de búsqueda procesados por IA como aquellos que no lo son. Este proceso de conciencia logra evidenciar la intromisión de IA en los procesos investigativos acorde a las posibilidades del equipo de investigación de identifcarla. En caso de usos voluntarios, claro está, la deinifición de los alcances de usos es nodal para poder identifcar posibles falacias o invenciones en la argumentación de la investigación. Pero aún más es importante tomar conciencia de las posibles vías de intromisión de argumentaciones o resultados <strong>artificiales</strong> generados por búsquedas condicionadas por IA más allá de las intenciones iniciales del equipo investigador.<br>
+De esta manera, se recomiendo no sólo indicar cuándo y cómo se usa un modelo de IA, sino también cuando no se usa en una investigación. Siguiendo la declaración sugerida en <span class="citation" data-cites="sampaio2024">Sampaio et al. (2024)</span>:</p>
+<blockquote class="blockquote">
+<p>Durante a preparação deste trabalho, o(s) autor(es) utilizou(aram) [nome da ferramenta/modelo ou serviço] versão [número e/ou data] para [justificar o motivo]. Após o uso desta ferramenta/modelo/ serviço, o(s) autor(es) revisou(aram) e editou(aram) o conteúdo em conformidade com o método científico e assume(m) total responsabilidade pelo conteúdo da publicação. (p.&nbsp;20)</p>
+</blockquote>
+<p>Bien podría declararse también cuando no se usa: “En en el presente trabajo no se han utilizado modelos de IA en ni una de sus fases.”</p>
+</section>
 </section>
 <section id="conclusión" class="level2">
 <h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
-<p>Firmar un artículo no es una formalidad ni una cortesía—es una declaración ética que conlleva responsabilidades legales e intelectuales. La adopción de los marcos del ICMJE y CRediT, junto con políticas claras sobre el uso de IA, asegura el reconocimiento justo de contribuciones reales y ayuda a prevenir conductas inadecuadas que socavan la confianza científica.</p>
+<p>Firmar un artículo no es una formalidad ni una cortesía, es una declaración ética que conlleva responsabilidades legales e intelectuales. La adopción de los marcos del ICMJE y CRediT, junto con políticas claras sobre el uso de IA, asegura el reconocimiento justo de contribuciones reales y ayuda a prevenir conductas inadecuadas que socavan la confianza científica.</p>
 <p>En la era de la inteligencia artificial, es fundamental mantener que la autoría requiere responsabilidad humana, transparencia en el uso de herramientas de IA, y adherencia a criterios éticos establecidos. La evolución hacia una mayor colaboración multidisciplinaria y el uso responsable de tecnologías emergentes debe ir acompañada de marcos éticos robustos que protejan la integridad de la investigación científica.</p>
+<blockquote class="blockquote">
+<p>Se llegará finalmente a la idea de que el nombre de autor no va, como el nombre propio, del interior de un discurso al individuo real y exterior que lo produjo, sino que corre, en cierto modo, en el límite de los textos, los recorta, sigue sus aristas, manifiesta su modo de ser o, al menos, lo caracteriza. Manifiesta el acontecimiento de un cierto conjunto del discurso, y se refiere al estatuto de este discurso en el interior de una sociedad y en el interior de una cultura. El nombre de autor no se sitúa en el estado civil de los hombres, ni se sitúa tampoco en la ficción de la obra, se sitúa en la ruptura que instaura un cierto grupo del discurso y su modo de ser singular. Podría decirse, por consiguiente, que en una civilización como la nuestra hay un cierto número de discursos dotados de la función de “autor” mientras que otros están desprovistos de ella. Una carta privada puede muy bien tener un signatario, pero no tiene autor; un contrato puede tener un fiador, pero no tiene autor. Un texto anónimo que se lee en la calle sobre un muro tendrá un redactor, pero no tendrá un autor. La función autor es, entonces, característica del modo de existencia, de circulación y de funcionamiento de ciertos discursos en el interior de una sociedad. <span class="citation" data-cites="foucault1994autor">Foucault (1994)</span>, pp.&nbsp;60-61</p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled" title="Nota">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En la redacción de este post ha intervenido IA en la escritura de párrafos, en la síntesis de ideas, en el resumen de bibliografía y en el armado de metadatos y texto en MD, YAML y BibTeX. También ha respondido las consultas y solicitudes que el autor ha realizado para ampliar la crítica y mejorar la sintaxis. La asistencia de IA fue proporcionada por Claude Sonnet 4 (Anthropic). En todo momento, el autor ha sido el principal responsable del montaje, de los interrogantes y problemáticas guías de este post, así como de gran parte de la redacción, de la selección bibliográfica principal, de los prompt elaborados para facilitar el desarrollo de la argumentación, de la intertextualidad y orden argumentativo.</p>
+</div>
+</div>
 
 
 
@@ -117,23 +207,41 @@ Codina, L. (2023). <em>Artículos científicos: Autoría y significado del orden
 <div id="ref-cope_ai" class="csl-entry">
 Committee on Publication Ethics. (2024). <em>Authorship and AI tools</em>. COPE Position Statement. <a href="https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools">https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools</a>
 </div>
+<div id="ref-corominas1984diccionario" class="csl-entry">
+Corominas, J., &amp; Pascual, J. A. (1984). <em>Diccionario crítico etimológico castellano e hispánico</em>. Editorial Gredos. <a href="https://archive.org/details/157203089-diccionario-critico-etimologico-castellano-a-ca-corominas-joan-pdf">https://archive.org/details/157203089-diccionario-critico-etimologico-castellano-a-ca-corominas-joan-pdf</a>
+</div>
 <div id="ref-credit_niso" class="csl-entry">
 CRediT. (2022). <em>Contributor role taxonomy (CRediT)</em>. ANSI/NISO Standard; NISO. <a href="https://credit.niso.org/">https://credit.niso.org/</a>
 </div>
 <div id="ref-elsevier_ai" class="csl-entry">
 Elsevier. (2024). <em>The use of AI and AI-assisted technologies in writing for elsevier</em>. Editorial Policy. <a href="https://www.nature.com/nature-portfolio/editorial-policies/ai">https://www.nature.com/nature-portfolio/editorial-policies/ai</a>
 </div>
+<div id="ref-foucault1994autor" class="csl-entry">
+Foucault, M. (1994). Qu’est-ce qu’un auteur? 1954-1969. In <em>Dits et écrits: Vol. I</em>. Gallimard.
+</div>
 <div id="ref-icmje_defining" class="csl-entry">
 International Committee of Medical Journal Editors. (2023). <em>Defining the role of authors and contributors</em>. ICMJE Recommendations. <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html</a>
 </div>
+<div id="ref-liang2024monitoring" class="csl-entry">
+Liang, W., Zhang, Z., Cao, Y., Liu, H., Huang, E., Yang, H., Boyd-Graber, J., Qi, D., et al. (2024). <em>Monitoring AI-modified content at scale: A case study on the impact of ChatGPT on AI conference peer reviews</em>. <a href="https://arxiv.org/abs/2403.07183">https://arxiv.org/abs/2403.07183</a>
+</div>
+<div id="ref-platon2022ion" class="csl-entry">
+Platón. (2022). <em>Ión</em> (J. T. Nápoli, M. L. Mattioli, &amp; D. S. Zamperetti Martín, Eds.; Primera edición). EDULP. <a href="https://libros.unlp.edu.ar/index.php/unlp/catalog/download/2083/2509/7004-1">https://libros.unlp.edu.ar/index.php/unlp/catalog/download/2083/2509/7004-1</a>
+</div>
 <div id="ref-rae_autoria" class="csl-entry">
-Real Academia Española. (2024). <em>Autoría</em>. Diccionario del estudiante. <a href="https://www.rae.es/diccionario-estudiante/autor%C3%ADa">https://www.rae.es/diccionario-estudiante/autor%C3%ADa</a>
+Real Academia Española. (2025). <em>Diccionario de la lengua española</em> (23.ª ed.). <a href="https://dle.rae.es/autor">https://dle.rae.es/autor</a>
+</div>
+<div id="ref-sampaio2024" class="csl-entry">
+Sampaio, R. C., Sabbatini, M., &amp; Limongi, R. (2024). <em>Diretrizes para o uso ético e responsável da inteligência artificial generativa: Um guia prático para pesquisadores</em>. Sociedade Brasileira de Estudos Interdisciplinares da Comunicação - Intercom. <a href="https://www.portalintercom.org.br/">https://www.portalintercom.org.br/</a>
 </div>
 <div id="ref-science_ai" class="csl-entry">
 Science Magazine. (2023). <em>Editorial policy on AI-generated content</em>. Editorial Policy. <a href="https://www.science.org/content/page/science-journals-editorial-policies#authorship">https://www.science.org/content/page/science-journals-editorial-policies#authorship</a>
 </div>
 <div id="ref-springer_ai" class="csl-entry">
 Springer Nature. (2024). <em>Artificial intelligence (AI)</em>. Editorial Policy. <a href="https://www.springernature.com/gp/policies/editorial-policies">https://www.springernature.com/gp/policies/editorial-policies</a>
+</div>
+<div id="ref-stokelwalker2024chatbots" class="csl-entry">
+Stokel-Walker, C. (2024). AI chatbots have thoroughly infiltrated scientific publishing. <em>Scientific American</em>. <a href="https://www.scientificamerican.com/article/chatbots-have-thoroughly-infiltrated-scientific-publishing/">https://www.scientificamerican.com/article/chatbots-have-thoroughly-infiltrated-scientific-publishing/</a>
 </div>
 <div id="ref-taylor_francis_ai" class="csl-entry">
 Taylor &amp; Francis Group. (2024). <em>Authorship guidelines and artificial intelligence</em>. Editorial Policy. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/</a>
