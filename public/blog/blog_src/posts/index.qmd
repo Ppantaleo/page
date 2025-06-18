@@ -1,0 +1,7 @@
+---
+title: "Posts"
+aliases: 
+  - /blog/posts/
+  - /blog/posts/index.html
+redirect: "../"
+---
