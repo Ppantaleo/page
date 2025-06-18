@@ -66,6 +66,7 @@ format:
     toc: true
     number-sections: false
     fontsize: 11pt
+    reference-section-title: "Referencias"
 lang: en
 ---
 
@@ -82,15 +83,15 @@ Asi mismo, se plantean los interrogantes básicos de utilización e implementaci
 
 ## ¿Qué es la autoría?
 
-Según la Real Academia Española, la autoría se define comúnmente como la "cualidad de autor" y autor es la persona que es "causa de algo" [@rae_autoria]. La palabra "autor" proviene del latín auctor, -óris, que significaba 'creador', 'fuente histórica' e 'instigador'. Este término latino deriva del verbo augére ('aumentar', 'hacer progresar'), por lo que originalmente designaba a quien hacía crecer o promovía algo.
+Según la Real Academia Española, la autoría se define comúnmente como la "cualidad de autor" y autor es la persona que es "causa de algo" [@rae_autoria]. La palabra "autor" proviene del latín auctor, -óris, que significaba 'creador', 'fuente histórica' e 'instigador'. Este término latino deriva del verbo augére ('aumentar', 'hacer progresar'), por lo que originalmente designaba a quien hacía crecer o promovía algo. La palabra se documenta en español desde 1155 [@corominas1984diccionario] y evolucionó semánticamente desde la idea de "quien hace crecer" hasta "creador de una obra". Esta misma raíz latina generó otras palabras como "autoridad", "autorizar" y "otorgar", todas relacionadas con los conceptos de origen, crecimiento y responsabilidad.
 
-La palabra se documenta en español desde 1155 [@corominas1984diccionario] y evolucionó semánticamente desde la idea de "quien hace crecer" hasta "creador de una obra". Esta misma raíz latina generó otras palabras como "autoridad", "autorizar" y "otorgar", todas relacionadas con los conceptos de origen, crecimiento y responsabilidad.
+Por su parte, la palabra griega ποιητής refiere al que "crea" o "el que hace", y si esa creación es por técnica o por inspiración era el debate platónico [@platon2022ion]. Así, hasta nuestros días, ¿Qué es la autoría? o por relación ¿Qué es ser autor y cuál es la condición para ello? son problemas nodales que anteceden a IA y es necesario así reconocerlos. Sin embargo, ésta presenta nuevas dimensiones y posiblidades de análisis. 
 
-Por su parte, la palabra griega ποιητής refiere al que "crea" o "el que hace", y si esa creación es por técnica o por inspiración era el debate platónico [@platon2022ion]. Así, hasta nuestros días, ¿Qué es la autoría? o por relación ¿Qué es ser autor? son problemas nodales que anteceden a IA y es necesario así reconocerlos. Sin embargo, ésta presenta nuevas dimensiones y posiblidades de análisis. @foucault1994autor sostiene en una de sus conferencias en el 22 de febrero de 1969:
+@foucault1994autor sostiene en una de sus conferencias el 22 de febrero de 1969:
 
 >Cómo se individualizó el autor en una cultura como la nuestra, qué estatuto se le dio, a partir de qué momento, por ejemplo, empezaron a hacerse investigaciones de autenticidad y de atribución, en qué sistema de valoración quedó atrapado, en qué momento se comenzó a contar la vida ya no de los héroes sino de los autores, cómo se instauró esa categoría fundamental de la crítica: "El hombre-y-la obra", todo esto merecería sin duda alguna ser analizado. (p. 54) 
 
-"Qué importa quien habla, dijo alguien, qué importa quien habla" es la pregunta nodal de la argumentación que Foucault retoma de Beckett. ¿Dónde está el autor? Es inevitable encontrarlo:
+"Qué importa quien habla, dijo alguien, qué importa quien habla" es la pregunta nodal de la argumentación que Foucault retoma de Beckett. ¿Dónde está el autor? Es difícil encontrarlo:
 
 >En la escritura no se trata de la manifestación o de la exaltación del gesto de escribir; no se trata de la sujeción de un sujeto a un lenguaje; se trata de la apertura de un espacio en donde el sujeto escritor no deja de desaparecer. [@foucault1994autor, p. 55]
 
@@ -98,25 +99,31 @@ Preguntándose hasta donde llega la obra de un autor, Foucault reflexiona acerta
 
 >Mas supongamos que tuviéramos que ver con un autor: ¿todo lo que escribió o dijo, todo lo que dejó tras él forma parte de su obra? Problema a la vez teórico y técnico. Cuando se emprende la publicación de las obras de Nietzsche, por ejemplo, ¿en dónde hay que detenerse? Hay qué publicar todo, ciertamente, pero ¿qué quiere decir este "todo"? Todo lo que el propio Nietzschte publicó, de acuerdo. ¿Los borradores de sus obras? Ciertamente. ¿Los proyectos de aforismos? Sí. ¿También los tachones, las notas al pie de los cuadernos? Sí. Pero cuando en el interior de un cuaderno lleno de aforismos se encuentra una referencia, la indicación de una cita o de una dirección, una cuenta de la lavandería: ¿obra o no obra? ¿Y por qué no? Y esto indefinidamente. [@foucault1994autor, pp. 56-57]
 
-**¿Obra o no obra?** ¿Es lícito utilizar IA en la escritura académica? A estas altunas, mejor dicho: ¿De qué forma es lícito utilizar IA en la escritura académica?
+**¿Obra o no obra?** ¿Es lícito utilizar IA en la escritura académica? A estas altunas, mejor dicho: ¿De qué forma es lícito utilizar IA en la escritura académica? ¿Dónde está el límite entre el autor y la colaboración? Como podemos ver, no es un problema actual sino de larga data; sin embargo, hoy día, cobra un relevancia y alcance mayor. El velo se corre y es más facil o más accesible a juicio de más sujetos cuestionar la procedencia, criticar la autenticidad, la autoría.  
 
 
 ## Criterios Internacionales: ICMJE y CRediT
 
 ### Los Cuatro Criterios del ICMJE
 
-El International Committee of Medical Journal Editors (ICMJE) propone cuatro criterios que deben cumplirse simultáneamente para justificar la autoría [@icmje_defining]:
+Ya en el ámbito académico, a distancia prudencial del filosófico o magistral de las conferencias de Michel Foucault, es más simple y necesario cercenar los límites de las definiciones, de los significados. Así, el International Committee of Medical Journal Editors (ICMJE) propone cuatro criterios que deben cumplirse simultáneamente para justificar la autoría [@icmje_defining]:
 
 1. **Contribuciones sustanciales** a la concepción o diseño del trabajo; o la adquisición, análisis o interpretación de datos para el trabajo
 2. **Redacción del trabajo** o revisión crítica del mismo para contenido intelectual importante
 3. **Aprobación final** de la versión a ser publicada
 4. **Responsabilidad** por todos los aspectos del trabajo, asegurando que las preguntas relacionadas con la precisión o integridad de cualquier parte del trabajo sean apropiadamente investigadas y resueltas
 
-Estos criterios establecen que todos aquellos designados como autores deben cumplir los cuatro criterios para la autoría, y todos los que cumplan los cuatro criterios deben ser identificados como autores.Todos aquellos que no cumplan con los cuatro criterios no deben figurar como autores, pero sí deben ser reconocidos según @icmje_defining. Sobre el uso de IA dice específicamente el documento citado: 
+Estos criterios establecen que todos aquellos designados como autores deben cumplir los cuatro criterios para la autoría, y todos los que cumplan los cuatro criterios deben ser identificados como autores. Todos aquellos que no cumplan con los cuatro criterios no deben figurar como autores, pero sí deben ser reconocidos como colaboradores según @icmje_defining. 
+Sobre el uso de IA dice específicamente el documento citado: 
 
 >At submission, the journal should require authors to disclose whether they used artificial intelligence (AI)-assisted technologies (such as Large Language Models [LLMs], chatbots, or image creators) in the production of submitted work. Authors who use such technology should describe, in both the cover letter and the submitted work in the appropriate section if applicable, how they used it. For example, if AI was used for writing assistance, describe this in the acknowledgment section (see Section II.A.3). If AI was used for data collection, analysis, or figure generation, authors should describe this use in the methods (see Section IV.A.3.d). Chatbots (such as ChatGPT) should not be listed as authors because they cannot be responsible for the accuracy, integrity, and originality of the work, and these responsibilities are required for authorship (see Section II.A.1). Therefore, humans are responsible for any submitted material that included the use of AI-assisted technologies. Authors should carefully review and edit the result because AI can generate authoritative-sounding output that can be incorrect, incomplete, or biased. Authors should not list AI and AI-assisted technologies as an author or co-author, nor cite AI as an author. Authors should be able to assert that there is no plagiarism in their paper, including in text and images produced by the AI. Humans must ensure there is appropriate attribution of all quoted material, including full citations. [@icmje_defining]
 
-Como bien se dice, el fundamento de por qué la IA no puede ser autor es porque no cumple uno de los criterios de autoría definidos anteriormente: no es sujeto de responsabilidades.
+En esto, cabe destacar dos cuestiones fundamentales:
+
+- la razón de por qué la IA no puede ser autor es porque no cumple uno de los criterios de autoría definidos anteriormente: no es sujeto de responsabilidades.
+- el uso de la IA: es pertinente que los autores declaren el uso, el tipo y la forma en la que se hizo.
+
+Ahora, sobre el uso surgen algunos interrogantes. En tiempos en donde la IA está transformando los modelos de búsqueda [@microsoft2023], sustituyendo a los buscadores tradicionales que han dominado internet los últimos 30 años y colándose involuntariamente en los resultados de búsqueda ¿es susceptible una simple declaración? ¿Cómo se declara estar dentro de un nuevo *paradigma*? La IA ya no es optativa, o al menos para quien use medios digitales de investigación, y el uso de ella será casi indefectible. En el sentido kuhniano del término [@kuhn1970], la IA representa un cambio paradigmático en la búsqueda y procesamiento de información científica. Este nuevo *paradigma* plantea la cuestión de si es posible declarar completamente el uso de IA cuando esta se ha vuelto ubicua en los procesos de investigación digital.
 
 ### La Taxonomía CRediT
 
@@ -249,6 +256,10 @@ En la era de la inteligencia artificial, es fundamental mantener que la autoría
 
 >Se llegará finalmente a la idea de que el nombre de autor no va, como el nombre propio, del interior de un discurso al individuo real y exterior que lo produjo, sino que corre, en cierto modo, en el límite de los textos, los recorta, sigue sus aristas, manifiesta su modo de ser o, al menos, lo caracteriza. Manifiesta el acontecimiento de un cierto conjunto del discurso, y se refiere al estatuto de este discurso en el interior de una sociedad y en el interior de una cultura. El nombre de autor no se sitúa en el estado civil de los hombres, ni se sitúa tampoco en la ficción de la obra, se sitúa en la ruptura que instaura un cierto grupo del discurso y su modo de ser singular. Podría decirse, por consiguiente, que en una civilización como la nuestra hay un cierto número de discursos dotados de la función de "autor" mientras que otros están desprovistos de ella. Una carta privada puede muy bien tener un signatario, pero no tiene autor; un contrato puede tener un fiador, pero no tiene autor. Un texto anónimo que se lee en la calle sobre un muro tendrá un redactor, pero no tendrá un autor. La función autor es, entonces, característica del modo de existencia, de circulación y de funcionamiento de ciertos discursos en el interior de una sociedad. @foucault1994autor, pp. 60-61
 
-::: {.callout-note title="Nota"}
+::: {.callout-note title="Nota 1"}
 En la redacción de este post ha intervenido IA en la escritura de párrafos, en la síntesis de ideas, en el resumen de bibliografía y en el armado de metadatos y texto en MD, YAML y BibTeX. También ha respondido las consultas y solicitudes que el autor ha realizado para ampliar la crítica y mejorar la sintaxis. La asistencia de IA fue proporcionada por Claude Sonnet 4 (Anthropic). En todo momento, el autor ha sido el principal responsable del montaje, de los interrogantes y problemáticas guías de este post, así como de gran parte de la redacción, de la selección bibliográfica principal, de los prompt elaborados para facilitar el desarrollo de la argumentación, de la intertextualidad y orden argumentativo.
+:::
+
+::: {.callout-note title="Nota 2"}
+Las traducciones son propias del autor procesadas mediante Claude Sonnet 4 (Anthropic). Mayoritariamente se ha tomado bibliografía en español y traducido la misma al inglés. Algunas de ellas se mantienen en idioma original de la bibliografía. 
 :::
