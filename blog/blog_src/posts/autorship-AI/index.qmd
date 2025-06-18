@@ -11,13 +11,13 @@ author:
 
 date: "2025-06-13"
 categories: [posts, scholarly-publishing, english]
-keywords: [authorship, ethics, AI]
+keywords: [authorship, ethics, AI, contribution, author, artificial intelligence]
 bibliography: post.bib
 csl: ../../apa.csl
 
 description: |
   A reflection on the concept of authorship in academic research. 
-  International criteria (ICMJE, CRediT), common conflicts, and key ethical guidelines are analyzed to support fair recognition of scholarly contributions.
+  International criteria (ICMJE, CRediT), common conflicts and main ethical guidelines in times of AI (artificial intelligence) to support a fair recognition of scholarly contributions are discussed.
 
 image: "post.jpg"
 image-alt: "Photo collage of a woman's legs and shoes"
@@ -25,6 +25,21 @@ image-credit: '<a href="https://unsplash.com/@etiennegirardet">Etienne Girardet<
 
 downloads: [pdf]
 sharing: [twitter, facebook, linkedin]
+
+# Open Graph y Twitter Card metadata
+pagetitle: "Authorship and Contribution in the Age of AI: Notes on the Current Debate"
+open-graph:
+  title: "Authorship and Contribution in the Age of AI"
+  description: "A reflection on authorship in academic research. International criteria (ICMJE, CRediT), conflicts and ethical guidelines in the AI era."
+  image: "post.jpg"
+  locale: en_US
+  type: article
+
+twitter-card:
+  title: "Authorship and Contribution in the Age of AI"
+  description: "A reflection on authorship in academic research. International criteria, conflicts and ethical guidelines in the AI era."
+  image: "post.jpg"
+  card-style: summary_large_image
 
 license: "CC BY"
 copyright: >
