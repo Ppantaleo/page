@@ -1,7 +1,6 @@
 ---
 title: "Posts"
 aliases: 
-  - /blog/posts/
-  - /blog/posts/index.html
+  - /blog/index.html
 redirect: "../"
 ---
