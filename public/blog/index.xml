@@ -105,11 +105,12 @@ Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on
 <div id="fig-authorship" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<iframe src="authorship_diagram.html" width="100%" height="1200px" style="border:none; border-radius:10px;">
+<iframe src="authorship_diagram_ES.html" width="100%" height="1200px" style="border:none; border-radius:10px;">
 </iframe>
+<p>Fuente: <span class="citation" data-cites="pantaleo2025">Pantaleo (2025b)</span></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Fuente: Patricio Pantaleo
+Figure&nbsp;1: Fuente: <span class="citation" data-cites="pantaleo2025">Pantaleo (2025b)</span>
 </figcaption>
 </figure>
 </div>
@@ -126,7 +127,7 @@ Figure&nbsp;1: Fuente: Patricio Pantaleo
 <img src="https://patricio.pantaleo.ar/blog/posts/autorship-AI/gf1.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Suspicius Trends in Word Usage. Amanda Montañez; Source: Andrew Gray. <span class="citation" data-cites="stokelwalker2024chatbots">Stokel-Walker (2024)</span>
+Figure&nbsp;2: Suspicius Trends in Word Usage. Amanda Montañez; Fuente: Andrew Gray. <span class="citation" data-cites="stokelwalker2024chatbots">Stokel-Walker (2024)</span>
 </figcaption>
 </figure>
 </div>
@@ -189,6 +190,17 @@ Nota
 <p>En la redacción de este post ha intervenido IA en la escritura de párrafos, en la síntesis de ideas, en el resumen de bibliografía y en el armado de metadatos y texto en MD, YAML y BibTeX. También ha respondido las consultas y solicitudes que el autor ha realizado para ampliar la crítica y mejorar la sintaxis. La asistencia de IA fue proporcionada por Claude Sonnet 4 (Anthropic). En todo momento, el autor ha sido el principal responsable del montaje, de los interrogantes y problemáticas guías de este post, así como de gran parte de la redacción, de la selección bibliográfica principal, de los prompt elaborados para facilitar el desarrollo de la argumentación, de la intertextualidad y orden argumentativo.</p>
 </div>
 </div>
+<div id="fig-authorship" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="authorship_diagram_EN.html" width="100%" height="1200px" style="border:none; border-radius:10px;">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Fuente: <span class="citation" data-cites="pantaleo2025en">Pantaleo (2025a)</span>
+</figcaption>
+</figure>
+</div>
 
 
 
@@ -227,6 +239,12 @@ International Committee of Medical Journal Editors. (2023). <em>Defining the rol
 </div>
 <div id="ref-liang2024monitoring" class="csl-entry">
 Liang, W., Zhang, Z., Cao, Y., Liu, H., Huang, E., Yang, H., Boyd-Graber, J., Qi, D., et al. (2024). <em>Monitoring AI-modified content at scale: A case study on the impact of ChatGPT on AI conference peer reviews</em>. <a href="https://arxiv.org/abs/2403.07183">https://arxiv.org/abs/2403.07183</a>
+</div>
+<div id="ref-pantaleo2025en" class="csl-entry">
+Pantaleo, P. I. (2025a). <em>Diagram: Key concepts in academic authorship</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.15691674">https://doi.org/10.5281/zenodo.15691674</a>
+</div>
+<div id="ref-pantaleo2025" class="csl-entry">
+Pantaleo, P. I. (2025b). <em>Diagrama web: Principales nociones de autoría académica</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.15691552">https://doi.org/10.5281/zenodo.15691552</a>
 </div>
 <div id="ref-platon2022ion" class="csl-entry">
 Platón. (2022). <em>Ión</em> (J. T. Nápoli, M. L. Mattioli, &amp; D. S. Zamperetti Martín, Eds.; Primera edición). EDULP. <a href="https://libros.unlp.edu.ar/index.php/unlp/catalog/download/2083/2509/7004-1">https://libros.unlp.edu.ar/index.php/unlp/catalog/download/2083/2509/7004-1</a>
@@ -268,6 +286,7 @@ Age of AI: Notes on the Current Debate</em> [Online post]. <a href="https://doi.
 </div></div></section></div> ]]></description>
   <category>posts</category>
   <category>scholarly-publishing</category>
+  <category>english</category>
   <guid>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</guid>
   <pubDate>Fri, 13 Jun 2025 03:00:00 GMT</pubDate>
   <media:content url="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" medium="image" type="image/jpeg"/>
