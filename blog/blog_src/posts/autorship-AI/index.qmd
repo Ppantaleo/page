@@ -10,7 +10,7 @@ author:
       - investigation: lead
 
 date: "2025-06-13"
-categories: [posts, scholarly-publishing]
+categories: [posts, scholarly-publishing, english]
 keywords: [authorship, ethics, AI]
 bibliography: post.bib
 csl: ../../apa.csl

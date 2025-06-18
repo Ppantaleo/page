@@ -24,6 +24,12 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
         }
 
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+
         @media (min-width: 768px) {
             body {
                 padding: 20px;
@@ -252,7 +258,7 @@
 
         .disputes-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
         }
 
@@ -438,9 +444,10 @@
         <h1>Principales nociones de autoría académica</h1>
         
         <div class="icmje-criteria">
-            <div class="criteria-title">Criterios ICMJE para Autoría (deben cumplirse todos simultáneamente)
+            <div class="criteria-title">Criterios ICMJE para Autoría
                 <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html" target="_blank" class="credit-link">🔗 ICMJE Recommendations</a>
             </div>
+            <p class="criteria-description" style="text-align: center;">Estos criterios deben cumplirse todos simultáneamente para otorgar autoría académica. La ausencia de cualquiera de ellos, como la Responsabilidad en el caso de la IA, hace que la autoría no sea susceptible de ser concedida.</p>
             <div class="criteria-grid">
                 <div class="criteria-item">
                     <div class="criteria-number">1.</div>
@@ -468,6 +475,9 @@
         <!-- Main Table -->
         <div class="table-container">
             <table class="authorship-table">
+                <caption style="caption-side: top; text-align: left; padding: 10px; font-style: italic;">
+                    Conceptos clave en autoría académica y su relación con los criterios ICMJE para la integridad en publicaciones científicas. Los conceptos claves de autoría son tomados de <a href="https://doi.org/10.24318/cope.2018.1.1" target="_blank" class="credit-link">🔗 COPE</a>
+                </caption>
             <thead>
                 <tr>
                     <th style="width: 25%;">Concepto</th>
@@ -478,7 +488,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <div class="concept-name">Autores Regalo</div>
+                        <div class="concept-name">Autores honorarios</div>
                         <span class="concept-category ethical">Problemas Éticos</span>
                     </td>
                     <td class="concept-description">
@@ -509,7 +519,7 @@
                         Uso de nombres grupales. Problemas de indexación en bases de datos como Medline.
                     </td>
                     <td class="relationship-column">
-                        Alternativa para grandes colaboraciones. Requiere listar contribuyentes individuales para transparencia y accountability.
+                        Alternativa para grandes colaboraciones. Requiere listar contribuyentes individuales para transparencia y responsabilidad.
                     </td>
                 </tr>
                 <tr>
@@ -551,7 +561,7 @@
                 <tr>
                     <td>
                         <div class="concept-name">Orden de Autores</div>
-                        <span class="concept-category process">Procesos</span>
+                        <span class="concept-category process">Procesos</span><span class="concept-category roles">Roles y Jerarquías</span>
                     </td>
                     <td class="concept-description">
                         Decisión conjunta de coautores. Debe tomarse antes de iniciar la redacción.
@@ -569,7 +579,7 @@
                         Descripción específica de lo que cada autor contribuyó. Información para verificar criterios ICMJE.
                     </td>
                     <td class="relationship-column">
-                        Herramienta de verificación que asegura que cada autor cumple los 4 criterios ICMJE. Aumenta transparencia y accountability.
+                        Herramienta de verificación que asegura que cada autor cumple los 4 criterios ICMJE. Aumenta transparencia y responsabilidad.
                     </td>
                 </tr>
                 <tr>
@@ -605,7 +615,7 @@
                         Asume responsabilidad por la integridad completa del trabajo desde concepción hasta publicación.
                     </td>
                     <td class="relationship-column">
-                        Rol de accountability máximo. Garantiza que todos los aspectos del trabajo cumplen estándares éticos y científicos.
+                        Rol de responsabilidad máximo. Garantiza que todos los aspectos del trabajo cumplen estándares éticos y científicos.
                     </td>
                 </tr>
                 <tr>
@@ -621,14 +631,6 @@
                     </td>
                 </tr>
             </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" style="text-align: center; font-size: 12px; color: #636e72;">
-                        Esta tabla resume conceptos clave en autoría académica y su relación con los criterios ICMJE. <a href="https://doi.org/10.24318/cope.2018.1.1" target="_blank" class="credit-link">🔗 Albert T, and Wager E, on behalf of COPE Council. How to handle authorship disputes: a guide for new researchers. Version 1. September 2003
-https://doi.org/10.24318/cope.2018.1.1</a>
-                    </td>
-                </tr>
-            </tfoot>
         </table>
         </div>
 
@@ -680,7 +682,8 @@ https://doi.org/10.24318/cope.2018.1.1</a>
             <div class="section-title">Taxonomía CRediT - Roles de Contribución</div>
             <div class="credit-subtitle">
                 Sistema estandarizado para describir contribuciones específicas a publicaciones científicas
-                <a href="https://credit.niso.org/" target="_blank" class="credit-link">🔗 credit.niso.org</a>
+                <a href="https://credit.niso.org/" target="_blank" class="credit-link">🔗 credit.niso.org</a> | 
+                <a href="https://terminologias.filo.uba.ar/vocabs/1007/term/15" target="_blank" class="credit-link">🔗 Versión en español - UBA</a>
             </div>
             <div class="credit-grid">
                 <div class="credit-role">
@@ -688,7 +691,7 @@ https://doi.org/10.24318/cope.2018.1.1</a>
                     <div class="role-desc">Ideas, formulación de objetivos y metas de investigación</div>
                 </div>
                 <div class="credit-role">
-                    <div class="role-name">Curación de datos</div>
+                    <div class="role-name">Curaduría de datos</div>
                     <div class="role-desc">Actividades de gestión para anotar, depurar y mantener datos</div>
                 </div>
                 <div class="credit-role">
@@ -696,7 +699,7 @@ https://doi.org/10.24318/cope.2018.1.1</a>
                     <div class="role-desc">Aplicación de técnicas estadísticas, matemáticas y computacionales</div>
                 </div>
                 <div class="credit-role">
-                    <div class="role-name">Adquisición de financiamiento</div>
+                    <div class="role-name">Adquisición de fondos</div>
                     <div class="role-desc">Adquisición del soporte financiero para el proyecto</div>
                 </div>
                 <div class="credit-role">
@@ -736,7 +739,7 @@ https://doi.org/10.24318/cope.2018.1.1</a>
                     <div class="role-desc">Preparación, creación y presentación del trabajo publicado</div>
                 </div>
                 <div class="credit-role">
-                    <div class="role-name">Redacción - revisión y edición</div>
+                    <div class="role-name">Escritura - revisión y edición</div>
                     <div class="role-desc">Preparación del manuscrito publicado por el equipo original</div>
                 </div>
             </div>
