@@ -150,7 +150,7 @@ La **autoría grupal** presenta desafíos particulares en la indexación de base
 
 ::: {#fig-authorship}
 ```{=html}
-<iframe src="authorship_diagram.html" 
+<iframe src="authorship_diagram_ES.html" 
         width="100%" 
         height="1200px" 
         style="border:none; border-radius:10px;">
