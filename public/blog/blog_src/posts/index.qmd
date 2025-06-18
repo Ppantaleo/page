@@ -10,3 +10,5 @@ format:
 ---
 
 Redirecting to [blog](../)...
+
+<!-- Este es un qmd para generar un html de redirect de /blog/post a /blog. También está en draft:true para que no aparezca en el listing de blog -->
