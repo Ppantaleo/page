@@ -468,6 +468,15 @@ div.keywords,
   color: $text-primary;
 }
 
+.tippy-box {
+  background: $gray-700 !important;
+  color: $white !important;
+}
+
+.tippy-box a {
+  color: $white !important;
+}
+
 // Listing de posts (tarjetas)
 .quarto-listing {
   .listing-item {
