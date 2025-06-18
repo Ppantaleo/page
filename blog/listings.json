@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/index.html",
       "/posts/autorship-AI/index.html"
     ]
   }
