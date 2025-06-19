@@ -81,7 +81,6 @@ export default function RootLayout({
         <link href="https://fonts.cdnfonts.com/css/tan-pearl" rel="stylesheet" />
         <link rel="icon" href="/images/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
-        {/* MailChimp Script */}
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9ff2d7319c483513cb68224bd/bf810a0f4a8dfcda83f6c4d52.js");</script>
       </head>
       <body className={`${montserrat.variable} font-sans`}>
