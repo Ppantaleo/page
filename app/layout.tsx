@@ -81,18 +81,6 @@ export default function RootLayout({
         <link href="https://fonts.cdnfonts.com/css/tan-pearl" rel="stylesheet" />
         <link rel="icon" href="/images/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
-
-        {/* MailChimp Script */}
-        <Script
-          id="mailchimp"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9ff2d7319c483513cb68224bd/bf810a0f4a8dfcda83f6c4d52.js");
-            `
-          }}
-        />
-        
       </head>
       <body className={`${montserrat.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
@@ -113,6 +101,17 @@ export default function RootLayout({
             gtag('config', 'G-1CK9XW12H5');
           `}
         </Script>
+
+        {/* MailChimp Script */}
+        <Script
+          id="mailchimp"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9ff2d7319c483513cb68224bd/bf810a0f4a8dfcda83f6c4d52.js");
+            `
+          }}
+        />
         
       </body>
     </html>
