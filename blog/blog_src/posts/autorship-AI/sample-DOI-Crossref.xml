@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" version="4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://data.crossref.org/schemas/crossref4.4.2.xsd">
+<head>
+<doi_batch_id>h7v45eJI</doi_batch_id>
+<timestamp>20250619170621</timestamp>
+<depositor>
+<depositor_name>Patricio Pantaleo Blog</depositor_name>
+<email_address>patricio@pantaleo.ar</email_address>
+</depositor>
+<registrant>Patricio Pantaleo's Blog</registrant>
+</head>
+<body>
+<posted_content type="other">
+<group_title>Academic Publishing Ethics</group_title>
+<contributors>
+<person_name sequence="first" contributor_role="author">
+<given_name>Patricio</given_name>
+<surname>Pantaleo</surname>
+<affiliation>Paideia Studio</affiliation>
+<ORCID>https://orcid.org/0000-0002-8104-8975</ORCID>
+</person_name>
+</contributors>
+<titles>
+<title>Authorship and Contribution in the Age of AI: Notes on the Current Debate</title>
+</titles>
+<posted_date>
+<month>06</month>
+<day>19</day>
+<year>2025</year>
+</posted_date>
+<institution>
+<institution_name>Paideia Studio</institution_name>
+</institution>
+<abstract xmlns="http://www.ncbi.nlm.nih.gov/JATS1">
+<p>A reflection on the concept of authorship in academic research. International criteria (ICMJE, CRediT), common conflicts and main ethical guidelines in times of AI (artificial intelligence) to support a fair recognition of scholarly contributions are discussed.</p>
+</abstract>
+<rel:program xmlns:rel="http://www.crossref.org/relations.xsd">
+<rel:related_item>
+<rel:description>PDF version</rel:description>
+<rel:inter_work_relation relationship-type="isSupplementedBy" identifier-type="uri">https://patricio.pantaleo.ar/blog/posts/autorship-AI/index.pdf</rel:inter_work_relation>
+</rel:related_item>
+<rel:related_item>
+<rel:description>EPUB version</rel:description>
+<rel:inter_work_relation relationship-type="isSupplementedBy" identifier-type="uri">https://patricio.pantaleo.ar/blog/posts/autorship-AI/index.epub</rel:inter_work_relation>
+</rel:related_item>
+</rel:program>
+<doi_data>
+<doi>10.62059/9x4p2w</doi>
+<resource>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</resource>
+</doi_data>
+<citation_list>
+<citation key="rae_autoria">
+<unstructured_citation>Real Academia Española. (2025). Diccionario de la lengua española (23.ª ed.). https://dle.rae.es/autor</unstructured_citation>
+</citation>
+<citation key="icmje_defining">
+<unstructured_citation>International Committee of Medical Journal Editors. (2023). Defining the Role of Authors and Contributors. ICMJE Recommendations. https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html</unstructured_citation>
+</citation>
+<citation key="credit_niso">
+<unstructured_citation>CRediT. (2022). Contributor Role Taxonomy (CRediT). ANSI/NISO Standard. NISO. https://credit.niso.org/</unstructured_citation>
+</citation>
+<citation key="codina_etica">
+<unstructured_citation>Codina, Lluís. (2023). Artículos científicos: autoría y significado del orden de firma. https://www.lluiscodina.com/etica-articulos-cientificos/</unstructured_citation>
+</citation>
+<citation key="albert_wager_2003">
+<unstructured_citation>Albert, Tim &amp; Wager, Elizabeth. (2003). How to handle authorship disputes: a guide for new researchers. Committee on Publication Ethics (COPE). https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers</unstructured_citation>
+</citation>
+<citation key="cope_ai">
+<unstructured_citation>Committee on Publication Ethics. (2024). Authorship and AI tools. COPE Position Statement. https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools</unstructured_citation>
+</citation>
+<citation key="cambridge_ai">
+<unstructured_citation>Cambridge University Press &amp; Assessment. (2024). Artificial Intelligence (AI) Editorial Policies. https://www.cambridge.org/core/services/publishing-ethics/authorship-and-contributorship-journals</unstructured_citation>
+</citation>
+<citation key="elsevier_ai">
+<unstructured_citation>Elsevier. (2024). The use of generative AI and AI-assisted technologies in scientific writing. https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals</unstructured_citation>
+</citation>
+<citation key="springer_ai">
+<unstructured_citation>Springer Nature. (2024). Artificial Intelligence (AI). https://www.springernature.com/gp/policies/editorial-policies</unstructured_citation>
+</citation>
+<citation key="science_ai">
+<unstructured_citation>Science Journals. (2023). Editorial Policy on AI-generated content. https://www.science.org/content/page/science-journals-editorial-policies</unstructured_citation>
+</citation>
+<citation key="taylor_francis_ai">
+<unstructured_citation>Taylor &amp; Francis Author Services. (2024). Authorship Guidelines and Artificial Intelligence. https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/</unstructured_citation>
+</citation>
+<citation key="taylor_francis_ai_policy">
+<unstructured_citation>Taylor &amp; Francis. (2024). AI Policy. https://taylorandfrancis.com/our-policies/ai-policy</unstructured_citation>
+</citation>
+<citation key="taylor_francis_ai_writing">
+<unstructured_citation>Taylor &amp; Francis Author Services. (2024). Using AI to write your paper. https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6</unstructured_citation>
+</citation>
+<citation key="wiley_ai">
+<unstructured_citation>Wiley. (2024). Best Practice Guidelines on Research Integrity and Publishing Ethics. https://authorservices.wiley.com/ethics-guidelines/index.html#5</unstructured_citation>
+</citation>
+<citation key="sampaio2024">
+<unstructured_citation>Sampaio, Rafael Cardoso, Sabbatini, Marcelo, &amp; Limongi, Ricardo. (2024). Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa: um guia prático para pesquisadores. Sociedade Brasileira de Estudos Interdisciplinares da Comunicação - Intercom. ISBN: 978-85-8208-142-6</unstructured_citation>
+</citation>
+<citation key="corominas1984diccionario">
+<unstructured_citation>Corominas, Joan &amp; Pascual, José Antonio. (1984). Diccionario Crítico Etimológico Castellano e Hispánico, Tomo I: A-CA. Editorial Gredos. https://archive.org/details/157203089-diccionario-critico-etimologico-castellano-a-ca-corominas-joan-pdf</unstructured_citation>
+</citation>
+<citation key="platon2022ion">
+<unstructured_citation>Platón. (2022). Ión. Edited by Nápoli, Juan Tobías, Mattioli, María Luz, &amp; Zamperetti Martín, Deidamia Sofía. EDULP. ISBN: 978-950-34-2149-9</unstructured_citation>
+</citation>
+<citation key="foucault1994autor">
+<unstructured_citation>Foucault, Michel. (1994). Qu'est-ce qu'un auteur? In Dits et écrits, Volume I: 1954-1969. Gallimard.</unstructured_citation>
+</citation>
+<citation key="stokelwalker2024chatbots">
+<unstructured_citation>Stokel-Walker, Chris. (2024). AI Chatbots Have Thoroughly Infiltrated Scientific Publishing. Scientific American. https://www.scientificamerican.com/article/chatbots-have-thoroughly-infiltrated-scientific-publishing/</unstructured_citation>
+</citation>
+<citation key="gray2024">
+<unstructured_citation>Gray, Andrew. (2024). ChatGPT Citations Are Rampant in Scientific Literature. arXiv preprint arXiv:2403.16887. https://arxiv.org/abs/2403.16887</unstructured_citation>
+</citation>
+<citation key="liang2024monitoring">
+<unstructured_citation>Liang, Weixin, Zhang, Zachary, Cao, Yuhui, Liu, Haotian, Huang, Enzo, Yang, Hengtong, Boyd-Graber, Jordan, Qi, Dianqi, et al. (2024). Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer Reviews. arXiv preprint arXiv:2403.07183. https://arxiv.org/abs/2403.07183</unstructured_citation>
+</citation>
+<citation key="dimensions2024chatbot">
+<unstructured_citation>Dimensions Blog. (2024). Article uncovers extensive use of chatbots in scientific publications. https://www.dimensions.ai/blog/article-uncovers-extensive-use-of-chatbots-in-scientific-publications/</unstructured_citation>
+</citation>
+<citation key="pantaleo2025">
+<unstructured_citation>Pantaleo, P. I. (2025). Diagrama web: Principales nociones de autoría académica. Zenodo. https://doi.org/10.5281/zenodo.15691552</unstructured_citation>
+</citation>
+<citation key="pantaleo2025en">
+<unstructured_citation>Pantaleo, P. I. (2025). Diagram: Key Concepts in Academic Authorship. Zenodo. https://doi.org/10.5281/zenodo.15691674</unstructured_citation>
+</citation>
+<citation key="microsoft2023">
+<unstructured_citation>Microsoft. (2023). Reinventing search with a new AI-powered Microsoft Bing and Edge, your copilot for the web. Microsoft Official Blog. https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/</unstructured_citation>
+</citation>
+<citation key="kuhn1970">
+<unstructured_citation>Kuhn, Thomas S. (1970). The Structure of Scientific Revolutions (2nd ed.). University of Chicago Press.</unstructured_citation>
+</citation>
+</citation_list>
+</posted_content>
+</body>
+</doi_batch>
