@@ -15,7 +15,7 @@
 <item>
   <title>Authorship and Contribution in the Age of AI: Notes on the Current Debate</title>
   <dc:creator>Patricio Iván Pantaleo</dc:creator>
-  <link>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</link>
+  <link>https://patricio.pantaleo.ar/blog/posts/autorship-AI/index_ES_draft.html</link>
   <description><![CDATA[ 
 
 
@@ -208,6 +208,307 @@ Nota 2
 </div>
 <div class="callout-body-container callout-body">
 <p>Las traducciones son propias del autor procesadas mediante Claude Sonnet 4 (Anthropic). Mayoritariamente se ha tomado bibliografía en español y traducido la misma al inglés. Algunas de ellas se mantienen en idioma original de la bibliografía.</p>
+</div>
+</div>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2">
+<div id="ref-albert_wager_2003" class="csl-entry">
+Albert, T., &amp; Wager, E. (2003). <em>How to handle authorship disputes: A guide for new researchers</em>. COPE Guidelines; Committee on Publication Ethics (COPE). <a href="https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers">https://publicationethics.org/guidance/guideline/how-handle-authorship-disputes-guide-new-researchers</a>
+</div>
+<div id="ref-cambridge_ai" class="csl-entry">
+Cambridge University Press &amp; Assessment. (2024). <em>Artificial intelligence (AI) editorial policies</em>. Editorial Policy. <a href="https://www.cambridge.org/core/services/publishing-ethics/authorship-and-contributorship-journals">https://www.cambridge.org/core/services/publishing-ethics/authorship-and-contributorship-journals</a>
+</div>
+<div id="ref-codina_etica" class="csl-entry">
+Codina, L. (2023). <em>Artículos científicos: Autoría y significado del orden de firma</em>. Blog post. <a href="https://www.lluiscodina.com/etica-articulos-cientificos/">https://www.lluiscodina.com/etica-articulos-cientificos/</a>
+</div>
+<div id="ref-cope_ai" class="csl-entry">
+Committee on Publication Ethics. (2024). <em>Authorship and AI tools</em>. COPE Position Statement. <a href="https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools">https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools</a>
+</div>
+<div id="ref-corominas1984diccionario" class="csl-entry">
+Corominas, J., &amp; Pascual, J. A. (1984). <em>Diccionario crítico etimológico castellano e hispánico</em>. Editorial Gredos. <a href="https://archive.org/details/157203089-diccionario-critico-etimologico-castellano-a-ca-corominas-joan-pdf">https://archive.org/details/157203089-diccionario-critico-etimologico-castellano-a-ca-corominas-joan-pdf</a>
+</div>
+<div id="ref-credit_niso" class="csl-entry">
+CRediT. (2022). <em>Contributor role taxonomy (CRediT)</em>. ANSI/NISO Standard; NISO. <a href="https://credit.niso.org/">https://credit.niso.org/</a>
+</div>
+<div id="ref-elsevier_ai" class="csl-entry">
+Elsevier. (2024). <em>The use of generative AI and AI-assisted technologies in scientific writing</em>. Editorial Policy. <a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals</a>
+</div>
+<div id="ref-foucault1994autor" class="csl-entry">
+Foucault, M. (1994). Qu’est-ce qu’un auteur? 1954-1969. In <em>Dits et écrits: Vol. I</em>. Gallimard.
+</div>
+<div id="ref-gray2024" class="csl-entry">
+Gray, A. (2024). <em>ChatGPT citations are rampant in scientific literature</em>. <a href="https://arxiv.org/abs/2403.16887">https://arxiv.org/abs/2403.16887</a>
+</div>
+<div id="ref-icmje_defining" class="csl-entry">
+International Committee of Medical Journal Editors. (2023). <em>Defining the role of authors and contributors</em>. ICMJE Recommendations. <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html</a>
+</div>
+<div id="ref-kuhn1970" class="csl-entry">
+Kuhn, T. S. (1970). <em>The structure of scientific revolutions</em> (2nd ed.). University of Chicago Press. <a href="https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf">https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf</a>
+</div>
+<div id="ref-liang2024monitoring" class="csl-entry">
+Liang, W., Zhang, Z., Cao, Y., Liu, H., Huang, E., Yang, H., Boyd-Graber, J., Qi, D., et al. (2024). <em>Monitoring AI-modified content at scale: A case study on the impact of ChatGPT on AI conference peer reviews</em>. <a href="https://arxiv.org/abs/2403.07183">https://arxiv.org/abs/2403.07183</a>
+</div>
+<div id="ref-microsoft2023" class="csl-entry">
+Microsoft. (2023). <em>Reinventing search with a new <span>AI</span>-powered <span>Microsoft</span> <span>Bing</span> and <span>Edge</span>, your copilot for the web</em>. Microsoft Official Blog. <a href="https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/">https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/</a>
+</div>
+<div id="ref-pantaleo2025en" class="csl-entry">
+Pantaleo, P. I. (2025). <em>Diagram: Key concepts in academic authorship</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.15691674">https://doi.org/10.5281/zenodo.15691674</a>
+</div>
+<div id="ref-platon2022ion" class="csl-entry">
+Platón. (2022). <em>Ión</em> (J. T. Nápoli, M. L. Mattioli, &amp; D. S. Zamperetti Martín, Eds.; Primera edición). EDULP. <a href="https://libros.unlp.edu.ar/index.php/unlp/catalog/download/2083/2509/7004-1">https://libros.unlp.edu.ar/index.php/unlp/catalog/download/2083/2509/7004-1</a>
+</div>
+<div id="ref-rae_autoria" class="csl-entry">
+Real Academia Española. (2025). <em>Diccionario de la lengua española</em> (23.ª ed.). <a href="https://dle.rae.es/autor">https://dle.rae.es/autor</a>
+</div>
+<div id="ref-sampaio2024" class="csl-entry">
+Sampaio, R. C., Sabbatini, M., &amp; Limongi, R. (2024). <em>Diretrizes para o uso ético e responsável da inteligência artificial generativa: Um guia prático para pesquisadores</em>. Sociedade Brasileira de Estudos Interdisciplinares da Comunicação - Intercom. <a href="https://www.portalintercom.org.br/">https://www.portalintercom.org.br/</a>
+</div>
+<div id="ref-science_ai" class="csl-entry">
+Science Journals. (2023). <em>Editorial policy on AI-generated content</em>. Editorial Policy. <a href="https://www.science.org/content/page/science-journals-editorial-policies">https://www.science.org/content/page/science-journals-editorial-policies</a>
+</div>
+<div id="ref-springer_ai" class="csl-entry">
+Springer Nature. (2024). <em>Artificial intelligence (AI)</em>. Editorial Policy. <a href="https://www.springernature.com/gp/policies/editorial-policies">https://www.springernature.com/gp/policies/editorial-policies</a>
+</div>
+<div id="ref-stokelwalker2024chatbots" class="csl-entry">
+Stokel-Walker, C. (2024). AI chatbots have thoroughly infiltrated scientific publishing. <em>Scientific American</em>. <a href="https://www.scientificamerican.com/article/chatbots-have-thoroughly-infiltrated-scientific-publishing/">https://www.scientificamerican.com/article/chatbots-have-thoroughly-infiltrated-scientific-publishing/</a>
+</div>
+<div id="ref-taylor_francis_ai_policy" class="csl-entry">
+Taylor &amp; Francis. (2024). <em>AI policy</em>. <a href="https://taylorandfrancis.com/our-policies/ai-policy" class="uri">https://taylorandfrancis.com/our-policies/ai-policy</a>.
+</div>
+<div id="ref-taylor_francis_ai" class="csl-entry">
+Taylor &amp; Francis Author Services. (2024a). <em>Authorship guidelines and artificial intelligence</em>. Editorial Policy. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/</a>
+</div>
+<div id="ref-taylor_francis_ai_writing" class="csl-entry">
+Taylor &amp; Francis Author Services. (2024b). <em>Using AI to write your paper</em>. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6" class="uri">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6</a>.
+</div>
+<div id="ref-wiley_ai" class="csl-entry">
+Wiley. (2024). <em>Best practice guidelines on research integrity and publishing ethics</em>. Editorial Policy. <a href="https://authorservices.wiley.com/ethics-guidelines/index.html#5">https://authorservices.wiley.com/ethics-guidelines/index.html#5</a>
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>© 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+</div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{pantaleo2025,
+  author = {Pantaleo, Patricio Iván},
+  title = {Authorship and {Contribution} in the {Age} of {AI:} {Notes}
+    on the {Current} {Debate}},
+  date = {2025-06-19},
+  url = {https://patricio.pantaleo.ar/blog/posts/autorship-AI},
+  doi = {10.62059/9x4p2w},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-pantaleo2025" class="csl-entry quarto-appendix-citeas">
+Pantaleo, P. I. (2025, June 19). <em>Authorship and Contribution in the
+Age of AI: Notes on the Current Debate</em> [Online post]. <a href="https://doi.org/10.62059/9x4p2w">https://doi.org/10.62059/9x4p2w</a>
+</div></div></section></div> ]]></description>
+  <category>posts</category>
+  <category>scholarly-publishing</category>
+  <category>english</category>
+  <guid>https://patricio.pantaleo.ar/blog/posts/autorship-AI/index_ES_draft.html</guid>
+  <pubDate>Thu, 19 Jun 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Authorship and Contribution in the Age of AI: Notes on the Current Debate</title>
+  <dc:creator>Patricio Iván Pantaleo</dc:creator>
+  <link>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="figure">
+<img src="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" class="img-fluid quarto-figure quarto-figure-center">
+<p style="text-align: center; font-size: 0.8em;">
+Photo by <a href="https://unsplash.com/@etiennegirardet">Etienne Girardet</a> on <a href="https://unsplash.com/">Unsplash</a>
+</p>
+</div>
+<p>Authorship in academic articles is not merely recognition of participation, but a key component of academic and scientific ethics. This post synthesizes international criteria and essential reflections on what it truly means to sign as an author of an academic work in the age of artificial intelligence, with the goal of contributing to outlining actions and standards for the use of AI in academic and scientific settings.</p>
+<p>Likewise, basic questions regarding use and implementation are raised in order to expand the critical dimension with which this topic is currently approached. Problems such as reproduction, invention, argumentative verbosity, among others, are implicit practices in various AI models, characteristic of a <strong>concatenation of data without self-awareness</strong>.</p>
+<section id="what-is-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-authorship">What is Authorship?</h2>
+<p>According to the Royal Spanish Academy, authorship is commonly defined as the “quality of being an author,” and an author is the person who is the “cause of something” <span class="citation" data-cites="rae_autoria">(Real Academia Española, 2025)</span>. The word “author” comes from the Latin auctor, -óris, which meant ‘creator,’ ‘historical source,’ and ‘instigator.’ This Latin term derives from the verb augére (‘to increase,’ ‘to make progress’), so it originally designated one who made something grow or promoted it. The word has been documented in Spanish since 1155 <span class="citation" data-cites="corominas1984diccionario">(Corominas &amp; Pascual, 1984)</span> and evolved semantically from the idea of “one who makes grow” to “creator of a work.” This same Latin root generated other words like “authority,” “authorize,” and “grant,” all related to the concepts of origin, growth, and responsibility.</p>
+<p>For its part, the Greek word ποιητής refers to one who “creates” or “the one who makes,” and whether that creation was by technique or by inspiration was the Platonic debate <span class="citation" data-cites="platon2022ion">(Platón, 2022)</span>. Thus, to this day, What is authorship? or by relation, What is it to be an author and what is the condition for it? are nodal problems that precede AI and must be recognized as such. However, AI presents new dimensions and possibilities for analysis.</p>
+<p><span class="citation" data-cites="foucault1994autor">Foucault (1994)</span> argues in one of his conferences on February 22, 1969:</p>
+<blockquote class="blockquote">
+<p>Cómo se individualizó el autor en una cultura como la nuestra, qué estatuto se le dio, a partir de qué momento, por ejemplo, empezaron a hacerse investigaciones de autenticidad y de atribución, en qué sistema de valoración quedó atrapado, en qué momento se comenzó a contar la vida ya no de los héroes sino de los autores, cómo se instauró esa categoría fundamental de la crítica: “El hombre-y-la obra”, todo esto merecería sin duda alguna ser analizado. (p.&nbsp;54)</p>
+</blockquote>
+<p>“What does it matter who speaks, someone said, what does it matter who speaks” is the nodal question of the argument that Foucault takes from Beckett. Where is the author? It is difficult to find:</p>
+<blockquote class="blockquote">
+<p>En la escritura no se trata de la manifestación o de la exaltación del gesto de escribir; no se trata de la sujeción de un sujeto a un lenguaje; se trata de la apertura de un espacio en donde el sujeto escritor no deja de desaparecer. <span class="citation" data-cites="foucault1994autor">(Foucault, 1994, p. 55)</span></p>
+</blockquote>
+<p>Wondering how far an author’s work extends, Foucault reflects accurately on something that is extremely important to reconsider today: How far does an author’s work extend? If AI mediates, voluntarily or involuntarily, in the process of research, writing, creation, Who is the author?:</p>
+<blockquote class="blockquote">
+<p>Mas supongamos que tuviéramos que ver con un autor: ¿todo lo que escribió o dijo, todo lo que dejó tras él forma parte de su obra? Problema a la vez teórico y técnico. Cuando se emprende la publicación de las obras de Nietzsche, por ejemplo, ¿en dónde hay que detenerse? Hay qué publicar todo, ciertamente, pero ¿qué quiere decir este “todo”? Todo lo que el propio Nietzschte publicó, de acuerdo. ¿Los borradores de sus obras? Ciertamente. ¿Los proyectos de aforismos? Sí. ¿También los tachones, las notas al pie de los cuadernos? Sí. Pero cuando en el interior de un cuaderno lleno de aforismos se encuentra una referencia, la indicación de una cita o de una dirección, una cuenta de la lavandería: ¿obra o no obra? ¿Y por qué no? Y esto indefinidamente. <span class="citation" data-cites="foucault1994autor">(Foucault, 1994, pp. 56–57)</span></p>
+</blockquote>
+<p><strong>Work or not work?</strong> Is it legitimate to use AI in academic writing? At this point, rather: In what way is it legitimate to use AI in academic writing? Where is the limit between the author and collaboration? As we can see, this is not a current problem but one of long standing; however, today it takes on greater relevance and scope. The veil is lifted and it is easier or more accessible for more subjects to question provenance, criticize authenticity, authorship.</p>
+</section>
+<section id="international-criteria-icmje-and-credit" class="level2">
+<h2 class="anchored" data-anchor-id="international-criteria-icmje-and-credit">International Criteria: ICMJE and CRediT</h2>
+<section id="the-four-icmje-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="the-four-icmje-criteria">The Four ICMJE Criteria</h3>
+<p>Already in the academic realm, at a prudent distance from the philosophical or magisterial realm of Michel Foucault’s conferences, it is simpler and necessary to cut the limits of definitions, of meanings. Thus, the International Committee of Medical Journal Editors (ICMJE) proposes four criteria that must be met simultaneously to justify authorship <span class="citation" data-cites="icmje_defining">(International Committee of Medical Journal Editors, 2023)</span>:</p>
+<ol type="1">
+<li><strong>Substantial contributions</strong> to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work</li>
+<li><strong>Drafting the work</strong> or revising it critically for important intellectual content</li>
+<li><strong>Final approval</strong> of the version to be published</li>
+<li><strong>Responsibility</strong> for all aspects of the work, ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved</li>
+</ol>
+<p>These criteria establish that all those designated as authors must meet the four criteria for authorship, and all who meet the four criteria must be identified as authors. All those who do not meet the four criteria should not be listed as authors, but should be recognized as collaborators according to <span class="citation" data-cites="icmje_defining">International Committee of Medical Journal Editors (2023)</span>.</p>
+<p>Regarding the use of AI, the cited document specifically states:</p>
+<blockquote class="blockquote">
+<p>At submission, the journal should require authors to disclose whether they used artificial intelligence (AI)-assisted technologies (such as Large Language Models [LLMs], chatbots, or image creators) in the production of submitted work. Authors who use such technology should describe, in both the cover letter and the submitted work in the appropriate section if applicable, how they used it. For example, if AI was used for writing assistance, describe this in the acknowledgment section (see Section II.A.3). If AI was used for data collection, analysis, or figure generation, authors should describe this use in the methods (see Section IV.A.3.d). Chatbots (such as ChatGPT) should not be listed as authors because they cannot be responsible for the accuracy, integrity, and originality of the work, and these responsibilities are required for authorship (see Section II.A.1). Therefore, humans are responsible for any submitted material that included the use of AI-assisted technologies. Authors should carefully review and edit the result because AI can generate authoritative-sounding output that can be incorrect, incomplete, or biased. Authors should not list AI and AI-assisted technologies as an author or co-author, nor cite AI as an author. Authors should be able to assert that there is no plagiarism in their paper, including in text and images produced by the AI. Humans must ensure there is appropriate attribution of all quoted material, including full citations. <span class="citation" data-cites="icmje_defining">(International Committee of Medical Journal Editors, 2023)</span></p>
+</blockquote>
+<p>In this regard, two fundamental issues should be highlighted:</p>
+<ul>
+<li>The reason why AI cannot be an author is because it does not meet one of the authorship criteria defined above: it is not subject to responsibilities.</li>
+<li>The use of AI: it is pertinent that authors declare the use, type, and manner in which it was done.</li>
+</ul>
+<p>Now, regarding use, some questions arise. In times when AI is transforming search models <span class="citation" data-cites="microsoft2023">(Microsoft, 2023)</span>, replacing traditional search engines that have dominated the internet for the last 30 years and involuntarily creeping into search results, is a simple declaration sufficient? How does one declare being within a new <em>paradigm</em>? AI is no longer optional, or at least for those who use digital research media, and its use will be almost inevitable. In the Kuhnian sense of the term <span class="citation" data-cites="kuhn1970">(Kuhn, 1970)</span>, AI represents a paradigmatic change in the search and processing of scientific information. This new <em>paradigm</em> raises the question of whether it is possible to fully declare the use of AI when it has become ubiquitous in digital research processes.</p>
+</section>
+<section id="the-credit-taxonomy" class="level3">
+<h3 class="anchored" data-anchor-id="the-credit-taxonomy">The CRediT Taxonomy</h3>
+<p>Complementing this definition, the CRediT taxonomy is a community taxonomy of 14 roles that can be used to describe the key types of contributions typically made to the production and publication of research results such as research articles. This taxonomy allows for more granular attribution of individual contributions to academic work <span class="citation" data-cites="credit_niso">(CRediT, 2022)</span>.</p>
+<p>The 14 CRediT roles include everything from conceptualization to data curation, providing a framework for recognizing different types of contributions beyond traditional authorship and can be applied to both authors and collaborators according to the definition of <span class="citation" data-cites="icmje_defining">International Committee of Medical Journal Editors (2023)</span>.</p>
+</section>
+</section>
+<section id="key-concepts-in-academic-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="key-concepts-in-academic-authorship">Key Concepts in Academic Authorship</h2>
+<p>Authorship in scientific publications represents one of the most complex and controversial aspects of the editorial process, requiring a clear understanding of the responsibilities, hierarchies, and ethical practices involved. Returning to what was outlined in <span class="citation" data-cites="icmje_defining">International Committee of Medical Journal Editors (2023)</span>, COPE defines a series of key concepts for academic authorship <span class="citation" data-cites="albert_wager_2003">(Albert &amp; Wager, 2003)</span>.</p>
+<section id="hierarchies-and-author-order" class="level3">
+<h3 class="anchored" data-anchor-id="hierarchies-and-author-order">Hierarchies and Author Order</h3>
+<p>The order of authors conveys crucial information about relative contributions to the research work. The first author is traditionally considered the one who made the greatest contribution and is frequently the principal investigator responsible for study execution and initial manuscript writing. This position is particularly valued given that academic citations typically refer to studies by the first author’s surname followed by “et al.”</p>
+<p>The position of the last author presents greater interpretative variability across disciplines; it is commonly assigned to a senior team member who provided supervision, methodological expertise, or institutional resources, although it is often suspected that this may involve honorary authorship.</p>
+</section>
+<section id="problematic-practices-in-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="problematic-practices-in-authorship">Problematic Practices in Authorship</h3>
+<p>Inappropriate behaviors related to authorship include <strong>honorary authorship</strong> (adding someone who did not contribute) and <strong>ghost authorship</strong> (omitting someone who did contribute). Both practices violate the principles of scientific integrity <span class="citation" data-cites="codina_etica">(Codina, 2023)</span>.</p>
+<p><span class="citation" data-cites="albert_wager_2003">Albert &amp; Wager (2003)</span> discusses ghost authorship and honorary authorship.</p>
+<p><strong>Ghost authorship</strong> includes both professional writers (frequently hired by commercial sponsors) whose participation is not acknowledged, and researchers who made significant contributions but were omitted from the author list. This practice represents a potential conflict of interest and violates the principles of scientific transparency.</p>
+<p><strong>Honorary authorship</strong> involves the inclusion of people who did not meet the ICMJE criteria, typically academic or administrative authority figures whose inclusion seeks to obtain political favor or institutional prestige. Another variant includes reciprocal agreements between colleagues to include each other in publications regardless of their actual contributions.</p>
+</section>
+<section id="responsibilities-and-guarantees" class="level3">
+<h3 class="anchored" data-anchor-id="responsibilities-and-guarantees">Responsibilities and Guarantees</h3>
+<p>Recognizing the growing specialization in contemporary research, ICMJE guidelines have introduced the concept of <strong>“guarantor”</strong> - one or more authors who assume responsibility for the complete integrity of the work from conception to final publication. This figure recognizes that it may be unreasonable to expect each author to deeply understand all technical aspects of the study (for example, for a radiologist to explain complex statistical methods), but maintains overall responsibility for the project.</p>
+<p>The <strong>corresponding author</strong>, although playing an administrative role in communication with editors and readers, should not be automatically equated with academic hierarchy.</p>
+</section>
+<section id="procedural-decisions-and-acknowledgments" class="level3">
+<h3 class="anchored" data-anchor-id="procedural-decisions-and-acknowledgments">Procedural Decisions and Acknowledgments</h3>
+<p>Decisions about author order require explicit negotiation among collaborators, ideally before beginning manuscript writing. Some groups opt for alphabetical ordering when contributions are equivalent, a practice that should be clearly communicated to the editor.</p>
+<p>Contributions that do not merit full authorship should be appropriately recognized in the <strong>acknowledgments</strong>, specifying the exact nature of the contribution made. Many journals frequently require signed consent from people recognized in this section.</p>
+</section>
+<section id="contemporary-implications" class="level3">
+<h3 class="anchored" data-anchor-id="contemporary-implications">Contemporary Implications</h3>
+<p>The absence of limits on the number of authors in modern databases has eliminated historical pressures to restrict lists, but the inclusion of multiple authors significantly increases the time for manuscript preparation, review, and completion.</p>
+<p><strong>Group authorship</strong> presents particular challenges in database indexing, where the first name in alphabetical lists may erroneously become the first author by default. These considerations underscore the importance of advance planning and explicit communication in collaborative research teams.</p>
+</section>
+<section id="main-notions-of-academic-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="main-notions-of-academic-authorship">Main Notions of Academic Authorship</h3>
+<p>Below is a web diagram created in HTML to synthesize the main ideas about authorship referenced above.</p>
+<div id="fig-authorship" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="authorship_diagram_EN.html" width="100%" height="1200px" style="border:none; border-radius:10px;">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Diagram: Key Concepts in Academic Authorship. <span class="citation" data-cites="pantaleo2025en">Pantaleo (2025)</span>
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="artificial-intelligence-and-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="artificial-intelligence-and-authorship">Artificial Intelligence and Authorship</h2>
+<p>The authorship problem specifically related to AI deepens issues that, as mentioned, precede it. How far can AI contribute to an academic writing? How is it recognized? Given the forced use to which we are increasingly conditioned with new search models, should the use or absence of it be declared?</p>
+<p>A recent analysis revealed that at least 1% of scientific articles published in 2023—approximately 60,000 papers—showed signs of using language models like ChatGPT <span class="citation" data-cites="stokelwalker2024chatbots gray2024">(Gray, 2024; Stokel-Walker, 2024)</span>, a figure that experts say represents merely “the tip of the iceberg” of a much broader phenomenon. Evidence of this use ranges from flagrant cases—such as the accidental inclusion of phrases like “certainly, here is a possible introduction for your topic” in papers published by Elsevier <span class="citation" data-cites="stokelwalker2024chatbots">(Stokel-Walker, 2024)</span>—to more subtle but revealing patterns in the use of scientific language. Words like “delve” experienced a 654% increase in the PubMed database between 2020 and 2023, while terms like “commendable” and “meticulous” showed similar increases <span class="citation" data-cites="stokelwalker2024chatbots">(Stokel-Walker, 2024)</span>, suggesting a fundamental change in the lexicon of academic writing.</p>
+<p>This trend reflects a complex reality in the contemporary academic world. In a context where researchers operate under the pressure of “publish or perish,” many turn to these tools as writing assistants or to overcome language barriers. However, what began as grammatical support is evolving toward more problematic uses: from generating scientific figures to the possible automation of the peer review process <span class="citation" data-cites="liang2024monitoring">(Liang et al., 2024)</span>.</p>
+<p>The phenomenon raises fundamental questions about scientific integrity, especially considering that these models are prone to “hallucinations”—inventing non-existent bibliographic references—and that automatic detectors of AI-generated content prove to be unreliable tools <span class="citation" data-cites="stokelwalker2024chatbots">(Stokel-Walker, 2024)</span>, beyond the fact that many also use AI to detect AI. If it’s about judgment, should one trust without reservations a tool that uses AI to detect AI-written content? The following graphs (Figure&nbsp;2) extracted from <span class="citation" data-cites="stokelwalker2024chatbots">Stokel-Walker (2024)</span> show the increased use of keywords related to AI-generated writing.</p>
+<div id="fig-trends" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://patricio.pantaleo.ar/blog/posts/autorship-AI/gf1.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Suspicious Trends in Word Usage. Amanda Montañez; Source: Andrew Gray. <span class="citation" data-cites="stokelwalker2024chatbots">Stokel-Walker (2024)</span>
+</figcaption>
+</figure>
+</div>
+<section id="editorial-policies-on-ai" class="level3">
+<h3 class="anchored" data-anchor-id="editorial-policies-on-ai">Editorial Policies on AI</h3>
+<p>In this context, some of the world’s major publishers have defined criteria for use and authorship related to AI. Below is a synthesis of the main editorial policies:</p>
+<p><strong>Cambridge University Press &amp; Assessment</strong> <span class="citation" data-cites="cambridge_ai">(Cambridge University Press &amp; Assessment, 2024)</span>: Establishes that AI tools must be explicitly declared and their use must be explained in detail in the manuscript. The publisher is categorical in stating that these tools do not qualify for authorship due to their fundamental inability to assume ethical, legal, and academic responsibility for the content produced.</p>
+<p><strong>Elsevier</strong> <span class="citation" data-cites="elsevier_ai">(Elsevier, 2024)</span>: AI tools and AI-assisted technologies do not qualify for authorship under Elsevier’s authorship policy. Authors who use these tools during the manuscript writing process must declare their use in a separate section of the manuscript, promoting transparency among authors, readers, reviewers, and editors.</p>
+<p><strong>Springer Nature</strong> <span class="citation" data-cites="springer_ai">(Springer Nature, 2024)</span>: Large Language Models (LLMs), such as ChatGPT, do not currently satisfy the publisher’s authorship criteria. The policy emphasizes that authorship attribution carries responsibility for the work, responsibility that cannot be effectively applied to LLMs. The use of these tools must be appropriately documented in the Methods section or in a suitable alternative part of the manuscript.</p>
+<p><strong>Science Journals</strong> <span class="citation" data-cites="science_ai">(Science Journals, 2023)</span>: Maintains a particularly strict policy establishing that text generated by AI, machine learning, or similar algorithmic tools cannot have authorship attribution. Violation of this policy constitutes scientific misconduct, equating it with other forms of academic fraud. It explicitly states:</p>
+<blockquote class="blockquote">
+<p>Artificial intelligence (AI). AI-assisted technologies [such as large language models (LLMs), chatbots, and image creators] do not meet the Science journals’ criteria for authorship and therefore may not be listed as authors or coauthors, nor may sources cited in Science journal content be authored or coauthored by AI tools. Authors who use AI-assisted technologies as components of their research study or as aids in the writing or presentation of the manuscript should note this in the cover letter and in the acknowledgments section of the manuscript. Detailed information should be provided in the methods section: The full prompt used in the production of the work, as well as the AI tool and its version, should be disclosed. Authors are accountable for the accuracy of the work and for ensuring that there is no plagiarism. They must also ensure that all sources are appropriately cited and should carefully review the work to guard against bias that may be introduced by AI. Editors may decline to move forward with manuscripts if AI is used inappropriately. Reviewers may not use AI technology in generating or writing their reviews because this could breach the confidentiality of the manuscript. <span class="citation" data-cites="science_ai">(Science Journals, 2023)</span></p>
+</blockquote>
+<p><strong>Taylor &amp; Francis Group</strong> <span class="citation" data-cites="taylor_francis_ai">(Taylor &amp; Francis Author Services, 2024a)</span>: AI tools cannot be considered authors under any circumstances. The publisher requires authors to appropriately document any use of these technologies, specifying what tools were used and how they contributed to the work. Taylor &amp; Francis Group also has a specific AI policy on its website <span class="citation" data-cites="taylor_francis_ai_policy">(Taylor &amp; Francis, 2024)</span> and guidelines on AI-assisted writing <span class="citation" data-cites="taylor_francis_ai_writing">(Taylor &amp; Francis Author Services, 2024b)</span>.</p>
+<p><strong>Wiley</strong> <span class="citation" data-cites="wiley_ai">(Wiley, 2024)</span>: Establishes that AI cannot be an author due to the impossibility of assuming the responsibilities inherent to authorship. Authors must declare in detail the use of AI tools in the Methods or Acknowledgments sections, providing specific information about how these technologies were used in the research and writing process.</p>
+</section>
+<section id="consensus-on-ai-and-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="consensus-on-ai-and-authorship">Consensus on AI and Authorship</h3>
+<p>AI tools cannot meet the requirements for authorship as they cannot assume responsibility for submitted work. As non-legal entities, they cannot assert the presence or absence of conflicts of interest nor handle copyright agreements and licenses <span class="citation" data-cites="cope_ai">(Committee on Publication Ethics, 2024)</span>. Authors using AI tools must be transparent in disclosing how the AI tool was used and what tool was used. Authors are fully responsible for the content of their manuscript, including those parts produced by an AI tool.</p>
+</section>
+</section>
+<section id="best-practices-for-authorship-determination-in-relation-to-ai-use" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices-for-authorship-determination-in-relation-to-ai-use">Best Practices for Authorship Determination in Relation to AI Use</h2>
+<section id="early-use-agreements" class="level3">
+<h3 class="anchored" data-anchor-id="early-use-agreements">Early Use Agreements</h3>
+<p>Authors should discuss AI use when planning research, agree on methodology and tools used in writing, and review the agreement during research. It is fundamental to establish these agreements before beginning work to avoid later disputes.</p>
+</section>
+<section id="differentiating-forced-from-induced-use" class="level3">
+<h3 class="anchored" data-anchor-id="differentiating-forced-from-induced-use">Differentiating Forced from Induced Use</h3>
+<p>It is essential that the entire research team can differentiate tools used voluntarily for conducting research or writing from those that are induced by the new web search paradigm managed by AI tools selected by corporations to show results and not by users.</p>
+</section>
+<section id="use-declaration" class="level3">
+<h3 class="anchored" data-anchor-id="use-declaration">Use Declaration</h3>
+<p>Currently, it is recommended to introduce in articles or writings a declaration of AI use just as declarations of conflicts of interest, data availability, or funding are commonly included <span class="citation" data-cites="sampaio2024">(Sampaio et al., 2024)</span>.</p>
+<p>As AI development advances and integration with search engines progresses, this becomes essential as it not only evidences the use or non-use of some AI model in some part of the article’s elaboration but, above all, the researcher’s awareness in using the digital tools available today.</p>
+<p>It is essential that people writing academic articles be attentive to differentiating search results processed by AI from those that are not. This awareness process manages to evidence AI intrusion in research processes according to the research team’s possibilities to identify it. In cases of voluntary use, clearly, defining the scope of use is crucial to identify possible fallacies or inventions in the research argumentation. But even more important is taking awareness of possible pathways for intrusion of <strong>artificial</strong> arguments or results generated by AI-conditioned searches beyond the initial intentions of the research team.</p>
+<p>Thus, it is recommended not only to indicate when and how an AI model is used, but also when it is not used in research. Following the declaration suggested in <span class="citation" data-cites="sampaio2024">Sampaio et al. (2024)</span>:</p>
+<blockquote class="blockquote">
+<p>During the preparation of this work, the author(s) used [name of tool/model or service] version [number and/or date] to [justify the reason]. After using this tool/model/service, the author(s) reviewed and edited the content in accordance with the scientific method and assume(s) full responsibility for the content of the publication. (p.&nbsp;20)</p>
+</blockquote>
+<p>It could also be declared when not used: “In the present work, AI models have not been used in any of its phases.”</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Signing an article is not a formality or a courtesy; it is an ethical declaration that carries legal and intellectual responsibilities. The adoption of ICMJE and CRediT frameworks, along with clear policies on AI use, ensures fair recognition of real contributions and helps prevent inappropriate behaviors that undermine scientific trust.</p>
+<p>In the age of artificial intelligence, it is fundamental to maintain that authorship requires human responsibility, transparency in the use of AI tools, and adherence to established ethical criteria. The evolution toward greater multidisciplinary collaboration and responsible use of emerging technologies must be accompanied by robust ethical frameworks that protect the integrity of scientific research.</p>
+<p>As Michel Foucault points out, there are discourses that are provided with authorship and others that are not. This is constructed within a society, a culture, a discourse and is validated by those who share the same argumentative guidelines:</p>
+<blockquote class="blockquote">
+<p>One will finally arrive at the idea that the author’s name does not go, like the proper name, from the interior of a discourse to the real and exterior individual who produced it, but runs, in a certain way, at the limit of texts, cuts them out, follows their edges, manifests their mode of being or, at least, characterizes it. It manifests the event of a certain set of discourse, and refers to the status of this discourse within a society and within a culture. The author’s name is not situated in the civil status of men, nor is it situated in the fiction of the work; it is situated in the rupture that establishes a certain group of discourse and its singular mode of being. It could be said, therefore, that in a civilization like ours there are a certain number of discourses endowed with the “author” function while others are deprived of it. A private letter may well have a signatory, but it does not have an author; a contract may have a guarantor, but it does not have an author. An anonymous text read on the street on a wall will have a writer, but will not have an author. The author function is, then, characteristic of the mode of existence, circulation and functioning of certain discourses within a society. <span class="citation" data-cites="foucault1994autor">(Foucault, 1994, pp. 60–61)</span></p>
+</blockquote>
+<p>It could be concluded that AI as such is deprived of authorship because it is not responsible nor conscious of its own creative act; it is an excellent tool. As such, its use by subjects is what constitutes an ethical act. It can be used ethically to enrich and develop new argumentative models or it can be used to develop text without any human care. In any case, the responsible act of human consciousness is what determines authorship.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Note 1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In writing this post, AI has intervened in paragraph writing, idea synthesis, bibliography summarization, and the creation of metadata and text in MD, YAML, and BibTeX. It has also responded to queries and requests made by the author to expand criticism and improve syntax. AI assistance was provided by Claude Sonnet 4 (Anthropic).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Note 2">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Originally composed in Spanish, this article has been translated into English while preserving references to Spanish-language sources, including the Royal Spanish Academy Dictionary. To ensure scholarly accuracy, all textual citations are maintained in their original languages—Spanish, English, and Portuguese. The translation was generated using Claude Sonnet 4 (Anthropic) and subsequently reviewed and validated by the author.</p>
 </div>
 </div>
 
