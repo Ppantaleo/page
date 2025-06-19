@@ -11,7 +11,7 @@
 <description>This blog brings together a variety of posts: articles, essays, methodological notes, code snippets, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You’ll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.
 </description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Fri, 13 Jun 2025 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Jun 2025 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Authorship and Contribution in the Age of AI: Notes on the Current Debate</title>
   <dc:creator>Patricio Iván Pantaleo</dc:creator>
@@ -146,7 +146,7 @@ Figure&nbsp;2: Suspicius Trends in Word Usage. Amanda Montañez; Fuente: Andrew 
 <blockquote class="blockquote">
 <p>Artificial intelligence (AI). AI-assisted technologies [such as large language models (LLMs), chatbots, and image creators] do not meet the Science journals’ criteria for authorship and therefore may not be listed as authors or coauthors, nor may sources cited in Science journal content be authored or coauthored by AI tools. Authors who use AI-assisted technologies as components of their research study or as aids in the writing or presentation of the manuscript should note this in the cover letter and in the acknowledgments section of the manuscript. Detailed information should be provided in the methods section: The full prompt used in the production of the work, as well as the AI tool and its version, should be disclosed. Authors are accountable for the accuracy of the work and for ensuring that there is no plagiarism. They must also ensure that all sources are appropriately cited and should carefully review the work to guard against bias that may be introduced by AI. Editors may decline to move forward with manuscripts if AI is used inappropriately. Reviewers may not use AI technology in generating or writing their reviews because this could breach the confidentiality of the manuscript. <span class="citation" data-cites="science_ai">(Science Journals, 2023)</span></p>
 </blockquote>
-<p><strong>Taylor &amp; Francis Group</strong> <span class="citation" data-cites="taylor_francis_ai">(Taylor &amp; Francis Group, 2024)</span>: Las herramientas de IA no pueden ser consideradas autores bajo ninguna circunstancia. La editorial requiere que los autores documenten apropiadamente cualquier uso de estas tecnologías, especificando qué herramientas fueron utilizadas y cómo contribuyeron al trabajo. Taylor &amp; Francis Group tiene en su web también una política específica sobre IA <span class="citation" data-cites="taylor_francis_ai_policy">(Taylor &amp; Francis, 2024)</span> e indicaciones sobre la escritura asistida por IA <span class="citation" data-cites="taylor_francis_ai_writing">(Taylor &amp; Francis Author Services, 2024)</span>.</p>
+<p><strong>Taylor &amp; Francis Group</strong> <span class="citation" data-cites="taylor_francis_ai">(Taylor &amp; Francis Author Services, 2024a)</span>: Las herramientas de IA no pueden ser consideradas autores bajo ninguna circunstancia. La editorial requiere que los autores documenten apropiadamente cualquier uso de estas tecnologías, especificando qué herramientas fueron utilizadas y cómo contribuyeron al trabajo. Taylor &amp; Francis Group tiene en su web también una política específica sobre IA <span class="citation" data-cites="taylor_francis_ai_policy">(Taylor &amp; Francis, 2024)</span> e indicaciones sobre la escritura asistida por IA <span class="citation" data-cites="taylor_francis_ai_writing">(Taylor &amp; Francis Author Services, 2024b)</span>.</p>
 <p><strong>Wiley</strong> <span class="citation" data-cites="wiley_ai">(Wiley, 2024)</span>: Establece que la IA no puede ser autor debido a la imposibilidad de asumir las responsabilidades inherentes a la autoría. Los autores deben declarar detalladamente el uso de herramientas de IA en las secciones de Métodos o Agradecimientos, proporcionando información específica sobre cómo se utilizaron estas tecnologías en el proceso de investigación y escritura.</p>
 </section>
 <section id="consenso-sobre-ia-y-autoría" class="level3">
@@ -279,11 +279,11 @@ Stokel-Walker, C. (2024). AI chatbots have thoroughly infiltrated scientific pub
 <div id="ref-taylor_francis_ai_policy" class="csl-entry">
 Taylor &amp; Francis. (2024). <em>AI policy</em>. <a href="https://taylorandfrancis.com/our-policies/ai-policy" class="uri">https://taylorandfrancis.com/our-policies/ai-policy</a>.
 </div>
-<div id="ref-taylor_francis_ai_writing" class="csl-entry">
-Taylor &amp; Francis Author Services. (2024). <em>Using AI to write your paper</em>. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6" class="uri">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6</a>.
-</div>
 <div id="ref-taylor_francis_ai" class="csl-entry">
-Taylor &amp; Francis Group. (2024). <em>Authorship guidelines and artificial intelligence</em>. Editorial Policy. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/</a>
+Taylor &amp; Francis Author Services. (2024a). <em>Authorship guidelines and artificial intelligence</em>. Editorial Policy. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/ethics-for-journal-authors/</a>
+</div>
+<div id="ref-taylor_francis_ai_writing" class="csl-entry">
+Taylor &amp; Francis Author Services. (2024b). <em>Using AI to write your paper</em>. <a href="https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6" class="uri">https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/#section6</a>.
 </div>
 <div id="ref-wiley_ai" class="csl-entry">
 Wiley. (2024). <em>Best practice guidelines on research integrity and publishing ethics</em>. Editorial Policy. <a href="https://authorservices.wiley.com/ethics-guidelines/index.html#5">https://authorservices.wiley.com/ethics-guidelines/index.html#5</a>
@@ -293,20 +293,20 @@ Wiley. (2024). <em>Best practice guidelines on research integrity and publishing
   author = {Pantaleo, Patricio Iván},
   title = {Authorship and {Contribution} in the {Age} of {AI:} {Notes}
     on the {Current} {Debate}},
-  date = {2025-06-13},
+  date = {2025-06-19},
   url = {https://patricio.pantaleo.ar/blog/posts/autorship-AI},
   doi = {10.62059/9x4p2w},
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-pantaleo2025" class="csl-entry quarto-appendix-citeas">
-Pantaleo, P. I. (2025, June 13). <em>Authorship and Contribution in the
+Pantaleo, P. I. (2025, June 19). <em>Authorship and Contribution in the
 Age of AI: Notes on the Current Debate</em> [Online post]. <a href="https://doi.org/10.62059/9x4p2w">https://doi.org/10.62059/9x4p2w</a>
 </div></div></section></div> ]]></description>
   <category>posts</category>
   <category>scholarly-publishing</category>
   <category>english</category>
   <guid>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</guid>
-  <pubDate>Fri, 13 Jun 2025 03:00:00 GMT</pubDate>
+  <pubDate>Thu, 19 Jun 2025 03:00:00 GMT</pubDate>
   <media:content url="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
