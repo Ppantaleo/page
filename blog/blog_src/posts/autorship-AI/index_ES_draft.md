@@ -1,6 +1,6 @@
 ---
 title: "Authorship and Contribution in the Age of AI: Notes on the Current Debate"
-dreaft: true
+draft: true
 author:
   - name: Patricio Iván Pantaleo
     orcid: 0000-0002-8104-8975
