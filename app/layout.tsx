@@ -4,6 +4,7 @@ import { Montserrat } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
+import MailChimpScript from "@/components/mailchimp-script"
 import Script from "next/script"
 
 const montserrat = Montserrat({
@@ -81,9 +82,9 @@ export default function RootLayout({
         <link href="https://fonts.cdnfonts.com/css/tan-pearl" rel="stylesheet" />
         <link rel="icon" href="/images/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
-        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9ff2d7319c483513cb68224bd/bf810a0f4a8dfcda83f6c4d52.js");</script>
       </head>
       <body className={`${montserrat.variable} font-sans`}>
+        <MailChimpScript />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
           {children}
@@ -102,7 +103,6 @@ export default function RootLayout({
             gtag('config', 'G-1CK9XW12H5');
           `}
         </Script>
-        
       </body>
     </html>
   )
