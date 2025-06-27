@@ -12,7 +12,7 @@ author:
 
 date: "2025-06-27"
 categories: [posts, essay, spanish]
-keywords: [artificial intelligence, decentralized AI, distributed technology, blockchain, decentralized computing, IPFS]
+keywords: [artificial intelligence, decentralized, AI, blockchain, IPFS]
 bibliography: post.bib
 csl: ../../apa.csl
 
