@@ -468,6 +468,21 @@ div.keywords,
   color: $text-primary;
 }
 
+.citation a, .footnote-ref {
+  text-decoration: underline;
+  text-decoration-color: $text-primary;
+  text-decoration-thickness: 0.3px;
+  text-underline-offset: 2px;
+}
+
+.blockquote {
+  font-size: 0.95em; /* 5% menor que el padre */
+}
+
+.quarto-float-fig .quarto-float-caption {
+  color: white;
+}
+
 .tippy-box {
   background: $gray-700 !important;
   color: $white !important;
