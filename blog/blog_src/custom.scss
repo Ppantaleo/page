@@ -479,8 +479,13 @@ div.keywords,
   font-size: 0.95em; /* 5% menor que el padre */
 }
 
-.quarto-float-fig .quarto-float-caption {
+/* Caption blanco solo en el tooltip de hover */
+.tippy-box .quarto-float-caption {
   color: white;
+}
+
+figcaption {
+  font-size: 0.8rem;
 }
 
 .tippy-box {
@@ -949,4 +954,12 @@ body footer:not(.nav-footer) {
 .nav-footer {
   display: block !important;
   visibility: visible !important;
+}
+
+// Estilos para comentarios
+
+.comment-separator {
+  margin: 2rem 0 1.5rem 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
 }

@@ -6,3 +6,4 @@ title-block-banner: true
 format:
   html:
     page-layout: article
+    include-after-body: disqus.html
