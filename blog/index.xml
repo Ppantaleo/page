@@ -141,13 +141,13 @@ Figura&nbsp;2: Comparación entre IA centralizada (CeAI) y IA descentralizada (D
 <p>Sin embargo, el análisis presentado revela que <strong>el problema fundamental no reside en la inteligencia artificial per se, sino en los modelos de centralización que la sustentan</strong>. La concentración de datos en manos de pocas corporaciones tecnológicas, la dependencia de infraestructuras centralizadas para el procesamiento de modelos y la falta de control de los usuarios sobre sus propios datos constituyen los verdaderos desafíos que la IA descentralizada busca abordar.</p>
 <p>Los datos han sido últimamente el factor determinante en el desarrollo de sistemas exitosos. Como demuestran los casos analizados, desde las primeras propuestas de <span class="citation" data-cites="MONTES2019354">Montes &amp; Goertzel (2019)</span> hasta las implementaciones críticas evaluadas por <span class="citation" data-cites="10.1049/blc2.70015">Mafrur (2025)</span>, la cuestión central no es desarrollar algoritmos más sofisticados, sino democratizar el acceso a los datos y redistribuir el control sobre las infraestructuras que los procesan. La IA descentralizada emerge así no como una mera innovación tecnológica, sino como una respuesta necesaria a la concentración de poder digital que caracteriza la era actual.</p>
 <p>La evolución hacia una IA más descentralizada no es meramente una cuestión técnica, sino una oportunidad para reimaginar cómo desarrollamos, implementamos y gobernamos las tecnologías que están redefiniendo nuestro mundo. En última instancia, el futuro de la inteligencia artificial será determinado por nuestra capacidad de resolver las tensiones entre eficiencia centralizada y autonomía descentralizada, entre innovación acelerada y control democrático. El futuro de la inteligencia artificial podría ser considerablemente más distribuido, democrático y resiliente de lo que las tendencias actuales sugieren, pero solo si logramos abordar la cuestión fundamental de quién controla los datos que alimentan estos sistemas.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Note 1">
+<div class="callout callout-style-default callout-note callout-titled" title="Uso de IA">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note 1
+Uso de IA
 </div>
 </div>
 <div class="callout-body-container callout-body">
