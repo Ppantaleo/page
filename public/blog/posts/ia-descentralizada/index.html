@@ -1,2 +1,993 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"></html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Patricio Iván Pantaleo">
+<meta name="keywords" content="inteligencia artificial, descentralizada, AI, blockchain, IPFS">
+<meta name="description" content="Un análisis sobre el estado actual y las perspectivas futuras de la inteligencia artificial descentralizada (DeAI). Se exploran las tecnologías emergentes, desafíos técnicos y las implicaciones de distribuir el poder computacional y la gobernanza de los sistemas de IA más allá de las estructuras centralizadas tradicionales.">
+
+<title>Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes – Patricio Pantaleo's Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f254c186f77590fdad851c0ccaa2da37.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1CK9XW12H5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1CK9XW12H5');
+</script>
+
+<script>
+// Mover el footer fuera del contenedor de Quarto
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('.nav-footer');
+    const quartoContent = document.querySelector('#quarto-content');
+    
+    if (footer && quartoContent) {
+        // Mover el footer después del contenedor de Quarto
+        quartoContent.parentNode.insertBefore(footer, quartoContent.nextSibling);
+    }
+});
+</script>
+
+<!-- Mailchimp -->
+
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9ff2d7319c483513cb68224bd/bf810a0f4a8dfcda83f6c4d52.js");</script>
+<meta name="quarto:status" content="draft">
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Inteligencia artificial descentralizada (DeAI)">
+<meta property="og:description" content="Un análisis sobre el estado actual y las perspectivas futuras de la IA descentralizada. Tecnologías emergentes y desafíos técnicos.">
+<meta property="og:image" content="https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/post.jpg">
+<meta property="og:site_name" content="Patricio Pantaleo's Blog">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image:alt" content="Collage fotográfico sobre inteligencia artificial descentralizada (DeAI)">
+<meta name="twitter:title" content="Inteligencia artificial descentralizada (DeAI)">
+<meta name="twitter:description" content="Un análisis sobre el estado actual y las perspectivas futuras de la IA descentralizada. Tecnologías emergentes y desafíos técnicos.">
+<meta name="twitter:image" content="https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/post.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Collage fotográfico sobre inteligencia artificial descentralizada (DeAI)">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Borrador</div>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="https://patricio.pantaleo.ar/" class="navbar-brand navbar-brand-logo">
+    <img src="../../logo.png" alt="Patricio Pantaleo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://patricio.pantaleo.ar"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://patricio.pantaleo.ar/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://patricio.pantaleo.ar/#contact"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes</h1>
+                  <div>
+        <div class="description">
+          <p>Un análisis sobre el estado actual y las perspectivas futuras de la inteligencia artificial descentralizada (DeAI). Se exploran las tecnologías emergentes, desafíos técnicos y las implicaciones de distribuir el poder computacional y la gobernanza de los sistemas de IA más allá de las estructuras centralizadas tradicionales.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">posts</div>
+                <div class="quarto-category">scholarly-publishing</div>
+                <div class="quarto-category">spanish</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor/a</div>
+      <div class="quarto-title-meta-contents">
+               <p>Patricio Iván Pantaleo <a href="https://orcid.org/0000-0002-8104-8975" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">27 de junio de 2025</p>
+      </div>
+    </div>
+    
+      
+      <div>
+      <div class="quarto-title-meta-heading">Doi</div>
+      <div class="quarto-title-meta-contents">
+        <p class="doi">
+          <a href="https://doi.org/10.62059/7k8m3n">10.62059/7k8m3n</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    
+
+  <div>
+    <div class="keywords">
+      <div class="block-title">Palabras clave</div>
+      <p>inteligencia artificial, descentralizada, AI, blockchain, IPFS</p>
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#centralización-vs.-descentralización-definiendo-el-paradigma-tecnológico" id="toc-centralización-vs.-descentralización-definiendo-el-paradigma-tecnológico" class="nav-link active" data-scroll-target="#centralización-vs.-descentralización-definiendo-el-paradigma-tecnológico">Centralización vs.&nbsp;descentralización: definiendo el paradigma tecnológico</a>
+  <ul class="collapse">
+  <li><a href="#de-la-tecnología-a-la-ciencia-el-movimiento-descentralizado" id="toc-de-la-tecnología-a-la-ciencia-el-movimiento-descentralizado" class="nav-link" data-scroll-target="#de-la-tecnología-a-la-ciencia-el-movimiento-descentralizado">De la tecnología a la ciencia: el movimiento descentralizado</a></li>
+  </ul></li>
+  <li><a href="#inteligencia-artificial-descentralizada-deai" id="toc-inteligencia-artificial-descentralizada-deai" class="nav-link" data-scroll-target="#inteligencia-artificial-descentralizada-deai">Inteligencia artificial descentralizada (DeAI)</a>
+  <ul class="collapse">
+  <li><a href="#revisión-histórica-de-la-distribución-a-la-descentralización" id="toc-revisión-histórica-de-la-distribución-a-la-descentralización" class="nav-link" data-scroll-target="#revisión-histórica-de-la-distribución-a-la-descentralización">Revisión histórica: de la distribución a la descentralización</a></li>
+  <li><a href="#estado-actual-características-e-implementaciones-de-inteligencia-artificial-descentralizada-deai" id="toc-estado-actual-características-e-implementaciones-de-inteligencia-artificial-descentralizada-deai" class="nav-link" data-scroll-target="#estado-actual-características-e-implementaciones-de-inteligencia-artificial-descentralizada-deai">Estado actual, características e implementaciones de inteligencia artificial descentralizada (DeAI)</a></li>
+  </ul></li>
+  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones">Conclusiones</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="index.epub"><i class="bi bi-file"></i>ePub</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="figure">
+<img src="post.jpg" class="img-fluid quarto-figure quarto-figure-center">
+<p style="text-align: center; font-size: 0.8em;">
+Foto de <a href="https://unsplash.com/es/@purzlbaum?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Claudio Schwarz</a> en <a href="https://unsplash.com/es/fotos/el-arte-del-graffiti-plantea-una-pregunta-al-espectador-G7cowNRODpc?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a>
+</p>
+</div>
+<p>En tiempos donde la inteligencia artificial alborea en el escenario de lo cotidiano, donde su utilización se afianza día a día y los interrogantes de uso son cada vez mayores, se plantea aquí una guía lectura nodal para un marco crítico que se proponga analizarla. Esta guía reside en una conceptualización básica, la de <strong>inteligencia artificial descentralizada (DeAI)</strong>. A su vez, presupone una diferenciación inicial sobre la cuál partir; la de recursos de usos centralizados en diferencia a aquellos recursos que son de uso descentralizado. Así, este post se propone abordar las principales orientaciones de lectura para un fenómeno que promete avanzar cada vez más en la vida humana, la inteligencia artificial, y la gestión de recursos que la sustentan.</p>
+<section id="centralización-vs.-descentralización-definiendo-el-paradigma-tecnológico" class="level2">
+<h2 class="anchored" data-anchor-id="centralización-vs.-descentralización-definiendo-el-paradigma-tecnológico">Centralización vs.&nbsp;descentralización: definiendo el paradigma tecnológico</h2>
+<p>Para comprender el alcance y las implicaciones de la inteligencia artificial descentralizada, es fundamental establecer primero la distinción entre sistemas centralizados y descentralizados en el ámbito tecnológico.</p>
+<p>Los <strong>sistemas centralizados</strong> se caracterizan por concentrar el control, procesamiento y toma de decisiones en un punto único o en un número limitado de entidades. En este modelo, una autoridad central —típicamente una empresa o institución— posee y opera la infraestructura, controla los protocolos de acceso, y define las reglas de funcionamiento. Los usuarios dependen completamente de esta entidad central para acceder al servicio, procesamiento de datos o funcionalidad específica.</p>
+<p>Adicionalmente, los términos de uso y privacidad suelen expresar (a veces confusamente) qué se hace con los datos y contenido que en el sistema se procesan y quien lo hace. En un sistema centralizado, una empresa o institución deciden por el común de sus usuarios que aceptaron previamente las condiciones de uso. Esto, probablemente es a lo que estés acostumbrado si no has profundizado a consciencia en el manejo de datos en el mundo actual; y lo es así, porque mayoritariamente en la internet vigente los sistemas centralizados tienen el poder (y la potestad) de imponerse como elección frente al usuario antes otras opciones. Por eso, la práctica consciente de elección es fundamental para acceder a otras fuentes de gestión de recursos virtuales.</p>
+<p>Esta predominancia de sistemas centralizados no es meramente accidental, sino el resultado de estrategias deliberadas de control de mercado y sesgos algorítmicos sistemáticos. La investigación académica ha demostrado que los motores de búsqueda dominantes perpetúan sesgos sociales existentes, donde el <strong>sesgo algorítmico</strong> es consistente con la discriminación social <span class="citation" data-cites="LIN2023102068">(<a href="#ref-LIN2023102068" role="doc-biblioref">Lin et&nbsp;al., 2023</a>)</span>, afectando particularmente a grupos históricamente desfavorecidos. Además, la concentración monopólica en estos mercados digitales resulta contraproducente para la innovación y calidad del servicio, ya que “una plataforma monopólica dominante resulta en precios más altos y subinversión en innovaciones de mejora de calidad” <span class="citation" data-cites="10.1093/joclec/nhs037">(<a href="#ref-10.1093/joclec/nhs037" role="doc-biblioref">Lianos &amp; Motchenkova, 2013</a>)</span>. Empresas como <strong>Google mantienen su dominancia</strong> no solo por superioridad técnica, sino <strong>gastando más de $26 mil millones anuales para asegurar su posición como motor de búsqueda predeterminado</strong> <span class="citation" data-cites="Foucart2025">(<a href="#ref-Foucart2025" role="doc-biblioref">Foucart, 2025</a>)</span>, lo que evidencia cómo el control de la configuración por defecto se convierte en una herramienta de poder que limita la elección del usuario. Esta realidad subraya la importancia crítica de desarrollar marcos alternativos que promuevan la diversidad de plataformas y la transparencia algorítmica <span class="citation" data-cites="MOWSHOWITZ2002141">(<a href="#ref-MOWSHOWITZ2002141" role="doc-biblioref">Mowshowitz &amp; Kawaguchi, 2002</a>)</span>, especialmente en contextos donde los efectos de red pueden utilizarse para crear ecosistemas más equilibrados <span class="citation" data-cites="Schuler2023">(<a href="#ref-Schuler2023" role="doc-biblioref">Schüler &amp; Petrik, 2023</a>)</span>.</p>
+<p>Un ejemplo ilustrativo de esta dinámica de poder centralizado también se puede observar en los términos de uso de plataformas de inteligencia artificial como OpenAI, donde la empresa establece unilateralmente las condiciones bajo las cuales los usuarios pueden acceder y utilizar sus servicios <span class="citation" data-cites="OpenAI2025Terms">(<a href="#ref-OpenAI2025Terms" role="doc-biblioref">OpenAI, 2025</a>)</span>. Estos términos determinan no solo qué tipo de contenido puede procesarse, sino también cómo se utilizarán los datos de entrada del usuario, qué derechos retiene la plataforma sobre las interacciones y bajo qué circunstancias puede suspenderse o terminarse el acceso al servicio. El usuario, para acceder a estas herramientas de IA, debe aceptar en bloque estas condiciones sin posibilidad de negociación, ejemplificando cómo los sistemas centralizados ejercen control sobre millones de usuarios mediante un simple clic de aceptación que pocas veces es leído o comprendido en su totalidad. Claro está, el problema principal no está en que una empresa establezca las condiciones bajo las cuáles puede ofrecer sus servicios, sino en cuando estas prácticas empiezan a ser monopólicas, hegemónicas y poco éticas en el uso de datos.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Uso de Wayback Machine para referencias web">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Uso de Wayback Machine para referencias web
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En algunas referencias - como <span class="citation" data-cites="OpenAI2025Terms">OpenAI (<a href="#ref-OpenAI2025Terms" role="doc-biblioref">2025</a>)</span> - se utiliza <a href="https://web.archive.org">Wayback Machine</a> en lugar de las URLs originales para preservar el estado específico de documentos web que cambian frecuentemente, como términos de uso y políticas de privacidad. Esto garantiza que los lectores puedan acceder exactamente al mismo contenido citado en el momento de la investigación, mejorando la verificabilidad y reproducibilidad del trabajo académico.</p>
+</div>
+</div>
+<p>Por el contrario, los <strong>sistemas descentralizados</strong> distribuyen el control y la funcionalidad entre múltiples participantes o nodos en una red. No existe una autoridad única que controle completamente el sistema; en su lugar, las decisiones se toman colectivamente, el procesamiento se distribuye y la resiliencia del sistema no depende de un punto único de fallo. La descentralización representa un paradigma fundamental que desafía los modelos tradicionales de organización jerárquica. A diferencia de los sistemas centralizados, donde existe uno o pocos puntos de control que coordinan todas las operaciones, los sistemas descentralizados distribuyen esta responsabilidad entre múltiples entidades autónomas que colaboran para lograr objetivos comunes <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005</a>)</span>. Esta distribución del poder de decisión no solo reduce la dependencia de infraestructura crítica, sino que también permite una mayor resiliencia ante fallos, ataques o intentos de censura.</p>
+<p>En el contexto de las redes informáticas, un ejemplo paradigmático son las redes peer-to-peer (P2P), que representan sistemas distribuidos donde los participantes, denominados <em>peers</em> o nodos, actúan simultáneamente como clientes y servidores <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005</a>)</span>. Estas redes se caracterizan por formar estructuras de red superpuestas (overlay networks) que se auto-organizan sobre la infraestructura existente del protocolo de Internet. Las redes P2P van más allá de los servicios tradicionales cliente-servidor al permitir que cada peer contribuya con recursos (ancho de banda, almacenamiento, capacidad de procesamiento) mientras simultáneamente accede a los recursos proporcionados por otros peers <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005</a>)</span>. Esta simetría en los roles elimina las limitaciones de escalabilidad inherentes a los sistemas centralizados y crea un modelo de compartición de recursos más eficiente y democrático, al menos en teoría.</p>
+<p>Existen diferentes tipos de redes P2P según su estructura organizacional. Las redes P2P estructuradas utilizan algoritmos determinísticos para organizar los peers y colocar los datos en ubicaciones específicas, empleando técnicas como las tablas hash distribuidas (DHT) que garantizan la localización de cualquier objeto de datos en un número logarítmico de saltos <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005</a>)</span>. Por otro lado, las redes P2P no estructuradas organizan los peers en grafos aleatorios sin un control estricto sobre la colocación de datos, utilizando técnicas como <em>flooding</em> o <em>random walks</em> para la búsqueda de contenido, lo que las hace más resilientes a la entrada y salida dinámica de peers pero menos eficientes para localizar elementos raros.</p>
+<p>Las características fundamentales de los sistemas descentralizados incluyen múltiples dimensiones interconectadas según <span class="citation" data-cites="lua2005survey">Lua et&nbsp;al. (<a href="#ref-lua2005survey" role="doc-biblioref">2005</a>)</span>:</p>
+<ol type="1">
+<li><p><strong>Auto-organización y dinamismo</strong>: Los nodos se unen y abandonan la red dinámicamente sin requerir configuración centralizada o aprobación de autoridades. Este proceso implica mecanismos de descubrimiento de <em>peers</em>, establecimiento de conexiones y mantenimiento de la topología de red de forma autónoma. La capacidad de auto-organización permite que el sistema se adapte continuamente a cambios en la disponibilidad de recursos y patrones de uso.</p></li>
+<li><p><strong>Simetría de roles y reciprocidad</strong>: Cada participante puede funcionar tanto como proveedor como consumidor de recursos, eliminando la distinción tradicional cliente-servidor. Esta simetría fomenta un modelo colaborativo donde la contribución de recursos por parte de cada peer beneficia al conjunto del sistema. Sin embargo, esta característica también introduce desafíos relacionados con incentivos para la cooperación y prevención del comportamiento oportunista.</p></li>
+<li><p><strong>Tolerancia a fallos y resiliencia</strong>: La ausencia de puntos únicos de fallo permite que el sistema continúe operando incluso cuando algunos nodos fallen, sean atacados o abandonen la red voluntariamente. Esta resiliencia se logra mediante redundancia de datos, múltiples rutas de enrutamiento y mecanismos de recuperación distribuidos. La capacidad de mantener la funcionalidad ante fallos parciales es una ventaja crítica sobre los sistemas centralizados.</p></li>
+<li><p><strong>Escalabilidad horizontal</strong>: La capacidad del sistema para crecer agregando más nodos sin degradar significativamente el rendimiento global. En teoría, cada nuevo peer que se une a la red contribuye con recursos adicionales, lo que puede mejorar la capacidad total del sistema. No obstante, esto requiere algoritmos eficientes que mantengan las propiedades de enrutamiento y búsqueda independientemente del tamaño de la red.</p></li>
+<li><p><strong>Resistencia a la censura y autonomía</strong>: La distribución del control dificulta el bloqueo, la manipulación o el cierre del sistema por parte de autoridades centrales o actores maliciosos. Esta característica es particularmente relevante en contextos donde la libertad de información y la privacidad son prioritarias. La ausencia de chokepoints centralizados hace que el sistema sea inherentemente más resistente a la interferencia externa.</p></li>
+</ol>
+<p>A pesar de sus ventajas, los sistemas descentralizados y las redes P2P presentan desafíos y limitaciones significativas que deben considerarse en su implementación. En primer lugar, las redes P2P no estructuradas como <em>Gnutella</em> enfrentaron problemas de escalabilidad debido a que los mecanismos de búsqueda basados en <em>flooding</em> consumen excesivo ancho de banda y generan cargas inesperadas en la red, además de que las consultas para contenido raro o poco replicado pueden fallar debido a las limitaciones del horizonte de búsqueda impuestas por el TTL (Time-To-Live) <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005, p. 85</a>)</span>. Por otro lado, aunque las redes P2P estructuradas solucionan parcialmente estos problemas mediante algoritmos determinísticos, introducen complejidad adicional y pueden experimentar alta latencia de búsqueda cuando el camino de la red superpuesta difiere significativamente del camino físico subyacente, lo que puede afectar adversamente el rendimiento de las aplicaciones <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005, pp. 88-90</a>)</span>. Adicionalmente, estos sistemas son vulnerables a diversos ataques de seguridad, incluyendo el retorno de objetos de datos incorrectos a las consultas, corrupción o denegación de acceso a réplicas de datos, suplantación de identidad para almacenar réplicas en peers ilegítimos, y ataques de colusión donde <em>peers</em> maliciosos colaboran para comprometer el sistema <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005</a>)</span>. Finalmente, la gestión de incentivos representa un desafío fundamental, ya que sin mecanismos adecuados para prevenir el comportamiento oportunista (free-riding), la confiabilidad y el valor del sistema pueden verse comprometidos cuando los usuarios se benefician de los recursos compartidos sin contribuir proporcionalmente <span class="citation" data-cites="lua2005survey">(<a href="#ref-lua2005survey" role="doc-biblioref">Lua et&nbsp;al., 2005</a>)</span>.</p>
+<p>Los desafíos inherentes a las primeras redes P2P han catalizado el desarrollo de nuevas generaciones de sistemas descentralizados que incorporan mecanismos de incentivos más sofisticados y arquitecturas mejoradas. BitTorrent v2 ha evolucionado con cifrado SHA-256 y optimizaciones que hacen las descargas más rápidas y seguras, manteniéndose como el protocolo P2P dominante <span class="citation" data-cites="bittorrent2022">(<a href="#ref-bittorrent2022" role="doc-biblioref">Hipertextual, 2022</a>)</span>. Por otro lado, IPFS (Sistema de Archivos Interplanetario) <span class="citation" data-cites="ipfs2024">(<a href="#ref-ipfs2024" role="doc-biblioref">Protocol Labs, 2024</a>)</span> representa un paradigma más avanzado que puede combinar tecnologías P2P con blockchain para crear un protocolo de hipermedia descentralizado direccionable por contenido, diseñado para hacer la web más rápida, segura y abierta <span class="citation" data-cites="ipfs2020">(<a href="#ref-ipfs2020" role="doc-biblioref">Desde Linux, 2020</a>)</span>. Mientras tanto, las redes blockchain como Bitcoin y Ethereum han resuelto el problema fundamental de los incentivos mediante mecanismos criptoeconómicos que recompensan la participación y penalizan el comportamiento malicioso, creando sistemas de contabilidad distribuidos donde el problema del doble gasto y el free-riding son superados mediante consenso distribuido y recompensas tokenizadas <span class="citation" data-cites="p2p2023">(<a href="#ref-p2p2023" role="doc-biblioref">Bit2Me Academy, 2023</a>)</span>. Estas tecnologías modernas demuestran cómo los principios de descentralización han evolucionado desde las limitaciones de las primeras redes P2P hacia ecosistemas más robustos y sostenibles.</p>
+<section id="de-la-tecnología-a-la-ciencia-el-movimiento-descentralizado" class="level3">
+<h3 class="anchored" data-anchor-id="de-la-tecnología-a-la-ciencia-el-movimiento-descentralizado">De la tecnología a la ciencia: el movimiento descentralizado</h3>
+<p>Esta dicotomía entre centralización y descentralización trasciende el ámbito puramente tecnológico y se extiende a dominios como la investigación científica. Como se ha analizado en trabajos previos <span class="citation" data-cites="pantaleo2024science">(<a href="#ref-pantaleo2024science" role="doc-biblioref">Pantaleo, 2024a</a>)</span>, la ciencia también enfrenta tensiones entre modelos centralizados —controlados por grandes grupos económicos, instituciones hegemónicas y sistemas de financiamiento concentrados— y enfoques descentralizados que buscan democratizar el acceso al conocimiento, diversificar las fuentes de financiamiento, y promover la colaboración abierta.</p>
+<p>El diálogo con referentes latinoamericanos en ciencia descentralizada <span class="citation" data-cites="pantaleo2024podcast">(<a href="#ref-pantaleo2024podcast" role="doc-biblioref">Pantaleo, 2024b</a>)</span> revela que esta transformación no es meramente técnica, sino que implica una redefinición fundamental de las relaciones de poder, los mecanismos de validación, y los criterios de calidad en la producción de conocimiento. Estas reflexiones sobre la descentralización científica proporcionan un marco conceptual valioso para entender las dinámicas similares que emergen en el desarrollo de la inteligencia artificial.</p>
+</section>
+</section>
+<section id="inteligencia-artificial-descentralizada-deai" class="level2">
+<h2 class="anchored" data-anchor-id="inteligencia-artificial-descentralizada-deai">Inteligencia artificial descentralizada (DeAI)</h2>
+<p>La inteligencia artificial ha experimentado un crecimiento exponencial en los últimos años, transformando sectores desde la medicina hasta el entretenimiento. Sin embargo, este desarrollo ha estado dominado por grandes corporaciones tecnológicas que concentran el poder computacional, los datos y el control sobre los sistemas más avanzados, como ya se viene describiendo el funcionamiento de sistemas centralizados. En este contexto es pertinente plantear un paradigma alternativo: la <strong>inteligencia artificial descentralizada (DeAI)</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="*DeAI*, *DzAI* o *DEAI*. Definir el acrónimo">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<em>DeAI</em>, <em>DzAI</em> o <em>DEAI</em>. Definir el acrónimo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En este trabajo se pueden ver distintos acrónimos que se utilizan para referir a inteligencia artificial descentralizada. Se usa <em>DzAI</em> <span class="citation" data-cites="demazeau1990decentralized">(<a href="#ref-demazeau1990decentralized" role="doc-biblioref">Demazeau &amp; Müller, 1990</a>)</span> o <em>DEAI</em> <span class="citation" data-cites="KERSIC2025486">(<a href="#ref-KERSIC2025486" role="doc-biblioref">Keršič &amp; Turkanović, 2025</a>)</span>. Se opta aquí, sin embargo, por <strong>DeAI</strong> <span class="citation" data-cites="9839452">(<a href="#ref-9839452" role="doc-biblioref">Cao, 2022</a>)</span> para mantener consistencia con otros acrónimos actuales en el campo de las tecnologías o disciplinas descentralizadas como <em>DeSci</em> <span class="citation" data-cites="pantaleo2024science">(<a href="#ref-pantaleo2024science" role="doc-biblioref">Pantaleo, 2024a</a>)</span> o <em>DeFi</em>. <em>DeAI</em> refiere así a <em>Decentralized (De)</em> <em>Artificial Intelligence (AI)</em>.</p>
+</div>
+</div>
+<section id="revisión-histórica-de-la-distribución-a-la-descentralización" class="level3">
+<h3 class="anchored" data-anchor-id="revisión-histórica-de-la-distribución-a-la-descentralización">Revisión histórica: de la distribución a la descentralización</h3>
+<p>La conceptualización de sistemas de inteligencia artificial no centralizados se remonta a fines de los años 80. <span class="citation" data-cites="demazeau1990decentralized">Demazeau &amp; Müller (<a href="#ref-demazeau1990decentralized" role="doc-biblioref">1990</a>)</span> establecieron una distinción seminal entre dos paradigmas fundamentales que sentarían las bases teóricas para los desarrollos posteriores. Su trabajo diferenciaba claramente entre <em>Distributed Artificial Intelligence (DAI)</em> y <em>Decentralized Artificial Intelligence (DzAI)</em>, una distinción que resulta crucial para comprender la evolución conceptual del campo.</p>
+<p>El <em>DAI</em> tradicional se enfocaba en la solución colaborativa de problemas globales mediante un grupo distribuido de entidades que trabajaban coordinadamente hacia objetivos comunes. Este enfoque requería intercambio mutuo de información constante para lograr un rendimiento colaborativo efectivo, con las entidades distribuidas tanto lógica como geográficamente. En contraste, el <em>DzAI</em> se centraba en la actividad de agentes completamente autónomos operando en un entorno multi-agente, donde cada agente actuaba racionalmente e intencionalmente respecto a sus propios objetivos específicos.</p>
+<p>Esta diferenciación temprana es particularmente relevante porque el concepto moderno de IA descentralizada retoma elementos conceptuales del <em>DzAI</em> original: entidades autónomas que persiguen sus propios incentivos, aunque ahora mediados por mecanismos económicos y blockchain que no existían en 1990.</p>
+<p>La verdadera transformación del concepto llegó así con la integración de tecnologías blockchain y la visión de democratización de la inteligencia artificial. <span class="citation" data-cites="MONTES2019354">Montes &amp; Goertzel (<a href="#ref-MONTES2019354" role="doc-biblioref">2019</a>)</span> presentaron una crítica fundamental al estado actual de la IA, argumentando que la dominación por parte de un oligopolio de mega-corporaciones centralizadas crea un terreno de juego inequitativo con implicaciones potencialmente negativas para la humanidad. Su propuesta de un sistema “distributed, decentralized, and democratized” articuló una visión comprehensiva de cómo la tecnología de <em>ledger</em> distribuido podría transformar fundamentalmente el desarrollo y acceso a servicios de IA. Los autores identificaron problemas sistémicos en el modelo centralizado actual: la necesidad universal de servicios de IA por parte de empresas que carecen del capital necesario para desarrollar sus propios sistemas, y la falta de visibilidad y fuentes de ingresos para desarrolladores independientes de IA. Esta asimetría en el acceso a recursos y oportunidades no solo limita la innovación, sino que también concentra el poder tecnológico en pocas manos, creando dependencias peligrosas y limitando la diversidad de enfoques y aplicaciones. Ya en 2019 los autores comentaban:</p>
+<blockquote class="blockquote">
+<p>Artificial intelligence is a rapidly growing industry with widespread predictions of dramatically changing the economic and labor landscape of the world. By 2020, the global AI market is projected at $47 billion (USD) and the global big data analytics market at $203 billion. To date, the overwhelming majority of AI development is done by a handful of technology mega-corporations (e.g.&nbsp;Facebook, Google, Amazon, IBM, Microsoft, Baidu, etc.). While the world’s population is over 7 billion people, only around 10,000 people in roughly seven countries are writing the code for all of AI (Shen, 2017). By remaining in the hands of a few, the trajectory of AI applications may be significantly compromised. The datasets used to develop such AI and the AIs themselves are biased and may not be generalizable to the wider population, and the companies are beholden to their stakeholder’s interests. The result is a ‘technocracy’ in which the future of one of the most potent set of technologies in the history of humankind is spoken for by a small biased minority <span class="citation" data-cites="MONTES2019354">(<a href="#ref-MONTES2019354" role="doc-biblioref">Montes &amp; Goertzel, 2019, p. 1</a>)</span>.</p>
+</blockquote>
+<p><span class="citation" data-cites="8946257">Harris &amp; Waggoner (<a href="#ref-8946257" role="doc-biblioref">2019</a>)</span>, por su parte, materializaron estas ideas teóricas en un framework práctico y funcional para “Decentralized and Collaborative AI on Blockchain”. Su propuesta permitía que múltiples participantes colaboraran para construir datasets de forma distribuida y compartir modelos continuamente actualizados en una blockchain pública mediante contratos inteligentes. Este framework no solo democratizaba el acceso a modelos de IA, sino que también creaba incentivos económicos para la participación y mantenimiento de la calidad de los datos. El sistema propuesto incluía mecanismos sofisticados de validación descentralizada, donde los participantes podían verificar y validar contribuciones de datos sin necesidad de una autoridad central. Esto representaba un avance significativo hacia la autogobernanza de sistemas de IA, donde la calidad y integridad se mantienen a través de incentivos económicos y mecanismos de consenso distribuido.</p>
+<p>Sin embargo, el trabajo también identificó limitaciones importantes en la descentralización completa. Algunos mecanismos de incentivos requerían autoridades externas que proporcionaran conjuntos de datos de prueba y fondos de recompensa, mientras que la validación frecuentemente dependía del modelo existente más que de consenso distribuido puro. Además, las restricciones técnicas de Ethereum, particularmente los altos costos de gas, limitaban la escalabilidad del sistema a modelos simples y datos pequeños, principalmente texto en lugar de aplicaciones complejas como procesamiento de imágenes. El sistema también enfrentaba vulnerabilidades ante agentes maliciosos con recursos suficientes y problemas de datos ambiguos que podían comprometer la calidad del modelo. No obstante, proporcionaron una <a href="https://github.com/microsoft/0xDeCA10B">implementación de código abierto completa</a> que demostró la viabilidad práctica del concepto y estableció las bases para futuras investigaciones en IA colaborativa descentralizada.</p>
+<p>Por otra parte, en <span class="citation" data-cites="9839452">Cao (<a href="#ref-9839452" role="doc-biblioref">2022</a>)</span> se puede ver como se consolidó y expandió significativamente el campo al proporcionar un marco conceptual comprehensivo que situaba la IA descentralizada como un paradigma distinto que trasciende tanto la IA centralizada como la distribuida tradicional (DAI). Su trabajo integró el concepto emergente de edge intelligence y exploró las intersecciones sinérgicas con tecnologías transformadoras como blockchain inteligente, Web3, metaverso y ciencia descentralizada (DeSci). Esta consolidación teórica fue crucial porque estableció la IA descentralizada no como una simple variación técnica de enfoques existentes, sino como un paradigma fundamentalmente nuevo que requiere consideraciones distintas en términos de arquitectura, gobernanza, y filosofía de desarrollo. <span class="citation" data-cites="9839452">Cao (<a href="#ref-9839452" role="doc-biblioref">2022</a>)</span> argumentó que la complementariedad y metasíntesis entre enfoques centralizados y descentralizados podría desbloquear un nuevo potencial para el desarrollo de sistemas de IA más robustos, equitativos y beneficiosos. El trabajo también exploró cómo la IA descentralizada podría habilitar y promover ecosistemas tecnológicos emergentes desde perspectivas disciplinarias, técnicas, prácticas y más amplias. Esta visión holística reconocía que la descentralización de la IA no es meramente un cambio técnico, sino una transformación que impacta aspectos económicos, sociales y éticos del desarrollo tecnológico.</p>
+<p>Para ilustrar la complejidad arquitectónica de este nuevo paradigma, los autores presentaron un mapa conceptual que sintetiza las principales configuraciones de la IA descentralizada. La <a href="#fig-1" class="quarto-xref">Figura&nbsp;1</a> muestra cinco arquitecturas fundamentales que operan en diferentes niveles de la infraestructura de red: desde sistemas P2P completamente descentralizados en dispositivos finales, hasta configuraciones híbridas que integran dispositivos, edge computing y cloud computing. Esta taxonomía arquitectónica demuestra cómo la IA descentralizada puede adaptarse a diferentes contextos operacionales, ya sea mediante el intercambio de datos, el intercambio de modelos, o configuraciones híbridas que optimizan tanto la privacidad como la eficiencia computacional.</p>
+<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig1.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: IA descentralizada: sintetizando IA en dispositivo, edge AI, y cloud AI. Ⓐ IA P2P en dispositivo. Ⓑ Edge AI con intercambio de datos. Ⓒ Edge AI con intercambio de modelos. Ⓓ Edge AI híbrida dispositivo-edge-cloud. <span class="citation" data-cites="9839452">Cao (<a href="#ref-9839452" role="doc-biblioref">2022</a>)</span>
+</figcaption>
+</figure>
+</div>
+<p>Las cinco arquitecturas ilustradas en la <a href="#fig-1" class="quarto-xref">Figura&nbsp;1</a> permiten diferentes grados de descentralización y especialización funcional, desde redes completamente distribuidas donde los dispositivos se conectan directamente entre sí, hasta sistemas híbridos que aprovechan las ventajas de cada nivel de la infraestructura de red para optimizar el rendimiento y la privacidad de las aplicaciones de IA.</p>
+<p>Finalmente, para consolidar la distinción conceptual entre ambos paradigmas, los autores presentaron una comparación sistemática que abarca los aspectos fundamentales de cada enfoque. La <a href="#fig-comparison" class="quarto-xref">Figura&nbsp;2</a> compara las propiedades, características, ventajas y desventajas de la IA centralizada (CeAI) y la IA descentralizada (DeAI) en términos de los aspectos principales de la IA: metodología, objetivos, inteligencia, tareas, datos y recursos, modelos, arquitecturas, procesos, mecanismos, computación, comunicación, toma de decisiones, salida, privacidad y seguridad. Esta comparación también demuestra la necesidad de integrar y equilibrar CeAI y DeAI en sistemas de IA complejos y resolución inteligente de problemas.</p>
+<div id="fig-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig2.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Comparación entre IA centralizada (CeAI) y IA descentralizada (DeAI). <span class="citation" data-cites="9839452">Cao (<a href="#ref-9839452" role="doc-biblioref">2022</a>)</span>
+</figcaption>
+</figure>
+</div>
+<p>La <a href="#fig-comparison" class="quarto-xref">Figura&nbsp;2</a> revela que, más allá de representar paradigmas opuestos, CeAI y DeAI exhiben características complementarias que sugieren la necesidad de enfoques híbridos para sistemas de IA complejos. Esta complementariedad arquitectónica y funcional establece las bases teóricas para el desarrollo de sistemas que puedan aprovechar las fortalezas de ambos paradigmas según los requisitos específicos de cada aplicación.</p>
+</section>
+<section id="estado-actual-características-e-implementaciones-de-inteligencia-artificial-descentralizada-deai" class="level3">
+<h3 class="anchored" data-anchor-id="estado-actual-características-e-implementaciones-de-inteligencia-artificial-descentralizada-deai">Estado actual, características e implementaciones de inteligencia artificial descentralizada (DeAI)</h3>
+<p>El campo de la IA descentralizada ha experimentado una evolución conceptual significativa que requiere un análisis sistemático de sus componentes fundamentales. <span class="citation" data-cites="KERSIC2025486">Keršič &amp; Turkanović (<a href="#ref-KERSIC2025486" role="doc-biblioref">2025</a>)</span> realizaron una revisión sistemática de literatura que analizó 71 estudios para identificar los bloques constructivos esenciales de los sistemas DeAI. Su investigación adoptó un enfoque <em>bottom-up</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, categorizando los componentes técnicos fundamentales que constituyen las redes y soluciones de IA descentralizada. El estudio de Keršič y Turkanović distingue claramente entre los paradigmas históricos de inteligencia artificial distribuida y los enfoques modernos de descentralización. Mientras que el Distributed AI (DAI) tradicional y los Multi-Agent Systems (MAS) se desarrollaron desde los años 70 para distribuir computación pero manteniendo control centralizado, la IA descentralizada moderna incorpora principios Web3 fundamentales: descentralización genuina, auto-soberanía, control de datos por parte de usuarios, ausencia de governance central, y privacidad nativa. Los bloques constructivos identificados incluyen componentes de red descentralizada, mecanismos de consenso adaptados para <em>workloads</em> de IA, sistemas de incentivos económicos, protocolos de interoperabilidad y arquitecturas de <em>edge intelligence</em>. Estos componentes trascienden las limitaciones de sistemas centralizados al eliminar puntos únicos de control y crear ecosistemas donde la innovación puede emerger orgánicamente de comunidades diversas.</p>
+<p>La integración de <em>edge intelligence</em> representa uno de los avances más significativos en la arquitectura de IA descentralizada. <span class="citation" data-cites="KERSIC2025486">Keršič &amp; Turkanović (<a href="#ref-KERSIC2025486" role="doc-biblioref">2025</a>)</span> identifican que este paradigma permite procesamiento local de IA cerca de las fuentes de datos, reduciendo latencia, mejorando privacidad, y disminuyendo dependencias de infraestructuras centralizadas. Esta distribución geográfica del poder computacional no es meramente una optimización técnica, sino un cambio fundamental que habilita aplicaciones previamente impracticables. La <em>edge intelligence</em> se convierte en componente esencial para aplicaciones como procesamiento de IA en tiempo real en dispositivos IoT, vehículos autónomos con capacidades de decisión local y sistemas móviles que operan independientemente de conectividad constante. Esta arquitectura distribuida crea resiliencia sistémica donde la red puede continuar funcionando incluso cuando nodos individuales fallan o son comprometidos.</p>
+<p>La IA descentralizada fundamentalmente redistribuye la capacidad computacional a través de múltiples nodos geográficamente dispersos, incorporando principios de edge intelligence que permiten procesamiento local cerca de las fuentes de datos. <span class="citation" data-cites="9839452">Cao (<a href="#ref-9839452" role="doc-biblioref">2022</a>)</span> enfatiza que esta distribución no es meramente una optimización técnica, sino un cambio paradigmático que reduce latencia, mejora privacidad, y disminuye dependencias de infraestructuras centralizadas vulnerables. Esta arquitectura distribuida habilita aplicaciones que antes eran impracticables, como procesamiento de IA en tiempo real en dispositivos IoT, vehículos autónomos con capacidades de decisión local, y sistemas de IA móviles que pueden operar independientemente de conectividad constante a la nube. La edge intelligence se convierte en un componente esencial que extiende las capacidades de IA directamente a los puntos de interacción con el mundo físico.</p>
+<p>Los sistemas de IA descentralizada implementan mecanismos de gobernanza donde las decisiones críticas se toman colectivamente a través de procesos de consenso distribuido. <span class="citation" data-cites="8946257">Harris &amp; Waggoner (<a href="#ref-8946257" role="doc-biblioref">2019</a>)</span> demostraron cómo estos mecanismos pueden funcionar en la práctica, con participantes validando contribuciones de datos y actualizaciones de modelos sin requerir autoridades centrales. Estos sistemas de gobernanza distribuida van más allá de la simple votación; incorporan incentivos económicos sofisticados que alinean los intereses individuales con el bienestar colectivo del sistema. Los mecanismos de <em>Self-Assessment</em> validados por <span class="citation" data-cites="10.1007/978-3-030-59638-5_10">Harris (<a href="#ref-10.1007/978-3-030-59638-5_10" role="doc-biblioref">2020</a>)</span> muestran cómo la calidad puede emerger orgánicamente de la participación incentivizada, creando sistemas autoregulados que mejoran con el tiempo.</p>
+<p>Una característica fundamental es el mantenimiento del control de datos en manos de sus creadores originales, contrastando dramáticamente con modelos centralizados donde corporaciones acumulan vastos datasets propietarios. <span class="citation" data-cites="MONTES2019354">Montes &amp; Goertzel (<a href="#ref-MONTES2019354" role="doc-biblioref">2019</a>)</span> identifican esto como crucial para abordar preocupaciones sobre privacidad, monopolización de información, y equidad en el acceso a recursos de datos. Este enfoque de soberanía de datos permite nuevos modelos de colaboración donde los participantes pueden contribuir a sistemas de IA sin sacrificar control sobre su información personal o propietaria. Los datos pueden permanecer localmente mientras contribuyen a modelos globales a través de técnicas como <em>federated learning</em> y <em>privacy-preserving computation</em>.</p>
+<p>En <span class="citation" data-cites="10.1007/978-3-030-59638-5_10">Harris (<a href="#ref-10.1007/978-3-030-59638-5_10" role="doc-biblioref">2020</a>)</span> se puede abordar una validación empírica comprehensiva de sistemas de IA descentralizada en blockchain, evaluando múltiples modelos de machine learning (Perceptron, Naive Bayes, y Nearest Centroid Classifier) implementados en contratos inteligentes de Ethereum. Su investigación abordó desafíos prácticos críticos que habían sido teorizados pero no probados empíricamente. El estudio evaluó el mecanismo de incentivos <em>Self-Assessment</em> a través de simulaciones extensas usando tres datasets diversos: predicción de actividades deportivas con datos de Endomondo, análisis de sentimientos en reseñas de películas de IMDB, y detección de noticias falsas. Esta diversidad de aplicaciones demostró la versatilidad y robustez del enfoque descentralizado across diferentes dominios y tipos de datos. Los resultados empíricos fueron reveladores: los participantes <em>buenos</em> que contribuían datos correctos consistentemente lograban obtener ganancias económicas, mientras que actores maliciosos que intentaban corromper los modelos perdían sus depósitos. Esto demostró que es posible crear sistemas económicamente sostenibles donde la calidad de datos se mantiene a través de incentivos alineados, sin requerir supervisión centralizada. Particularmente significativo fue el hallazgo de que diferentes modelos de machine learning tienen características de costo y rendimiento distintas en entornos blockchain. El modelo Perceptron demostró ser consistentemente el más económico en términos de costos de gas de Ethereum, mientras que modelos más complejos como Naive Bayes requerían consideraciones especiales de optimización para ser viables económicamente.</p>
+<p>Sin embargo, investigaciones recientes también han revelado discrepancias significativas entre las promesas teóricas y las realidades de implementación. <span class="citation" data-cites="10.1049/blc2.70015">Mafrur (<a href="#ref-10.1049/blc2.70015" role="doc-biblioref">2025</a>)</span> presenta una evaluación crítica de tokens basados en IA, cuestionando si los proyectos actuales logran verdadera descentralización o simplemente crean una “ilusión de descentralización” mediante narrativas especulativas. El análisis de Mafrur examina proyectos líderes como RENDER, Bittensor, Fetch.ai, SingularityNET, y Ocean Protocol, identificando limitaciones fundamentales en sus arquitecturas técnicas y modelos de negocio. Desde una perspectiva técnica, muchas plataformas dependen extensivamente de computación <em>off-chain</em>, exhiben capacidades limitadas para inteligencia <em>on-chain</em>, y enfrentan desafíos significativos de escalabilidad. Desde una perspectiva de negocio, muchos modelos aparentemente replican estructuras de servicios de IA centralizados, simplemente añadiendo capas de pago y governance basadas en tokens sin entregar valor genuinamente novedoso.</p>
+<p>Esta evaluación crítica revela una brecha fundamental entre las aspiraciones de descentralización y las implementaciones actuales. Muchos proyectos que se promocionan como <em>IA descentralizada</em> mantienen componentes centralizados críticos, especialmente en las capas de computación y almacenamiento de modelos. La dependencia de infraestructura <em>off-chain</em> socava las garantías de resistencia a censura y verificabilidad que constituyen principios fundamentales de la descentralización genuina.</p>
+<p>Los desafíos identificados por estas investigaciones recientes van más allá de problemas técnicos superficiales. <span class="citation" data-cites="KERSIC2025486">Keršič &amp; Turkanović (<a href="#ref-KERSIC2025486" role="doc-biblioref">2025</a>)</span> destacan problemas fundamentales relacionados con privacidad digital, ownership de datos, y control que persisten incluso en sistemas ostensiblemente descentralizados. La transferencia de tecnologías de IA desde el ámbito académico hacia aplicaciones del mundo real acelera cada año, pero durante esta transición emergen cuestiones éticas críticas que los enfoques centralizados actuales no pueden abordar adecuadamente. La investigación revela que muchos sistemas enfrentan el <em>trilema de descentralización</em> en IA: <strong>es extremadamente difícil lograr simultáneamente descentralización genuina, performance competitivo, y escalabilidad económica</strong>. Los <em>trade-offs</em> entre estos objetivos a menudo resultan en compromisos que sacrifican aspectos de descentralización para mantener viabilidad práctica. <span class="citation" data-cites="10.1049/blc2.70015">Mafrur (<a href="#ref-10.1049/blc2.70015" role="doc-biblioref">2025</a>)</span> identifica que los desafíos de escalabilidad son particularmente altos porque las workloads de IA requieren recursos computacionales intensivos que son costosos de distribuir eficientemente. Los mecanismos de consenso tradicionales de blockchain no están optimizados para validar outputs de IA, y los intentos de adaptación a menudo introducen centralizaciones ocultas o vulnerabilidades de seguridad.</p>
+<p>Las investigaciones recientes sugieren que el futuro de la IA descentralizada dependerá de resolver tensiones fundamentales entre idealismo tecnológico y pragmatismo de implementación. Mientras que las visiones de sistemas completamente descentralizados, resilientes a censura, y controlados por usuarios permanecen atractivas, las realidades técnicas y económicas imponen constrains significativos. El camino hacia IA verdaderamente descentralizada requerirá probablemente enfoques híbridos que combinen beneficios de centralización (eficiencia, performance) con garantías de descentralización (resistencia a censura, control de usuarios) de manera más sofisticada que las implementaciones actuales. Esto podría incluir arquitecturas de múltiples capas donde diferentes aspectos del sistema operen con diferentes grados de descentralización según sus requisitos específicos. La evaluación crítica presentada por <span class="citation" data-cites="10.1049/blc2.70015">Mafrur (<a href="#ref-10.1049/blc2.70015" role="doc-biblioref">2025</a>)</span> no descarta el potencial de la IA descentralizada, sino que enfatiza la necesidad de aproximaciones más fundamentadas y evaluación rigurosa. El campo debe evolucionar más allá de narrativas especulativas hacia implementaciones que demuestren valor técnico y social genuino, balanceando aspiraciones de descentralización con viabilidad práctica y beneficios tangibles para usuarios.</p>
+<p><strong>Bittensor</strong> <span class="citation" data-cites="bittensor2024">(<a href="#ref-bittensor2024" role="doc-biblioref">Bittensor Foundation, 2024</a>)</span> emerge como uno de los ejemplos más avanzados de IA descentralizada en funcionamiento. Esta red permite que los participantes contribuyan con poder computacional para entrenar y ejecutar modelos de IA, recibiendo incentivos económicos a cambio. La plataforma ya cuenta con modelos operativos que demuestran la viabilidad práctica de este enfoque.</p>
+<p><strong>Akash Network</strong> ofrece una alternativa descentralizada a los proveedores tradicionales de computación en la nube, permitiendo alquilar poder computacional distribuido específicamente para el entrenamiento de modelos de IA. Esta infraestructura reduce la dependencia de gigantes tecnológicos como AWS o Google Cloud.</p>
+</section>
+</section>
+<section id="conclusiones" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones">Conclusiones</h2>
+<p>La inteligencia artificial descentralizada representa una frontera emergente con potencial transformador. Aunque enfrenta desafíos técnicos significativos, los avances en computación distribuida, aprendizaje federado y sistemas de incentivos económicos están creando las condiciones para su viabilidad práctica.</p>
+<p>El desarrollo de este paradigma no solo tiene implicaciones técnicas, sino que también plantea cuestiones fundamentales sobre el poder, la gobernanza y la equidad en la era de la inteligencia artificial. A medida que estas tecnologías maduren, es probable que veamos una coexistencia entre sistemas centralizados y descentralizados, cada uno optimizado para diferentes casos de uso y valores.</p>
+<p>La evolución hacia una IA más descentralizada no es meramente una cuestión técnica, sino una oportunidad para reimaginar cómo desarrollamos, implementamos y gobernamos las tecnologías que están redefiniendo nuestro mundo. El futuro de la inteligencia artificial podría ser considerablemente más distribuido, democrático y resiliente de lo que las tendencias actuales sugieren.</p>
+<p>El problema siempre fueron los datos</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Note 1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En la elaboración de este texto, se empleó inteligencia artificial para la redacción de párrafos, síntesis conceptual, síntesis bibliográfica, generación de metadatos y contenido en formatos MD, YAML y BibTeX. Asimismo, se utilizó para responder consultas del autor orientadas a expandir análisis críticos y perfeccionar la sintaxis. La asistencia fue proporcionada por Claude Sonnet 4 (Anthropic).</p>
+</div>
+</div>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-p2p2023" class="csl-entry" role="listitem">
+Bit2Me Academy. (2023). <em>¿Qué es una red P2P?</em> <a href="https://academy.bit2me.com/que-es-una-red-p2p/">https://academy.bit2me.com/que-es-una-red-p2p/</a>
+</div>
+<div id="ref-bittensor2024" class="csl-entry" role="listitem">
+Bittensor Foundation. (2024). <em>Bittensor: A Peer-to-Peer Intelligence Market</em>. <a href="https://bittensor.com/">https://bittensor.com/</a>
+</div>
+<div id="ref-9839452" class="csl-entry" role="listitem">
+Cao, L. (2022). Decentralized AI: Edge Intelligence and Smart Blockchain, Metaverse, Web3, and DeSci. <em>IEEE Intelligent Systems</em>, <em>37</em>(3), 6-19. <a href="https://doi.org/10.1109/MIS.2022.3181504">https://doi.org/10.1109/MIS.2022.3181504</a>
+</div>
+<div id="ref-demazeau1990decentralized" class="csl-entry" role="listitem">
+Demazeau, Y., &amp; Müller, J.-P. (Eds.). (1990). <em>Decentralized A.I</em> (1.ª ed.). Elsevier.
+</div>
+<div id="ref-ipfs2020" class="csl-entry" role="listitem">
+Desde Linux. (2020). <em>IPFS: Un avanzado Sistema de Archivos con Tecnología P2P y Blockchain</em>. <a href="https://blog.desdelinux.net/ipfs-sistema-archivos-interplanetarios-tecnologia-p2p-blockchain/">https://blog.desdelinux.net/ipfs-sistema-archivos-interplanetarios-tecnologia-p2p-blockchain/</a>
+</div>
+<div id="ref-Foucart2025" class="csl-entry" role="listitem">
+Foucart, R. (2025). Google monopoly ruling: where the tech giant goes from here. <em>The Conversation</em>. <a href="https://theconversation.com/google-monopoly-ruling-where-the-tech-giant-goes-from-here-236569">https://theconversation.com/google-monopoly-ruling-where-the-tech-giant-goes-from-here-236569</a>
+</div>
+<div id="ref-10.1007/978-3-030-59638-5_10" class="csl-entry" role="listitem">
+Harris, J. D. (2020). Analysis of Models for Decentralized and Collaborative AI on Blockchain. En Z. Chen, L. Cui, B. Palanisamy, &amp; L.-J. Zhang (Eds.), <em>Blockchain – ICBC 2020</em> (pp. 142-153). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-59638-5_10">https://doi.org/10.1007/978-3-030-59638-5_10</a>
+</div>
+<div id="ref-8946257" class="csl-entry" role="listitem">
+Harris, J. D., &amp; Waggoner, B. (2019). Decentralized and Collaborative AI on Blockchain. <em>2019 IEEE International Conference on Blockchain (Blockchain)</em>, 368-375. <a href="https://doi.org/10.1109/Blockchain.2019.00057">https://doi.org/10.1109/Blockchain.2019.00057</a>
+</div>
+<div id="ref-bittorrent2022" class="csl-entry" role="listitem">
+Hipertextual. (2022). <em>Qué es BitTorrent v2, el futuro del P2P que hará las descargas más rápidas y seguras</em>. <a href="https://hipertextual.com/2022/02/bittorrent-v2">https://hipertextual.com/2022/02/bittorrent-v2</a>
+</div>
+<div id="ref-KERSIC2025486" class="csl-entry" role="listitem">
+Keršič, V., &amp; Turkanović, M. (2025). A review on building blocks of decentralized artificial intelligence. <em>ICT Express</em>, <em>11</em>(3), 486-506. <a href="https://doi.org/10.1016/j.icte.2025.04.001">https://doi.org/10.1016/j.icte.2025.04.001</a>
+</div>
+<div id="ref-10.1093/joclec/nhs037" class="csl-entry" role="listitem">
+Lianos, I., &amp; Motchenkova, E. (2013). Market dominance and seach quality in the search engine market. <em>Journal of Competition Law &amp; Economics</em>, <em>9</em>(2), 419-455. <a href="https://doi.org/10.1093/joclec/nhs037">https://doi.org/10.1093/joclec/nhs037</a>
+</div>
+<div id="ref-LIN2023102068" class="csl-entry" role="listitem">
+Lin, C., Gao, Y., Ta, N., Li, K., &amp; Fu, H. (2023). Trapped in the search box: An examination of algorithmic bias in search engine autocomplete predictions. <em>Telematics and Informatics</em>, <em>85</em>, 102068. <a href="https://doi.org/10.1016/j.tele.2023.102068">https://doi.org/10.1016/j.tele.2023.102068</a>
+</div>
+<div id="ref-lua2005survey" class="csl-entry" role="listitem">
+Lua, E. K., Crowcroft, J., Pias, M., Sharma, R., &amp; Lim, S. (2005). A survey and comparison of peer-to-peer overlay network schemes. <em>IEEE Communications Surveys &amp; Tutorials</em>, <em>7</em>(2), 72-93. <a href="https://doi.org/10.1109/COMST.2005.1610546">https://doi.org/10.1109/COMST.2005.1610546</a>
+</div>
+<div id="ref-10.1049/blc2.70015" class="csl-entry" role="listitem">
+Mafrur, R. (2025). AI-Based Crypto Tokens: The Illusion of Decentralized AI? <em>IET Blockchain</em>, <em>5</em>(1), e70015. <a href="https://doi.org/10.1049/blc2.70015">https://doi.org/10.1049/blc2.70015</a>
+</div>
+<div id="ref-MONTES2019354" class="csl-entry" role="listitem">
+Montes, G. A., &amp; Goertzel, B. (2019). Distributed, decentralized, and democratized artificial intelligence. <em>Technological Forecasting and Social Change</em>, <em>141</em>, 354-358. <a href="https://doi.org/10.1016/j.techfore.2018.11.010">https://doi.org/10.1016/j.techfore.2018.11.010</a>
+</div>
+<div id="ref-MOWSHOWITZ2002141" class="csl-entry" role="listitem">
+Mowshowitz, A., &amp; Kawaguchi, A. (2002). Assessing bias in search engines. <em>Information Processing &amp; Management</em>, <em>38</em>(1), 141-156. <a href="https://doi.org/10.1016/S0306-4573(01)00020-6">https://doi.org/10.1016/S0306-4573(01)00020-6</a>
+</div>
+<div id="ref-OpenAI2025Terms" class="csl-entry" role="listitem">
+OpenAI. (2025). <em>Términos de Uso</em>. OpenAI. <a href="https://web.archive.org/web/20250628200335/https://openai.com/es-ES/policies/terms-of-use/">https://web.archive.org/web/20250628200335/https://openai.com/es-ES/policies/terms-of-use/</a>
+</div>
+<div id="ref-pantaleo2024science" class="csl-entry" role="listitem">
+Pantaleo, P. I. (2024a). <em>DeSci o el futuro de la ciencia</em>. <a href="https://doi.org/10.62059/paideia.studio.4896">https://doi.org/10.62059/paideia.studio.4896</a>
+</div>
+<div id="ref-pantaleo2024podcast" class="csl-entry" role="listitem">
+Pantaleo, P. I. (2024b). <em>Episodio 4: DeSci - Ciencia Descentralizada en Latinoamérica - Conversaciones con Referentes</em>. <a href="https://doi.org/10.62059/paideia.studio.7542">https://doi.org/10.62059/paideia.studio.7542</a>
+</div>
+<div id="ref-ipfs2024" class="csl-entry" role="listitem">
+Protocol Labs. (2024). <em>IPFS: InterPlanetary File System</em>. <a href="https://ipfs.tech/">https://ipfs.tech/</a>
+</div>
+<div id="ref-Schuler2023" class="csl-entry" role="listitem">
+Schüler, F., &amp; Petrik, D. (2023). Measuring network effects of digital industrial platforms: towards a balanced platform performance management. <em>Information Systems and e-Business Management</em>, <em>21</em>(4), 863-911. <a href="https://doi.org/10.1007/s10257-023-00655-x">https://doi.org/10.1007/s10257-023-00655-x</a>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p><em>bottom-up approach</em> se refiere aquí a construir la comprensión de los sistemas DeAI (DEAI en el artículo) partiendo de sus componentes más básicos (bloques de construcción) para luego entender cómo se combinan en arquitecturas más complejas, en lugar de analizar sistemas completos desde el principio.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Derechos de autor</h2><div class="quarto-appendix-contents"><div>© 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+</div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{pantaleo2025,
+  author = {Pantaleo, Patricio Iván},
+  title = {Inteligencia artificial descentralizada (DeAI): perspectivas
+    de un desarrollo en ciernes},
+  date = {2025-06-27},
+  url = {https://patricio.pantaleo.ar/blog/posts/ia-descentralizada},
+  doi = {10.62059/7k8m3n},
+  langid = {es}
+}
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-pantaleo2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Pantaleo, P. I. (2025, June 27). <em>Inteligencia artificial
+descentralizada (DeAI): perspectivas de un desarrollo en ciernes</em>
+[Online post]. <a href="https://doi.org/10.62059/7k8m3n">https://doi.org/10.62059/7k8m3n</a>
+</div></div></section></div></main> <!-- /main -->
+<!-- Footer idéntico al sitio principal -->
+<footer class="nav-footer">
+  <div class="nav-footer-center">
+    <!-- Sección izquierda: Logo y descripción -->
+    <div class="footer-brand">
+      <img src="https://patricio.pantaleo.ar/images/logo.png" alt="Patricio Pantaleo Logo">
+      <div>
+        <p class="footer-description">Digital Humanities &amp; Academic Publishing</p>
+      </div>
+    </div>
+    
+    <!-- Sección derecha: Redes sociales -->
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/patricio-pantaleo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewbox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+        </svg>
+      </a>
+      
+      <a href="mailto:patricio@pantaleo.ar" aria-label="Email">
+        <svg viewbox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+        </svg>
+      </a>
+      
+      <a href="https://github.com/Ppantaleo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewbox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+        </svg>
+      </a>
+      
+      <a href="https://mastodon.social/@patopantaleo" target="_blank" rel="noopener noreferrer" aria-label="Mastodon">
+        <svg viewbox="0 0 24 24" fill="currentColor">
+          <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.96 1.498l.638 1.06.638-1.06c.658-.999 1.649-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sección inferior: Copyright y enlaces -->
+  <div class="footer-bottom">
+    <div>
+      © <span id="current-year"></span> Patricio Pantaleo
+      <span class="footer-separator">·</span>
+      <a href="https://github.com/Ppantaleo/page/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+        GPL-3.0 License
+      </a>
+    </div>
+    <div class="footer-source">
+      <a href="https://github.com/Ppantaleo/page" target="_blank" rel="noopener noreferrer">
+        <svg viewbox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+        </svg>
+        <span>Source Code</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Actualizar el año automáticamente
+document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+<hr class="comment-separator">
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        // URL canónica específica para posts del blog
+        this.page.url = 'https://patricio.pantaleo.ar' + window.location.pathname;
+        
+        // Identificador único usando solo el nombre del post
+        this.page.identifier = window.location.pathname.split('/').pop() || window.location.pathname;
+    };
+    
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://patricio-pantaleo-blog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/patricio\.pantaleo\.ar\/blog");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
