@@ -213,6 +213,6 @@ Los datos han sido últimamente el factor determinante en el desarrollo de siste
 
 La evolución hacia una IA más descentralizada no es meramente una cuestión técnica, sino una oportunidad para reimaginar cómo desarrollamos, implementamos y gobernamos las tecnologías que están redefiniendo nuestro mundo. En última instancia, el futuro de la inteligencia artificial será determinado por nuestra capacidad de resolver las tensiones entre eficiencia centralizada y autonomía descentralizada, entre innovación acelerada y control democrático. El futuro de la inteligencia artificial podría ser considerablemente más distribuido, democrático y resiliente de lo que las tendencias actuales sugieren, pero solo si logramos abordar la cuestión fundamental de quién controla los datos que alimentan estos sistemas.
 
-::: {.callout-note title="Note 1"}
+::: {.callout-note title="Uso de IA"}
 En la elaboración de este texto, se empleó inteligencia artificial para la redacción de párrafos, síntesis conceptual, síntesis bibliográfica, generación de metadatos y contenido en formatos MD, YAML y BibTeX. Asimismo, se utilizó para responder consultas del autor orientadas a expandir análisis críticos y perfeccionar la sintaxis. La asistencia fue proporcionada por Claude Sonnet 4 (Anthropic).
 :::
