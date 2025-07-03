@@ -1,6 +1,6 @@
 ---
 title: "Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes"
-draft: true
+draft: false
 author:
   - name: Patricio Iván Pantaleo
     orcid: 0000-0002-8104-8975
@@ -10,7 +10,7 @@ author:
       - writing: lead
       - investigation: lead
 
-date: "2025-06-27"
+date: "2025-07-03"
 categories: [posts, scholarly-publishing, spanish]
 keywords: [inteligencia artificial, descentralizada, AI, blockchain, IPFS]
 bibliography: post.bib
@@ -203,14 +203,15 @@ La evaluación crítica presentada por @10.1049/blc2.70015 no descarta el potenc
 
 ## Conclusiones
 
-La inteligencia artificial descentralizada representa una frontera emergente con potencial transformador. Aunque enfrenta desafíos técnicos significativos, los avances en computación distribuida, aprendizaje federado y sistemas de incentivos económicos están creando las condiciones para su viabilidad práctica.
+La inteligencia artificial descentralizada (DeAI) representa una frontera emergente con potencial transformador. Aunque enfrenta desafíos técnicos significativos, los avances en computación distribuida, aprendizaje federado y sistemas de incentivos económicos están creando las condiciones para su viabilidad práctica.
 
 El desarrollo de este paradigma no solo tiene implicaciones técnicas, sino que también plantea cuestiones fundamentales sobre el poder, la gobernanza y la equidad en la era de la inteligencia artificial. A medida que estas tecnologías maduren, es probable que veamos una coexistencia entre sistemas centralizados y descentralizados, cada uno optimizado para diferentes casos de uso y valores.
 
-La evolución hacia una IA más descentralizada no es meramente una cuestión técnica, sino una oportunidad para reimaginar cómo desarrollamos, implementamos y gobernamos las tecnologías que están redefiniendo nuestro mundo. El futuro de la inteligencia artificial podría ser considerablemente más distribuido, democrático y resiliente de lo que las tendencias actuales sugieren.
+Sin embargo, el análisis presentado revela que **el problema fundamental no reside en la inteligencia artificial per se, sino en los modelos de centralización que la sustentan**. La concentración de datos en manos de pocas corporaciones tecnológicas, la dependencia de infraestructuras centralizadas para el procesamiento de modelos y la falta de control de los usuarios sobre sus propios datos constituyen los verdaderos desafíos que la IA descentralizada busca abordar.
 
+Los datos han sido últimamente el factor determinante en el desarrollo de sistemas exitosos. Como demuestran los casos analizados, desde las primeras propuestas de @MONTES2019354 hasta las implementaciones críticas evaluadas por @10.1049/blc2.70015, la cuestión central no es desarrollar algoritmos más sofisticados, sino democratizar el acceso a los datos y redistribuir el control sobre las infraestructuras que los procesan. La IA descentralizada emerge así no como una mera innovación tecnológica, sino como una respuesta necesaria a la concentración de poder digital que caracteriza la era actual.
 
-El problema siempre fueron los datos
+La evolución hacia una IA más descentralizada no es meramente una cuestión técnica, sino una oportunidad para reimaginar cómo desarrollamos, implementamos y gobernamos las tecnologías que están redefiniendo nuestro mundo. En última instancia, el futuro de la inteligencia artificial será determinado por nuestra capacidad de resolver las tensiones entre eficiencia centralizada y autonomía descentralizada, entre innovación acelerada y control democrático. El futuro de la inteligencia artificial podría ser considerablemente más distribuido, democrático y resiliente de lo que las tendencias actuales sugieren, pero solo si logramos abordar la cuestión fundamental de quién controla los datos que alimentan estos sistemas.
 
 ::: {.callout-note title="Note 1"}
 En la elaboración de este texto, se empleó inteligencia artificial para la redacción de párrafos, síntesis conceptual, síntesis bibliográfica, generación de metadatos y contenido en formatos MD, YAML y BibTeX. Asimismo, se utilizó para responder consultas del autor orientadas a expandir análisis críticos y perfeccionar la sintaxis. La asistencia fue proporcionada por Claude Sonnet 4 (Anthropic).
