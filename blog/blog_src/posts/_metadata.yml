@@ -7,3 +7,5 @@ format:
   html:
     page-layout: article
     include-after-body: disqus.html
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/'
