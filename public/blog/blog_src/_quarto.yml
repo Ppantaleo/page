@@ -46,6 +46,8 @@ format:
     linestretch: 1.7
     include-in-header: "header.html"
     include-after-body: footer.html
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/'
 
 execute:
   freeze: auto

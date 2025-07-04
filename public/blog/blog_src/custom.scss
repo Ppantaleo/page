@@ -497,6 +497,14 @@ figcaption {
   color: $white !important;
 }
 
+// Footnotes tooltip - solo texto blanco
+// Footnotes tooltip - texto blanco
+.tippy-box[data-theme="quarto"] .tippy-content,
+.tippy-box[data-theme="quarto"] .tippy-content *,
+.tippy-box[data-theme="quarto"] .tippy-content a {
+ color: white !important;
+}
+
 // Listing de posts (tarjetas)
 .quarto-listing {
   .listing-item {
