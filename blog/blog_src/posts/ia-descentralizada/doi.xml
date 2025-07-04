@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" version="4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://data.crossref.org/schemas/crossref4.4.2.xsd">
+<head>
+<doi_batch_id>h7k8m3nX</doi_batch_id>
+<timestamp>20250703180000</timestamp>
+<depositor>
+<depositor_name>Patricio Pantaleo Blog</depositor_name>
+<email_address>patricio@pantaleo.ar</email_address>
+</depositor>
+<registrant>Patricio Pantaleo's Blog</registrant>
+</head>
+<body>
+<posted_content type="other">
+<group_title>Artificial Intelligence and Technology</group_title>
+<contributors>
+<person_name sequence="first" contributor_role="author">
+<given_name>Patricio Iván</given_name>
+<surname>Pantaleo</surname>
+<affiliation>Paideia Studio</affiliation>
+<ORCID>https://orcid.org/0000-0002-8104-8975</ORCID>
+</person_name>
+</contributors>
+<titles>
+<title>Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes</title>
+</titles>
+<posted_date>
+<month>07</month>
+<day>03</day>
+<year>2025</year>
+</posted_date>
+<institution>
+<institution_name>Paideia Studio</institution_name>
+</institution>
+<abstract xmlns="http://www.ncbi.nlm.nih.gov/JATS1">
+<p>Un análisis sobre el estado actual y las perspectivas futuras de la inteligencia artificial descentralizada (DeAI). Se exploran las tecnologías emergentes, desafíos técnicos y las implicaciones de distribuir el poder computacional y la gobernanza de los sistemas de IA más allá de las estructuras centralizadas tradicionales.</p>
+</abstract>
+<rel:program xmlns:rel="http://www.crossref.org/relations.xsd">
+<rel:related_item>
+<rel:description>PDF version</rel:description>
+<rel:inter_work_relation relationship-type="isSupplementedBy" identifier-type="uri">https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/index.pdf</rel:inter_work_relation>
+</rel:related_item>
+<rel:related_item>
+<rel:description>EPUB version</rel:description>
+<rel:inter_work_relation relationship-type="isSupplementedBy" identifier-type="uri">https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/index.epub</rel:inter_work_relation>
+</rel:related_item>
+</rel:program>
+<doi_data>
+<doi>10.62059/7k8m3n</doi>
+<resource>https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/</resource>
+</doi_data>
+<citation_list>
+<citation key="pantaleo2024science">
+<unstructured_citation>Pantaleo, Patricio Iván. (2024). DeSci o el futuro de la ciencia. Blog post. https://paideiastudio.net/desci-o-el-futuro-de-la-ciencia/</unstructured_citation>
+</citation>
+<citation key="pantaleo2024podcast">
+<unstructured_citation>Pantaleo, Patricio Iván. (2024). Episodio 4: DeSci - Ciencia Descentralizada en Latinoamérica - Conversaciones con Referentes. Podcast episode. https://paideiastudio.net/episodio-4-desci-ciencia-descentralizada/</unstructured_citation>
+</citation>
+<citation key="LIN2023102068">
+<unstructured_citation>Lin, Cong, Gao, Yuxin, Ta, Na, Li, Kaiyu, &amp; Fu, Hongyao. (2023). Trapped in the search box: An examination of algorithmic bias in search engine autocomplete predictions. Telematics and Informatics, 85, 102068. https://doi.org/10.1016/j.tele.2023.102068</unstructured_citation>
+</citation>
+<citation key="MOWSHOWITZ2002141">
+<unstructured_citation>Mowshowitz, Abbe &amp; Kawaguchi, Akira. (2002). Assessing bias in search engines. Information Processing &amp; Management, 38(1), 141-156. https://doi.org/10.1016/S0306-4573(01)00020-6</unstructured_citation>
+</citation>
+<citation key="10.1093/joclec/nhs037">
+<unstructured_citation>Lianos, Ioannis &amp; Motchenkova, Evgenia. (2013). Market dominance and search quality in the search engine market. Journal of Competition Law &amp; Economics, 9(2), 419-455. https://doi.org/10.1093/joclec/nhs037</unstructured_citation>
+</citation>
+<citation key="Schuler2023">
+<unstructured_citation>Schüler, Fabian &amp; Petrik, Dimitri. (2023). Measuring network effects of digital industrial platforms: towards a balanced platform performance management. Information Systems and e-Business Management, 21(4), 863-911. https://doi.org/10.1007/s10257-023-00655-x</unstructured_citation>
+</citation>
+<citation key="Foucart2025">
+<unstructured_citation>Foucart, Renaud. (2025). Google monopoly ruling: where the tech giant goes from here. The Conversation. https://theconversation.com/google-monopoly-ruling-where-the-tech-giant-goes-from-here-236569</unstructured_citation>
+</citation>
+<citation key="OpenAI2025Terms">
+<unstructured_citation>OpenAI. (2025). Términos de Uso. https://web.archive.org/web/20250628200335/https://openai.com/es-ES/policies/terms-of-use/</unstructured_citation>
+</citation>
+<citation key="lua2005survey">
+<unstructured_citation>Lua, Eng Keong, Crowcroft, Jon, Pias, Marcelo, Sharma, Ravi, &amp; Lim, Steven. (2005). A survey and comparison of peer-to-peer overlay network schemes. IEEE Communications Surveys &amp; Tutorials, 7(2), 72-93. https://doi.org/10.1109/COMST.2005.1610546</unstructured_citation>
+</citation>
+<citation key="bittorrent2022">
+<unstructured_citation>Hipertextual. (2022). Qué es BitTorrent v2, el futuro del P2P que hará las descargas más rápidas y seguras. https://hipertextual.com/2022/02/bittorrent-v2</unstructured_citation>
+</citation>
+<citation key="ipfs2020">
+<unstructured_citation>Desde Linux. (2020). IPFS: Un avanzado Sistema de Archivos con Tecnología P2P y Blockchain. https://blog.desdelinux.net/ipfs-sistema-archivos-interplanetarios-tecnologia-p2p-blockchain/</unstructured_citation>
+</citation>
+<citation key="p2p2023">
+<unstructured_citation>Bit2Me Academy. (2023). ¿Qué es una red P2P? https://academy.bit2me.com/que-es-una-red-p2p/</unstructured_citation>
+</citation>
+<citation key="demazeau1990decentralized">
+<unstructured_citation>Demazeau, Yves &amp; Müller, Jean-Pierre (Eds.). (1990). Decentralized A.I. Elsevier.</unstructured_citation>
+</citation>
+<citation key="MONTES2019354">
+<unstructured_citation>Montes, Gabriel Axel &amp; Goertzel, Ben. (2019). Distributed, decentralized, and democratized artificial intelligence. Technological Forecasting and Social Change, 141, 354-358. https://doi.org/10.1016/j.techfore.2018.11.010</unstructured_citation>
+</citation>
+<citation key="8946257">
+<unstructured_citation>Harris, Justin D. &amp; Waggoner, Bo. (2019). Decentralized and Collaborative AI on Blockchain. 2019 IEEE International Conference on Blockchain (Blockchain), 368-375. https://doi.org/10.1109/Blockchain.2019.00057</unstructured_citation>
+</citation>
+<citation key="9839452">
+<unstructured_citation>Cao, Longbing. (2022). Decentralized AI: Edge Intelligence and Smart Blockchain, Metaverse, Web3, and DeSci. IEEE Intelligent Systems, 37(3), 6-19. https://doi.org/10.1109/MIS.2022.3181504</unstructured_citation>
+</citation>
+<citation key="KERSIC2025486">
+<unstructured_citation>Keršič, Vid &amp; Turkanović, Muhamed. (2025). A review on building blocks of decentralized artificial intelligence. ICT Express, 11(3), 486-506. https://doi.org/10.1016/j.icte.2025.04.001</unstructured_citation>
+</citation>
+<citation key="10.1007/978-3-030-59638-5_10">
+<unstructured_citation>Harris, Justin D. (2020). Analysis of Models for Decentralized and Collaborative AI on Blockchain. In Blockchain -- ICBC 2020 (pp. 142-153). Springer International Publishing. https://doi.org/10.1007/978-3-030-59638-5_10</unstructured_citation>
+</citation>
+<citation key="10.1049/blc2.70015">
+<unstructured_citation>Mafrur, Rischan. (2025). AI-Based Crypto Tokens: The Illusion of Decentralized AI? IET Blockchain, 5(1), e70015. https://doi.org/10.1049/blc2.70015</unstructured_citation>
+</citation>
+<citation key="app15010019">
+<unstructured_citation>Mssassi, Souhail &amp; Abou El Kalam, Anas. (2025). The Blockchain Trilemma: A Formal Proof of the Inherent Trade-Offs Among Decentralization, Security, and Scalability. Applied Sciences, 15(1), 19. https://doi.org/10.3390/app15010019</unstructured_citation>
+</citation>
+<citation key="ipfs2024">
+<unstructured_citation>Protocol Labs. (2024). IPFS: InterPlanetary File System. https://ipfs.tech/</unstructured_citation>
+</citation>
+<citation key="nakamoto2008bitcoin">
+<unstructured_citation>Nakamoto, Satoshi. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf</unstructured_citation>
+</citation>
+<citation key="mcmahan2017communication">
+<unstructured_citation>McMahan, Brendan, Moore, Eider, Ramage, Daniel, Hampson, Seth, &amp; Arcas, Blaise Aguera y. (2017). Communication-Efficient Learning of Deep Networks from Decentralized Data. Proceedings of the 20th International Conference on Artificial Intelligence and Statistics, 54, 1273-1282.</unstructured_citation>
+</citation>
+<citation key="li2020federated">
+<unstructured_citation>Li, Tian, Sahu, Anit Kumar, Talwalkar, Ameet, &amp; Smith, Virginia. (2020). Federated Learning: Challenges, Methods, and Future Directions. IEEE Signal Processing Magazine, 37(3), 50-60.</unstructured_citation>
+</citation>
+<citation key="kairouz2021advances">
+<unstructured_citation>Kairouz, Peter, McMahan, H Brendan, Avent, Brendan, Bellet, Aurélien, Bennis, Mehdi, Bhagoji, Arjun Nitin, Bonawitz, Kallista, Charles, Zachary, Cormode, Graham, Cummings, Rachel, et al. (2021). Advances and Open Problems in Federated Learning. Foundations and Trends in Machine Learning, 14(1-2), 1-210.</unstructured_citation>
+</citation>
+<citation key="benet2014ipfs">
+<unstructured_citation>Benet, Juan. (2014). IPFS-Content Addressed, Versioned, P2P File System. arXiv preprint arXiv:1407.3561.</unstructured_citation>
+</citation>
+<citation key="wood2014ethereum">
+<unstructured_citation>Wood, Gavin, et al. (2014). Ethereum: A Secure Decentralised Generalised Transaction Ledger. Ethereum project yellow paper, 151(2014), 1-32.</unstructured_citation>
+</citation>
+<citation key="akash2024">
+<unstructured_citation>Akash Network. (2024). Akash Network: The Unstoppable Cloud. https://akash.network/</unstructured_citation>
+</citation>
+<citation key="filecoin2024">
+<unstructured_citation>Protocol Labs. (2024). Filecoin: A Decentralized Storage Network. https://filecoin.io/</unstructured_citation>
+</citation>
+<citation key="bittensor2024">
+<unstructured_citation>Bittensor Foundation. (2024). Bittensor: A Peer-to-Peer Intelligence Market. https://bittensor.com/</unstructured_citation>
+</citation>
+<citation key="voigt2023decentralized">
+<unstructured_citation>Voigt, Paul &amp; von dem Bussche, Axel. (2023). Decentralized AI: Challenges and Opportunities for Distributed Machine Learning. AI and Ethics, 3(2), 245-262.</unstructured_citation>
+</citation>
+<citation key="zhang2023blockchain">
+<unstructured_citation>Zhang, Wei, Liu, Ming, &amp; Chen, Xiaofeng. (2023). Blockchain-Based Decentralized AI: A Survey. IEEE Transactions on Neural Networks and Learning Systems, 34(8), 4521-4535.</unstructured_citation>
+</citation>
+</citation_list>
+</posted_content>
+</body>
+</doi_batch>
