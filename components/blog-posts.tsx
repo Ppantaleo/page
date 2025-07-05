@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Clock, Calendar } from "lucide-react"
+import { ArrowRight, Clock, Calendar, Tag } from "lucide-react"
 
 interface BlogPost {
   title: string
@@ -35,25 +35,70 @@ export default function BlogPosts() {
         const parsedPosts = Array.from(items).slice(0, 3).map(item => {
           const title = item.querySelector('title')?.textContent || ''
           const link = item.querySelector('link')?.textContent || ''
-          const description = item.querySelector('description')?.textContent || ''
           const pubDate = item.querySelector('pubDate')?.textContent || ''
           
+          // Intentar extraer la descripción del feed primero
+          let description = ''
+          
+          // 1. Buscar en dc:description (Dublin Core)
+          const dcDescription = item.querySelector('description')?.textContent || ''
+          
+          // 2. Buscar en el contenido completo
+          const contentEncoded = item.querySelector('content\\:encoded')?.textContent || dcDescription
+          
+          // Si hay contenido HTML, intentar extraer solo la descripción/extracto
+          if (contentEncoded && contentEncoded.length > 0) {
+            // Crear un documento temporal para parsear el HTML
+            const tempDiv = document.createElement('div')
+            tempDiv.innerHTML = contentEncoded
+            
+            // Buscar párrafos que no sean créditos de fotos
+            const paragraphs = tempDiv.querySelectorAll('p')
+            let cleanDescription = ''
+            
+            for (const p of paragraphs) {
+              const text = p.textContent || ''
+              // Omitir párrafos que son créditos de fotos
+              if (!text.toLowerCase().includes('foto de') && 
+                  !text.toLowerCase().includes('photo by') && 
+                  !text.toLowerCase().includes('image by') &&
+                  !text.toLowerCase().includes('unsplash') &&
+                  text.trim().length > 20) {
+                cleanDescription = text.trim()
+                break // Tomar el primer párrafo válido
+              }
+            }
+            
+            description = cleanDescription || dcDescription.replace(/<[^>]*>/g, '').substring(0, 150)
+          } else {
+            description = dcDescription.replace(/<[^>]*>/g, '').substring(0, 150)
+          }
+          
           // Extraer imagen del contenido si existe
-          const contentEncoded = item.querySelector('content\\:encoded')?.textContent || 
-                                item.querySelector('description')?.textContent || ''
           const imgMatch = contentEncoded.match(/<img[^>]+src="([^">]+)"/i)
           const image = imgMatch ? imgMatch[1] : null
           
-          // Calcular tiempo de lectura aproximado
-          const wordCount = description.replace(/<[^>]*>/g, '').split(' ').length
-          const readingTime = Math.ceil(wordCount / 200) // 200 palabras por minuto
+          // Extraer categorías del RSS
+          const categories: string[] = []
+          const categoryElements = item.querySelectorAll('category')
+          categoryElements.forEach(cat => {
+            const categoryText = cat.textContent?.trim()
+            if (categoryText && !categories.includes(categoryText)) {
+              categories.push(categoryText)
+            }
+          })
+          
+          // Calcular tiempo de lectura aproximado basado en el contenido completo
+          const wordCount = contentEncoded.replace(/<[^>]*>/g, '').split(/\s+/).length
+          const readingTime = Math.max(1, Math.ceil(wordCount / 200)) // Mínimo 1 minuto
 
           return {
             title: title.replace(/<!\[CDATA\[|\]\]>/g, ''),
-            description: description.replace(/<[^>]*>/g, '').substring(0, 150) + '...',
+            description: description + (description.length >= 150 ? '...' : ''),
             date: pubDate,
             path: link.replace('https://patricio.pantaleo.ar', ''),
             image,
+            categories: categories.filter(cat => cat.toLowerCase() !== 'posts'), // Filtrar "posts" genérico
             'reading-time': `${readingTime} min`
           }
         })
@@ -71,7 +116,7 @@ export default function BlogPosts() {
 
   const formatDate = (dateString: string): string => {
     const date = new Date(dateString)
-    return date.toLocaleDateString('es-ES', {
+    return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -83,7 +128,7 @@ export default function BlogPosts() {
       <section className="py-24 bg-white dark:bg-slate-900">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-serif mb-12 text-center text-slate-800 dark:text-white">
-            Últimas entradas del blog
+            Latest Blog Posts
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
@@ -114,13 +159,13 @@ export default function BlogPosts() {
             Blog
           </h2>
           <p className="text-slate-600 dark:text-slate-300 mb-4">
-            No hay entradas disponibles en este momento.
+            No blog posts available at the moment.
           </p>
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-primary hover:underline"
           >
-            Visitar blog
+            Visit blog
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -133,10 +178,10 @@ export default function BlogPosts() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-serif mb-4 text-slate-800 dark:text-white">
-            Últimas entradas del blog
+            Latest Blog Posts
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Reflexiones sobre publicación académica, acceso abierto, herramientas digitales y humanidades.
+            Thoughts on academic publishing, open access, digital tools, and humanities.
           </p>
         </div>
 
@@ -157,7 +202,7 @@ export default function BlogPosts() {
               )}
               
               <div className="p-6">
-                <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400 mb-4">
+                <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400 mb-3">
                   <div className="flex items-center gap-1">
                     <Clock className="w-4 h-4" />
                     <span>{post['reading-time']}</span>
@@ -170,6 +215,21 @@ export default function BlogPosts() {
                     </time>
                   </div>
                 </div>
+
+                {/* Categories/Tags */}
+                {post.categories && post.categories.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {post.categories.slice(0, 3).map((category, catIndex) => (
+                      <span
+                        key={catIndex}
+                        className="inline-flex items-center gap-1 px-2 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                      >
+                        <Tag className="w-3 h-3" />
+                        {category}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <h3 className="text-xl font-serif mb-3 text-slate-800 dark:text-white group-hover:text-primary transition-colors">
                   <Link href={post.path}>
@@ -185,7 +245,7 @@ export default function BlogPosts() {
                   href={post.path}
                   className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all text-sm font-medium"
                 >
-                  Leer más
+                  Read more
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -198,7 +258,7 @@ export default function BlogPosts() {
             href="/blog"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:bg-primary/90 transition-colors"
           >
-            Ver todas las entradas
+            View all posts
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
