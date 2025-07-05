@@ -21,6 +21,13 @@ export default function BlogPosts() {
   const [posts, setPosts] = useState<BlogPost[]>([])
   const [loading, setLoading] = useState(true)
 
+  // Función para limitar palabras
+  const limitWords = (text: string, maxWords: number): string => {
+    const words = text.trim().split(/\s+/)
+    if (words.length <= maxWords) return text
+    return words.slice(0, maxWords).join(' ') + '...'
+  }
+
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -69,9 +76,10 @@ export default function BlogPosts() {
               }
             }
             
-            description = cleanDescription || dcDescription.replace(/<[^>]*>/g, '').substring(0, 150)
+            // Limitar a un número específico de palabras
+            description = limitWords(cleanDescription || dcDescription.replace(/<[^>]*>/g, ''), 40)
           } else {
-            description = dcDescription.replace(/<[^>]*>/g, '').substring(0, 150)
+            description = limitWords(dcDescription.replace(/<[^>]*>/g, ''), 40)
           }
           
           // Extraer imagen del contenido si existe
@@ -94,7 +102,7 @@ export default function BlogPosts() {
 
           return {
             title: title.replace(/<!\[CDATA\[|\]\]>/g, ''),
-            description: description + (description.length >= 150 ? '...' : ''),
+            description: description,
             date: pubDate,
             path: link.replace('https://patricio.pantaleo.ar', ''),
             image,
