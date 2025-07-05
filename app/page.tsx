@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import BlogPosts from "@/components/blog-posts"
 import {
   ArrowRight,
   BookOpen,
@@ -215,6 +216,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Blog Posts Section */}
+      <BlogPosts />
 
       {/* Skills Section */}
       <section id="skills" className="py-24 bg-background dark:bg-slate-800">
