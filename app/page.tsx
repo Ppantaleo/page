@@ -58,7 +58,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-serif mb-4 text-slate-800 dark:text-white">Patricio Pantaleo</h1>
 
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-2xl mb-8 tracking-wide">
-              Digital Humanities Expert & Academic Publishing Specialist
+              Digital Humanities & Academic Publishing
             </p>
 
             <div className="flex space-x-4 mb-12">
