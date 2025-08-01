@@ -1,22 +1,21 @@
-// components/LinkedInFeed.tsx
 import { ExternalLink, Linkedin } from 'lucide-react'
 
-// Solo necesitas actualizar estas 3 URLs de iframes de LinkedIn
+// Only update these 3 LinkedIn iframe URLs
 const linkedinEmbeds = [
   {
     id: 1,
     src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7356725220063199233?collapsed=1",
-    title: "Publicación sobre humanidades digitales"
+    title: "Post about digital humanities"
   },
   {
     id: 2,
-    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7356725220063199233?collapsed=1", // Cambia por tu segunda URL
-    title: "Publicación sobre metadatos académicos"
+    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7349106949252182018?collapsed=1", // Change for your second URL
+    title: "Post about academic metadata"
   },
   {
     id: 3,
-    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7356725220063199233?collapsed=1", // Cambia por tu tercera URL
-    title: "Publicación sobre Open Journal Systems"
+    src: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7348794106204041218", // Change for your third URL
+    title: "Post about Open Journal Systems"
   }
 ]
 
@@ -31,11 +30,11 @@ export default function LinkedInFeed() {
               <Linkedin className="w-7 h-7 text-primary-foreground" />
             </div>
             <h2 className="text-3xl font-serif text-slate-800 dark:text-white">
-              Últimas publicaciones en LinkedIn
+              Latest LinkedIn Posts
             </h2>
           </div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Reflexiones sobre humanidades digitales, publicación académica y gestión de metadatos
+            Insights on digital humanities, academic publishing, and metadata management
           </p>
         </div>
 
@@ -72,13 +71,9 @@ export default function LinkedInFeed() {
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors shadow-sm hover:shadow-md"
           >
             <Linkedin className="w-5 h-5 mr-2" />
-            Seguir en LinkedIn
+            Follow on LinkedIn
             <ExternalLink className="w-4 h-4 ml-2" />
           </a>
-          
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-4">
-            Posts actualizados automáticamente desde LinkedIn
-          </p>
         </div>
       </div>
     </section>
