@@ -14,6 +14,8 @@ El proyecto combina dos tecnologías principales:
 ```
 ├── app/                    # Aplicación Next.js principal
 ├── components/             # Componentes React reutilizables
+│   ├── LinkedInFeed.tsx   # Componente de posts de LinkedIn
+│   └── ui/                # Componentes shadcn/ui
 ├── public/
 │   ├── blog/              # ✅ OUTPUT del proyecto Quarto (HTML compilado)
 │   └── images/            # Imágenes del sitio principal
@@ -109,6 +111,52 @@ posts/nombre-post/
 └── archivos/          # Recursos adicionales
 ```
 
+## 📱 Actualizar Posts de LinkedIn
+
+### 🔄 Cómo actualizar el componente LinkedIn Feed
+
+El sitio incluye una sección que muestra los últimos posts de LinkedIn mediante iframes embebidos.
+
+**Ubicación:** `components/LinkedInFeed.tsx`
+
+#### Pasos para actualizar:
+
+1. **Obtener la URL del embed:**
+   - Ve a tu post en LinkedIn
+   - Clic en los 3 puntos (`...`) del post
+   - Selecciona "Insertar esta publicación"
+   - Copia la URL del atributo `src` del iframe
+
+2. **Actualizar el componente:**
+   ```tsx
+   // En components/LinkedInFeed.tsx
+   const linkedinEmbeds = [
+     {
+       id: 1,
+       src: "https://www.linkedin.com/embed/feed/update/urn:li:share:TU_NUEVO_POST_ID",
+       title: "Descripción de tu post"
+     },
+     // ... otros posts
+   ]
+   ```
+
+3. **Hacer deploy:**
+   ```bash
+   git add .
+   git commit -m "Update LinkedIn posts"
+   git push origin main
+   ```
+
+#### ⚠️ Limitaciones:
+- No todos los posts de LinkedIn permiten embed
+- Usa solo posts que tengan la opción "Insertar esta publicación"
+- Los posts muy antiguos pueden no funcionar
+
+#### 💡 Consejos:
+- Mantén solo los 3 posts más recientes
+- Verifica que los embeds funcionen antes de hacer commit
+- Los iframes se cargan automáticamente desde LinkedIn con datos actualizados
+
 ## 🎨 Personalización de Estilos
 
 ### Sitio Principal
@@ -149,6 +197,7 @@ El sitio se despliega automáticamente en GitHub Pages mediante GitHub Actions:
 │   └── globals.css        # Estilos globales
 ├── components/
 │   ├── header.tsx         # Navegación principal
+│   ├── LinkedInFeed.tsx   # Componente de LinkedIn
 │   └── ui/                # Componentes shadcn/ui
 ├── public/
 │   ├── blog/              # Blog compilado (NO EDITAR)
