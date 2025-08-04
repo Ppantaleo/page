@@ -1,0 +1,51 @@
+---
+title: "Familia animal"
+author:
+ - name: Patricio Iván Pantaleo
+   orcid: 0000-0002-8104-8975
+date: "2025-06-19"
+categories: [cuentos, spanish]
+description: |
+ Un relato sobre la convivencia con los animales de la familia, explorando los vínculos que se forman entre humanos y mascotas a través de historias de rescate, adaptación y amor incondicional.
+
+downloads: [pdf, epub]
+sharing: [twitter, facebook, linkedin]
+
+license: "CC BY"
+copyright: >
+ © 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+
+comments:
+ hypothesis: true
+
+format:
+ html: default
+ pdf:
+   documentclass: scrartcl
+   toc: true
+   number-sections: false
+   fontsize: 11pt
+ epub:
+   toc: true
+lang: es
+---
+
+Simón se levanta con dificultad. Su cadera afectada por la edad, le prohíbe demostrar la destreza de años atrás ante una solicitud. Antiguamente, en sus años mozos, Simón respondía rápidamente ante una solicitud o una necesidad; sobre todo, como en este caso, cuando se trata de comida.
+
+Le abro la puerta del patio, aguardo pacientemente que salga de la casa y abro la puerta bajo el asador en donde guardo su comida. Le doy en su plato y come, casi con la misma voracidad que lo hacía en su juventud. Parece que eso aún perdura en la última etapa de su vida.
+
+Simón, cariñosamente apodado Mon desde hace ya varios años cuando mi sobrinita pequeña en sus primeras palabras intentaba llamarlo, es un perro labrador, con problemas de cadera como la mayoría de los labradores. Convive, además de Ana, Cami, Toto y yo, con Pequeño, Gorda, Cleo y Tuerto, el último llegado pero también, estimo, el más viejo.
+
+Tuerto era el gato de la vecina, esta murió y quedó a cargo del otro vecino, el cual también murió y el pobre quedó otra vez a la deriva. No teniendo mejor lugar donde aquerenciarse, arrimó su estigma de sepulturero a nuestra familia animal. Como nunca he dado demasiada cabida a las supersticiones, las cuales me resultan llanamente prejuicios y la muerte siempre me resultó la puerta visible y más aparente de lo trascendental, le dimos claramente la bienvenida. Además, vaya a saber quién por qué cosa, está tuerto, viejo, flaco y todo maltrecho. Si diera importancia a mis imágenes mentales y me enroscara en los temores que engendran, fácilmente podría compararse a este recién llegado con el gato fantasma de la película Cementerio de mascotas.
+
+A Dios gracias, estas imágenes fluyen en mi mente como el río pesado y barrancoso de mi pueblo y he nacido con cierta tendencia a observar las películas internas, lo que en ocasiones me permite despegarme y actuar en la dirección deseada, sin ser cooptado por las imágenes. En pequeña parte por esto, en gran parte por mi familia, Tuerto no repuso el ojo, pero sí el espíritu. Ahora es un sepulturero señorial, de esos que da gusto escuchar o ver como una estatua de mármol cuidadosamente tallada en el cementerio. Su pelo anciano y gris ahora está reluciente por la alimentación continua y hasta ya me he animado a hacerle caricias. Aún no he escuchado su ronronear, pero estimo que es más por la distancia que yo mantengo que por una incapacidad suya.
+
+Tuerto, como todo anciano agregado al último y con un estigma social tan alto, se mantiene distante pero integrado a la familia. Pequeño, el otro felino macho, lo ha aceptado desde el primer día y parece que no hay disputas entre ellos. Simón, ni fu ni fa con él, y Gorda y Cleo suelen disputarle el alimento, pero esta no es una saña específica con Tuerto, sino un comportamiento natural de las dos hembras, hermanas y felinas de la familia.
+
+La historia de Pequeño me recuerda a mi infancia, angustiosamente a ella. No porque esta haya sido una etapa desdichada en mi vida sino por una película: Chatrán. ¡Qué dolor me daba ver la introducción de la película, donde el gato navegaba a la deriva dentro de una caja en un río portentoso! No he vuelto a ver esa película. Solo ahora, al escribir, brevemente para recordar algo y remover el amontonado polvo en mi memoria hace ya tantos años. Vi segundos, lo necesario para escribir, no más. Ya podré jactarme de mayores osadías en mi vida pero ¿de esta? ¿La de ver Chatrán de nuevo a mis 39 años? ¿Cómo sería capaz?
+
+Pequeño apareció así, como Chatrán: frágil, pequeño, abandonado, solo, con meses de vida, en una madrugada, maullando, bajo la lluvia torrencial y trepado a un árbol del cual no podía bajar. ¿Pueden creer que tuve el descaro de decirle a Ana que lo dejara ahí maullando que ya se iba a ir? Le dije que no lo recogiéramos, que lo dejásemos abandonado. ¿Se lo dije a Pequeño y también a mi dolor infantil? ¿Se lo dije a Pequeño y a mi sensibilidad innata de la cual siempre he renegado?
+
+Algo se sobrepuso, como siempre. Por flaqueza de mi resistencia, por insistencia de Ana o por compasión, salí a la noche lluviosa, me trepé al árbol y bajé a Pequeño. Ahora entiendo mi no inicial. En esa época, Pequeño se sintió en casa rápidamente. Creo que tuvo pocos problemas de adaptación. Para ese entonces, Gorda había parido a 3 gatitos a los cuales estaba amamantando por lo que uno más en la mesa, no fue problema para ella. Pero para mí, inicialmente, ya éramos muchos. El tiempo pasó, los 3 gatitos de Gorda se fueron con otras familias pero Pequeño se quedó. Irónicamente, como pasa en estos casos en los que utilizamos un adjetivo calificativo como sustantivo, Pequeño es el felino más grande de la casa, me animaría a decir de la cuadra, de la manzana y vaya a saber quién hasta dónde llega su grandeza. Además es arisco como pocos, al mínimo ruido huye rápido pero siempre a la distancia se voltea para dimensionar el peligro. Si la acción no era agresiva, la reacción de Pequeño es volver a recibir unas caricias.
+
+De Cleo y Gorda tenemos que hablar en conjunto, como se haría de Hypnos y Tánatos, de Rómulo y Remo o de Caín y Abel. Aparecieron en el verano de 2016, en el lago de mi pueblo, jugando en el quincho que teníamos por entonces alquilado por la temporada de trabajo.

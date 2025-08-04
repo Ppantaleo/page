@@ -2,11 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://patricio.pantaleo.ar/blog/index.html</loc>
-    <lastmod>2025-06-18T20:20:53.759Z</lastmod>
+    <lastmod>2025-08-04T18:52:49.245Z</lastmod>
   </url>
   <url>
     <loc>https://patricio.pantaleo.ar/blog/posts/autorship-AI/index.html</loc>
     <lastmod>2025-06-19T19:47:37.342Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patricio.pantaleo.ar/blog/cuentos.html</loc>
+    <lastmod>2025-08-04T18:51:51.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patricio.pantaleo.ar/blog/posts/cuento-animales/index.html</loc>
+    <lastmod>2025-08-04T18:55:10.432Z</lastmod>
   </url>
   <url>
     <loc>https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/index.html</loc>
