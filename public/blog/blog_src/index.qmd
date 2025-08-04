@@ -12,7 +12,7 @@ listing:
     filter-ui: true
     feed: true
     exclude:
-      categories: "cuentos"  # Excluir cuentos del listing principal
+      categories: ["cuentos", "aforismos"]  # Excluir cuentos del listing principal
     fields: [image, title, categories, reading-time]
     field-display-names:
       reading-time: "Reading Time"
@@ -27,6 +27,17 @@ listing:
       categories: "cuentos"  # Solo incluir cuentos
     fields: [title, categories, description, date]
     max-items: 6  # Limitar a 6 cuentos más recientes
+  - id: aforismos
+    contents: posts
+    sort: "date desc"
+    type: table  # Tabla es mejor para aforismos
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "aforismos"
+    fields: [title, date]
+    max-items: 1  # Solo mostrar el post de aforismos
 page-layout: full
 title-block-banner: true
 format:
@@ -50,4 +61,18 @@ Brief tales that delve into the complexities of human experience, ranging from i
 
 ::: {.cuentos-more}
 [Explore all stories →](cuentos.html){.btn-cuentos}
+:::
+
+<!-- Section for aphorisms -->
+## Aphorisms & Reflections
+
+::: {.aforismos-intro}
+Brief thoughts and reflections on life, knowledge, and human experience, updated regularly with new insights.
+:::
+
+::: {#aforismos .aforismos-section}
+:::
+
+::: {.aforismos-more}
+[Read all aphorisms →](posts/aforismos/){.btn-aforismos}
 :::

@@ -1,0 +1,17 @@
+---
+title: "Aphorisms & Reflections"
+description: "A collection of brief thoughts and reflections"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+  include:
+    categories: "aforismos"
+  fields: [title, description, date]
+page-layout: full
+title-block-banner: true
+---
+
+::: {.intro-text}
+A curated collection of aphorisms, brief reflections, and thoughtful maxims exploring various aspects of human experience and wisdom.
+:::

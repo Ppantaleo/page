@@ -4,13 +4,20 @@
     "items": [
       "/posts/ia-descentralizada/index.html",
       "/posts/autorship-AI/index.html",
-      "/posts/cuento-animales/index.html"
+      "/posts/cuento-animales/index.html",
+      "/posts/aforismos/index.html"
     ]
   },
   {
     "listing": "/cuentos.html",
     "items": [
       "/posts/cuento-animales/index.html"
+    ]
+  },
+  {
+    "listing": "/aforismos.html",
+    "items": [
+      "/posts/aforismos/index.html"
     ]
   }
 ]

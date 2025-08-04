@@ -21,8 +21,13 @@ El proyecto combina dos tecnologías principales:
 │   └── images/            # Imágenes del sitio principal
 ├── public/blog/blog_src/  # 📝 FUENTES del blog en Quarto
 │   ├── posts/             # Posts del blog (.qmd)
+│   │   ├── cuentos/       # Cuentos y relatos breves
+│   │   ├── aforismos/     # Aforismos y reflexiones
+│   │   └── ...            # Posts académicos
 │   ├── _quarto.yml        # Configuración de Quarto
-│   └── custom.scss        # Estilos personalizados
+│   ├── custom.scss        # Estilos personalizados
+│   ├── cuentos.qmd        # Página de todos los cuentos
+│   └── aforismos.qmd      # Página de todos los aforismos
 └── ...
 ```
 
@@ -83,7 +88,15 @@ quarto preview
 
 ## 📝 Gestión de Contenido
 
-### Crear un Nuevo Post
+### Estructura del Blog
+
+El blog está organizado en tres categorías principales:
+
+1. **Posts Académicos**: Artículos de investigación, metodología y reflexiones académicas
+2. **Cuentos**: Relatos breves y narrativa literaria
+3. **Aforismos**: Reflexiones breves y sentencias sobre la experiencia humana
+
+### Crear un Nuevo Post Académico
 
 1. Crear archivo `.qmd` en `public/blog/blog_src/posts/nombre-post/`
 2. Incluir metadatos YAML en el frontmatter:
@@ -95,11 +108,75 @@ author: "Patricio Iván Pantaleo"
 date: "2025-06-16"
 categories: [posts, categoria]
 description: "Descripción del post"
+downloads: [pdf, epub]
+sharing: [twitter, facebook, linkedin]
+license: "CC BY"
+doi: 10.62059/ejemplo
 ---
 ```
 
 3. Escribir contenido en Markdown
 4. Renderizar con `quarto render`
+
+### Crear un Nuevo Cuento
+
+1. Crear archivo `.qmd` en `public/blog/blog_src/posts/nombre-cuento/`
+2. Usar plantilla simplificada:
+
+```yaml
+---
+title: "Título del Cuento"
+author:
+  - name: Patricio Iván Pantaleo
+    orcid: 0000-0002-8104-8975
+date: "2025-08-04"
+categories: [cuentos, spanish]
+description: |
+  Breve descripción del cuento.
+
+downloads: [pdf, epub]
+sharing: [twitter, facebook, linkedin]
+license: "CC BY"
+copyright: >
+  © 2025 Patricio Iván Pantaleo.
+
+comments:
+  hypothesis: true
+
+format:
+  html: default
+  pdf:
+    documentclass: scrartcl
+    toc: true
+    number-sections: false
+    fontsize: 11pt
+  epub:
+    toc: true
+lang: es
+---
+```
+
+### Gestionar Aforismos
+
+Los aforismos se gestionan de forma centralizada en un solo archivo:
+
+1. Editar `public/blog/blog_src/posts/aforismos/index.qmd`
+2. Agregar nuevos aforismos siguiendo el formato:
+
+```markdown
+## [Mes Año]
+
+**[fecha]**
+> "[aforismo]"
+
+**[otra fecha]**
+> "[otro aforismo]"
+*[tema opcional]*
+
+---
+```
+
+3. Los aforismos aparecen automáticamente en la página principal y en la sección dedicada
 
 ### Estructura de un Post
 
@@ -110,6 +187,29 @@ posts/nombre-post/
 ├── post.bib           # Referencias (opcional)
 └── archivos/          # Recursos adicionales
 ```
+
+## 🎨 Organización del Contenido en el Blog
+
+### Página Principal del Blog (`index.qmd`)
+
+La página principal está organizada en secciones:
+
+- **Posts Académicos**: Artículos principales (excluye cuentos y aforismos)
+- **Cuentos**: Sección horizontal deslizable con los últimos cuentos
+- **Aforismos**: Sección minimalista con enlace al archivo completo
+
+### Categorización Automática
+
+El sistema usa las categorías para organizar el contenido:
+
+- `categories: [posts, ...]` → Aparece en la sección principal
+- `categories: [cuentos, ...]` → Aparece en la sección de cuentos
+- `categories: [aforismos, ...]` → Aparece en la sección de aforismos
+
+### Páginas Especializadas
+
+- **`cuentos.qmd`**: Todos los cuentos en formato grid
+- **`aforismos.qmd`**: Vista completa de aforismos organizados por fecha
 
 ## 📱 Actualizar Posts de LinkedIn
 
@@ -167,7 +267,14 @@ El sitio incluye una sección que muestra los últimos posts de LinkedIn mediant
 ### Blog
 - Estilos principales en `public/blog/blog_src/custom.scss`
 - Variables SCSS que replican el diseño del sitio principal
+- Estilos específicos para secciones de cuentos y aforismos
 - Footer y header personalizados en `footer.html` y `header.html`
+
+### Estilos por Sección
+
+- **Cuentos**: Diseño horizontal deslizable con cards destacadas
+- **Aforismos**: Diseño minimalista con tipografía elegante
+- **Posts Académicos**: Diseño estándar de blog con metadatos completos
 
 ## 🚀 Deployment
 
@@ -201,9 +308,18 @@ El sitio se despliega automáticamente en GitHub Pages mediante GitHub Actions:
 │   └── ui/                # Componentes shadcn/ui
 ├── public/
 │   ├── blog/              # Blog compilado (NO EDITAR)
-│   │   ├── index.html     # Lista de posts
+│   │   ├── index.html     # Lista de posts con secciones
+│   │   ├── cuentos.html   # Página de todos los cuentos
+│   │   ├── aforismos.html # Página de todos los aforismos
 │   │   └── posts/         # Posts individuales
 │   └── blog/blog_src/     # Fuentes del blog (EDITAR AQUÍ)
+│       ├── posts/
+│       │   ├── cuentos/   # Cuentos individuales
+│       │   ├── aforismos/ # Archivo único de aforismos
+│       │   └── ...        # Posts académicos
+│       ├── custom.scss    # Estilos del blog
+│       ├── cuentos.qmd    # Página de cuentos
+│       └── aforismos.qmd  # Página de aforismos
 ├── next.config.mjs        # Configuración Next.js para export
 └── package.json           # Dependencias y scripts
 ```
@@ -230,3 +346,11 @@ Este proyecto está bajo la licencia GPL-3.0. Ver [LICENSE](LICENSE) para más d
 ---
 
 **Nota**: El blog se genera con Quarto desde `public/blog/blog_src/` y el output se coloca en `public/blog/`. No editar directamente los archivos HTML del blog.
+
+### 📖 Flujo de Trabajo Recomendado
+
+1. **Para posts académicos**: Crear nueva carpeta en `posts/` con metadatos completos
+2. **Para cuentos**: Crear nueva carpeta en `posts/` con categoría `cuentos`
+3. **Para aforismos**: Editar directamente `posts/aforismos/index.qmd`
+4. **Renderizar**: `cd public/blog/blog_src && quarto render`
+5. **Deploy**: `git push origin main` (automático)
