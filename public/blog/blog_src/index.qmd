@@ -60,7 +60,7 @@ Brief tales that delve into the complexities of human experience, ranging from i
 :::
 
 ::: {.cuentos-more}
-[Explore all stories →](cuentos.html){.btn-cuentos}
+[Explore all stories →](cuentos){.btn-cuentos}
 :::
 
 <!-- Section for aphorisms -->
@@ -74,5 +74,5 @@ Brief thoughts and reflections on life, knowledge, and human experience, updated
 :::
 
 ::: {.aforismos-more}
-[Read all aphorisms →](posts/aforismos/){.btn-aforismos}
+[Read all aphorisms →](aforismos){.btn-aforismos}
 :::
