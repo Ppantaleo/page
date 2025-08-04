@@ -1,0 +1,19 @@
+---
+title: "Short Stories"
+description: "All stories and brief literary narratives"
+listing:
+ contents: posts
+ sort: "date desc"
+ type: grid
+ include:
+   categories: "cuentos"
+ fields: [title, description, date, reading-time]
+ field-display-names:
+   reading-time: "Reading Time"
+page-layout: full
+title-block-banner: true
+---
+
+::: {.intro-text}
+Here you'll find all the short stories and brief narratives, exploring different literary themes and narrative styles.
+:::

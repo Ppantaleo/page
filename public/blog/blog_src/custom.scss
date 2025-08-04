@@ -971,3 +971,181 @@ body footer:not(.nav-footer) {
   border: none;
   border-top: 1px solid #e5e7eb;
 }
+
+// Estilos para la sección de cuentos
+.cuentos-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: $text-secondary;
+  margin: 1rem auto 2rem auto;
+  max-width: 600px;
+  line-height: 1.6;
+  font-family: $font-family-sans-serif;
+}
+
+// Grid horizontal para cuentos (slider effect)
+#cuentos.cuentos-grid .quarto-listing {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  
+  // Scrollbar styling para el slider horizontal
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: $gray-100;
+    border-radius: $border-radius-sm;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: $gray-300;
+    border-radius: $border-radius-sm;
+    
+    &:hover {
+      background: $gray-400;
+    }
+  }
+}
+
+#cuentos.cuentos-grid .listing-item {
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+  background: $white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: $gray-300;
+  }
+  
+  .listing-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    color: $text-primary;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: $text-secondary;
+      }
+    }
+  }
+  
+  .listing-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: $text-secondary;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .listing-date {
+    font-size: 0.8rem;
+    color: $text-muted;
+    font-style: italic;
+  }
+  
+  .listing-categories .listing-category {
+    background: $gray-50;
+    color: $text-muted;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.25rem;
+  }
+}
+
+// Botón "Ver todos los cuentos"
+.cuentos-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-cuentos {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: $primary;
+  color: $white;
+  text-decoration: none;
+  border: none;
+  border-radius: $border-radius;
+  font-weight: 500;
+  font-family: $font-family-sans-serif;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: inherit;
+  
+  &:hover {
+    background: $gray-700;
+    transform: translateY(-1px);
+    color: $white;
+    text-decoration: none;
+  }
+  
+  &:focus {
+    outline: 2px solid $gray-400;
+    outline-offset: 2px;
+  }
+}
+
+// Separador visual para la sección de cuentos
+h2:has(+ .cuentos-intro) {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid $border-color;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: $text-primary;
+  
+  @media (max-width: 768px) {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+// Responsive para cuentos
+@media (max-width: 768px) {
+  #cuentos.cuentos-grid .listing-item {
+    min-width: 280px;
+    max-width: 280px;
+    padding: 1.25rem;
+  }
+  
+  .cuentos-intro {
+    font-size: 1rem;
+    margin: 1rem auto 1.5rem auto;
+  }
+  
+  .cuentos-more {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #cuentos.cuentos-grid .listing-item {
+    min-width: 260px;
+    max-width: 260px;
+    padding: 1rem;
+  }
+  
+  .btn-cuentos {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,20 +1,53 @@
 ---
 title: "Blog"
 description: |
-  This blog brings together a variety of posts: articles, essays, methodological notes, code snippets, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You’ll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.
+  This blog brings together a variety of posts: articles, essays, methodological notes, code snippets, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You'll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.
 listing:
-  contents: posts
-  sort: "date desc"
-  type: grid
-  categories: false
-  sort-ui: true
-  filter-ui: true
-  feed: true
-  fields: [image, title, categories,  reading-time]
-  field-display-names:
-    reading-time: "Reading Time"
+  - id: main-posts
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    feed: true
+    exclude:
+      categories: "cuentos"  # Excluir cuentos del listing principal
+    fields: [image, title, categories, reading-time]
+    field-display-names:
+      reading-time: "Reading Time"
+  - id: cuentos
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "cuentos"  # Solo incluir cuentos
+    fields: [title, categories, description, date]
+    max-items: 6  # Limitar a 6 cuentos más recientes
 page-layout: full
 title-block-banner: true
+format:
+  html:
+    css: custom-sections.css
 ---
 
+<!-- Listing principal (sin cuentos) -->
+::: {#main-posts}
+:::
 
+<!-- Separate section for short stories -->
+## Short Stories
+
+::: {.cuentos-intro}
+Brief tales that delve into the complexities of human experience, ranging from intimate daily moments to journeys into the realm of the extraordinary.
+:::
+
+::: {#cuentos .cuentos-grid}
+:::
+
+::: {.cuentos-more}
+[Explore all stories →](cuentos.html){.btn-cuentos}
+:::
