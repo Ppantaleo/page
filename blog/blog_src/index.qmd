@@ -1,7 +1,7 @@
 ---
 title: "Blog"
 description: |
-  This blog brings together a variety of posts: articles, essays, methodological notes, code snippets, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You'll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.
+  This blog brings together a variety of posts: articles, essays, methodological notes, stories, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You'll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.
 listing:
   - id: main-posts
     contents: posts
@@ -46,6 +46,8 @@ format:
 ---
 
 <!-- Listing principal (sin cuentos) -->
+## Post
+
 ::: {#main-posts}
 :::
 
