@@ -1,0 +1,47 @@
+---
+title: "Aforismos y Reflexiones"
+author:
+  - name: Patricio Iván Pantaleo
+    orcid: 0000-0002-8104-8975
+date: "2025-08-04"
+categories: [aforismos, reflexiones, spanish]
+description: |
+  Colección de aforismos, reflexiones breves y sentencias que exploran diferentes aspectos de la experiencia humana, el conocimiento y la vida cotidiana.
+
+downloads: [pdf, epub]
+sharing: [twitter, facebook, linkedin]
+
+license: "CC BY"
+copyright: >
+  © 2025 Patricio Iván Pantaleo. This post is published under the Creative Commons CC BY 4.0 license.
+
+comments:
+  hypothesis: true
+
+format:
+  html: 
+    default: true
+    toc: true
+    toc-location: right
+  pdf:
+    documentclass: scrartcl
+    toc: true
+    number-sections: false
+    fontsize: 11pt
+  epub:
+    toc: true
+lang: es
+---
+
+*Esta página se actualiza regularmente con nuevas reflexiones y aforismos.*
+
+---
+
+## Julio 2021
+
+**23 de julio**
+> "La poesía goza de una cautividad en la atención humana que la tecnología siempre va a envidiar. Una, es una mezcla de atención y emancipación, libertad, autonomía. La otra, una combinación con automatismo y ausencia."
+
+---
+
+<!-- Aquí agregarás más aforismos siguiendo el mismo formato -->

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="This blog brings together a variety of posts: articles, essays, methodological notes, code snippets, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You’ll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.">
+<meta name="description" content="A collection of brief thoughts and reflections">
 
-<title>Blog – Patricio Pantaleo’s Blog</title>
+<title>Aphorisms &amp; Reflections – Patricio Pantaleo’s Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,76 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-main-posts .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-main-posts'] = new List('listing-main-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-cuentos .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-categories','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-cuentos'] = new List('listing-cuentos', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-aforismos .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-aforismos'] = new List('listing-aforismos', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -213,8 +157,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="custom-sections.css">
-<link rel="alternate" type="application/rss+xml" title="Patricio Pantaleo's Blog" href="index.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -260,18 +203,18 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
+    <div class="quarto-title column-page">
+      <h1 class="title">Aphorisms &amp; Reflections</h1>
                   <div>
         <div class="description">
-          <p>This blog brings together a variety of posts: articles, essays, methodological notes, code snippets, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You’ll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.</p>
+          A collection of brief thoughts and reflections
         </div>
       </div>
                 </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -282,32 +225,37 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#short-stories" id="toc-short-stories" class="nav-link active" data-scroll-target="#short-stories">Short Stories</a></li>
-  <li><a href="#aphorisms-reflections" id="toc-aphorisms-reflections" class="nav-link" data-scroll-target="#aphorisms-reflections">Aphorisms &amp; Reflections</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="YWZvcmlzbW9z">aforismos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y3VlbnRvcw==">cuentos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW5nbGlzaA==">english <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9zdHM=">posts <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVmbGV4aW9uZXM=">reflexiones <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2Nob2xhcmx5LXB1Ymxpc2hpbmc=">scholarly-publishing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3BhbmlzaA==">spanish <span class="quarto-category-count">(3)</span></div></div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
-<!-- Listing principal (sin cuentos) -->
-<div id="listing-main-posts" class="quarto-listing quarto-listing-container-grid">
+<div class="intro-text">
+<p>A curated collection of aphorisms, brief reflections, and thoughtful maxims exploring various aspects of human experience and wisdom.</p>
+</div>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-main-posts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-main-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
           Title
         </option>
      </select>
@@ -317,127 +265,17 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cG9zdHMlMkNzY2hvbGFybHktcHVibGlzaGluZyUyQ3NwYW5pc2g=" data-listing-date-sort="1751511600000" data-listing-file-modified-sort="1751629938015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5240">
-<a href="./posts/ia-descentralizada/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/ia-descentralizada/post.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Collage fotográfico sobre inteligencia artificial descentralizada (DeAI)">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes
-</h5>
-<div class="listing-reading-time card-text text-muted">
-27 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cG9zdHM='); return false;">
-posts
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nob2xhcmx5LXB1Ymxpc2hpbmc='); return false;">
-scholarly-publishing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c3BhbmlzaA=='); return false;">
-spanish
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cG9zdHMlMkNzY2hvbGFybHktcHVibGlzaGluZyUyQ2VuZ2xpc2g=" data-listing-date-sort="1750302000000" data-listing-file-modified-sort="1750362457342" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3868">
-<a href="./posts/autorship-AI/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/autorship-AI/post.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Photo collage">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Authorship and Contribution in the Age of AI: Notes on the Current Debate
-</h5>
-<div class="listing-reading-time card-text text-muted">
-20 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cG9zdHM='); return false;">
-posts
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nob2xhcmx5LXB1Ymxpc2hpbmc='); return false;">
-scholarly-publishing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZW5nbGlzaA=='); return false;">
-english
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<!-- Separate section for short stories -->
-<section id="short-stories" class="level2">
-<h2 class="anchored" data-anchor-id="short-stories">Short Stories</h2>
-<div class="cuentos-intro">
-<p>Brief tales that delve into the complexities of human experience, ranging from intimate daily moments to journeys into the realm of the extraordinary.</p>
-</div>
-<div id="listing-cuentos" class="cuentos-grid quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y3VlbnRvcyUyQ3NwYW5pc2g=" data-listing-date-sort="1750302000000" data-listing-file-modified-sort="1754333710432" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
-<a href="./posts/cuento-animales/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Familia animal
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Y3VlbnRvcw=='); return false;">
-cuentos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('c3BhbmlzaA=='); return false;">
-spanish
-</div>
-</div>
-<div class="card-text listing-description">
-Un relato sobre la convivencia con los animales de la familia, explorando los vínculos que se forman entre humanos y mascotas a través de historias de rescate, adaptación y…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 19, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<div class="cuentos-more">
-<p><a href="cuentos.html" class="btn-cuentos">Explore all stories →</a></p>
-</div>
-<!-- Section for aphorisms -->
-</section>
-<section id="aphorisms-reflections" class="level2">
-<h2 class="anchored" data-anchor-id="aphorisms-reflections">Aphorisms &amp; Reflections</h2>
-<div class="aforismos-intro">
-<p>Brief thoughts and reflections on life, knowledge, and human experience, updated regularly with new insights.</p>
-</div>
-<div id="listing-aforismos" class="aforismos-section quarto-listing quarto-listing-container-table">
 <table class="quarto-listing-table table">
 <thead>
 <tr>
 <th>
-Title
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
-Date
+Description
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
 </th>
 </tr>
 </thead>
@@ -445,6 +283,9 @@ Date
 <tr data-index="0" data-categories="YWZvcmlzbW9zJTJDcmVmbGV4aW9uZXMlMkNzcGFuaXNo" data-listing-date-sort="1754276400000" data-listing-file-modified-sort="1754334661130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Aforismos y Reflexiones" data-listing-filename-sort="index.qmd">
 <td>
 <a href="./posts/aforismos/index.html" class="title listing-title">Aforismos y Reflexiones</a>
+</td>
+<td>
+<span class="listing-description">Colección de aforismos, reflexiones breves y sentencias que exploran diferentes aspectos de la experiencia humana, el conocimiento y la vida cotidiana. </span>
 </td>
 <td>
 <span class="listing-date">Aug 4, 2025</span>
@@ -455,16 +296,7 @@ Date
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-<div class="aforismos-more">
-<p><a href="posts/aforismos/" class="btn-aforismos">Read all aphorisms →</a></p>
-</div>
-
-
-
-</section>
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <!-- Footer idéntico al sitio principal -->
 <footer class="nav-footer">
   <div class="nav-footer-center">
