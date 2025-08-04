@@ -1,5 +1,6 @@
 ---
 title: "Familia animal"
+draft: true
 author:
  - name: Patricio Iván Pantaleo
    orcid: 0000-0002-8104-8975
