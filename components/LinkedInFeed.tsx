@@ -14,7 +14,7 @@ const linkedinEmbeds = [
   },
   {
     id: 3,
-    src: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7348794106204041218", // Change for your third URL
+    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7367255402171764736?collapsed=1", // Change for your third URL
     title: "Post about Open Journal Systems"
   }
 ]
