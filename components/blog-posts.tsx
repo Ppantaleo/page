@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Clock, Calendar, Tag } from "lucide-react"
+import { ArrowRight, Clock, Calendar, Tag, BookOpen, PenTool } from "lucide-react"
 
 interface BlogPost {
   title: string
@@ -28,6 +28,18 @@ export default function BlogPosts() {
     return words.slice(0, maxWords).join(' ') + '...'
   }
 
+  // Función para filtrar posts principales (excluir cuentos y aforismos)
+  const filterMainPosts = (posts: BlogPost[]): BlogPost[] => {
+    return posts.filter(post => {
+      const categories = post.categories || []
+      return !categories.some(cat => 
+        cat.toLowerCase().includes('cuento') || 
+        cat.toLowerCase().includes('aforismo') ||
+        cat.toLowerCase().includes('story')
+      )
+    })
+  }
+
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -39,7 +51,7 @@ export default function BlogPosts() {
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml')
         const items = xmlDoc.querySelectorAll('item')
         
-        const parsedPosts = Array.from(items).slice(0, 3).map(item => {
+        const parsedPosts = Array.from(items).map(item => {
           const title = item.querySelector('title')?.textContent || ''
           const link = item.querySelector('link')?.textContent || ''
           const pubDate = item.querySelector('pubDate')?.textContent || ''
@@ -111,7 +123,9 @@ export default function BlogPosts() {
           }
         })
         
-        setPosts(parsedPosts)
+        // Filtrar solo posts principales (sin cuentos ni aforismos) y tomar los primeros 3
+        const mainPosts = filterMainPosts(parsedPosts).slice(0, 3)
+        setPosts(mainPosts)
       } catch (error) {
         console.error('Error fetching blog posts:', error)
       } finally {
@@ -261,12 +275,32 @@ export default function BlogPosts() {
           ))}
         </div>
 
-        <div className="text-center">
+        {/* Navigation buttons section */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:bg-primary/90 transition-colors"
           >
-            View all posts
+            <BookOpen className="w-4 h-4" />
+            Ver todos los posts
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          
+          <Link
+            href="/blog/cuentos"
+            className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 transition-colors"
+          >
+            <PenTool className="w-4 h-4" />
+            Ver cuentos
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          
+          <Link
+            href="/blog/aforismos"
+            className="inline-flex items-center gap-2 bg-outline text-foreground border border-slate-300 dark:border-slate-600 px-6 py-3 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          >
+            <Tag className="w-4 h-4" />
+            Ver aforismos
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
