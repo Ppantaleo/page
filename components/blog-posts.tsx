@@ -282,7 +282,7 @@ export default function BlogPosts() {
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:bg-primary/90 transition-colors"
           >
             <BookOpen className="w-4 h-4" />
-            Ver todos los posts
+            View all posts
             <ArrowRight className="w-4 h-4" />
           </Link>
           
@@ -291,7 +291,7 @@ export default function BlogPosts() {
             className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 transition-colors"
           >
             <PenTool className="w-4 h-4" />
-            Ver cuentos
+            View stories
             <ArrowRight className="w-4 h-4" />
           </Link>
           
@@ -300,7 +300,7 @@ export default function BlogPosts() {
             className="inline-flex items-center gap-2 bg-outline text-foreground border border-slate-300 dark:border-slate-600 px-6 py-3 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
           >
             <Tag className="w-4 h-4" />
-            Ver aforismos
+            View aphorisms
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
