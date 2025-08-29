@@ -1,6 +1,6 @@
 ---
 title: "Aforismos y Reflexiones"
-draft: true
+draft: false
 author:
   - name: Patricio Iván Pantaleo
     orcid: 0000-0002-8104-8975
@@ -36,13 +36,21 @@ lang: es
 
 *Esta página se actualiza regularmente con nuevas reflexiones y aforismos.*
 
----
+## Agosto 2025
+
+**28 de agosto**
+
+> "Pero ¿cómo es posible que sea tan nítido ese sueño? ¿Cómo puede ser un sueño si mana la sangre y brotan las lágrimas calientes?" Han Kang
+
+> "Entre el vivir y el soñar hay una tercera cosa. Adivínala." Antonio Machado
+
+> "Me circunda el Universo. Soy el núcleo de la ola (onda) estelar."
 
 ## Julio 2021
 
 **23 de julio**
+
 > "La poesía goza de una cautividad en la atención humana que la tecnología siempre va a envidiar. Una, es una mezcla de atención y emancipación, libertad, autonomía. La otra, una combinación con automatismo y ausencia."
 
----
 
 <!-- Aquí agregarás más aforismos siguiendo el mismo formato -->
