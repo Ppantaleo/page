@@ -3,7 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/posts/ia-descentralizada/index.html",
-      "/posts/autorship-AI/index.html"
+      "/posts/autorship-AI/index.html",
+      "/posts/aforismos/index.html"
     ]
   },
   {
@@ -12,6 +13,8 @@
   },
   {
     "listing": "/aforismos.html",
-    "items": []
+    "items": [
+      "/posts/aforismos/index.html"
+    ]
   }
 ]
