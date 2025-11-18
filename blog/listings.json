@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/aforismos.html",
+    "items": [
+      "/posts/aforismos/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/ia-descentralizada/index.html",
@@ -10,11 +16,5 @@
   {
     "listing": "/cuentos.html",
     "items": []
-  },
-  {
-    "listing": "/aforismos.html",
-    "items": [
-      "/posts/aforismos/index.html"
-    ]
   }
 ]

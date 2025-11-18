@@ -10,8 +10,8 @@
 <atom:link href="https://patricio.pantaleo.ar/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>This blog brings together a variety of posts: articles, essays, methodological notes, stories, and personal reflections. Topics include academic publishing, authorship, open access, and digital tools for research. You&#39;ll also find content on history, historical methodology, philosophy, documentary sources, and other related interests.
 </description>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Mon, 04 Aug 2025 03:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Mon, 04 Aug 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Aforismos y Reflexiones</title>
   <dc:creator>Patricio Iván Pantaleo</dc:creator>
@@ -53,7 +53,7 @@
   <category>reflexiones</category>
   <category>spanish</category>
   <guid>https://patricio.pantaleo.ar/blog/posts/aforismos/</guid>
-  <pubDate>Mon, 04 Aug 2025 03:00:00 GMT</pubDate>
+  <pubDate>Mon, 04 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes</title>
@@ -86,7 +86,7 @@ Foto de <a href="https://unsplash.com/es/@purzlbaum?utm_content=creditCopyText&a
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Uso de Wayback Machine para referencias web
+<span class="screen-reader-only">Nota</span>Uso de Wayback Machine para referencias web
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -121,7 +121,7 @@ Uso de Wayback Machine para referencias web
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<em>DeAI</em>, <em>DzAI</em> o <em>DEAI</em>. Definir el acrónimo
+<span class="screen-reader-only">Nota</span><em>DeAI</em>, <em>DzAI</em> o <em>DEAI</em>. Definir el acrónimo
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -192,7 +192,7 @@ Figura&nbsp;2: Comparación entre IA centralizada (CeAI) y IA descentralizada (D
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Uso de IA
+<span class="screen-reader-only">Nota</span>Uso de IA
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -297,7 +297,7 @@ descentralizada (DeAI): perspectivas de un desarrollo en ciernes</em>
   <category>scholarly-publishing</category>
   <category>spanish</category>
   <guid>https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/</guid>
-  <pubDate>Thu, 03 Jul 2025 03:00:00 GMT</pubDate>
+  <pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/post.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -482,7 +482,7 @@ Figure&nbsp;2: Suspicious Trends in Word Usage. Amanda Montañez; Source: Andrew
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note 1
+<span class="screen-reader-only">Note</span>Note 1
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -495,7 +495,7 @@ Note 1
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note 2
+<span class="screen-reader-only">Note</span>Note 2
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -598,7 +598,7 @@ Age of AI: Notes on the Current Debate</em> [Online post]. <a href="https://doi.
   <category>scholarly-publishing</category>
   <category>english</category>
   <guid>https://patricio.pantaleo.ar/blog/posts/autorship-AI/</guid>
-  <pubDate>Thu, 19 Jun 2025 03:00:00 GMT</pubDate>
+  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://patricio.pantaleo.ar/blog/posts/autorship-AI/post.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
