@@ -86,11 +86,11 @@ npm run build
 # Navegar al directorio del blog
 cd public/blog/blog_src
 
-# Renderizar el blog (output a public/blog/)
-quarto render
-
-# Servidor de desarrollo para el blog
+# Servidor de desarrollo para el blog (opcional)
 quarto preview
+
+# NOTA: Ya NO necesitas hacer 'quarto render' manualmente
+# GitHub Actions se encarga del render automáticamente
 ```
 
 ## 📝 Gestión de Contenido
@@ -288,19 +288,40 @@ El sitio incluye una sección que muestra los últimos posts de LinkedIn mediant
 El sitio se despliega automáticamente en GitHub Pages mediante GitHub Actions:
 
 1. **Trigger**: Push a la rama `main`
-2. **Build**: Next.js exporta estático + Quarto ya renderizado
-3. **Deploy**: Archivos estáticos a `gh-pages`
-4. **URL**: https://patricio.pantaleo.ar
+2. **Quarto Render**: Renderiza archivos `.qmd` a HTML automáticamente
+3. **Build**: Next.js exporta estático con blog renderizado
+4. **Deploy**: Archivos estáticos a `gh-pages`
+5. **URL**: https://patricio.pantaleo.ar
 
 ### Configuración de Deployment
 
 ```yaml
 # .github/workflows/build-and-deploy.yml
+- name: Setup Quarto
+  uses: quarto-dev/quarto-actions/setup@v2
+  
+- name: Render Quarto Blog
+  run: |
+    cd public/blog/blog_src
+    quarto render
+    
 - name: Build
   run: npm run build
-- name: Create CNAME
-  run: echo "patricio.pantaleo.ar" > out/CNAME
 ```
+
+### 🔄 Flujo de Trabajo Automatizado
+
+**Ya NO necesitas renderizar Quarto manualmente:**
+
+1. Edita archivos `.qmd` en `public/blog/blog_src/`
+2. Haz commit y push de los **archivos fuente** únicamente
+3. GitHub Actions automáticamente:
+   - Instala Quarto en el runner
+   - Renderiza `.qmd` → HTML
+   - Hace build de Next.js
+   - Despliega todo junto
+
+**Solo commitea archivos fuente (.qmd), NO los HTML generados**
 
 ## 📁 Estructura de Archivos Clave
 
@@ -419,5 +440,6 @@ La sección de recursos está implementada en Next.js y organizada por categorí
 2. **Para cuentos**: Crear nueva carpeta en `posts/` con categoría `cuentos`
 3. **Para aforismos**: Editar directamente `posts/aforismos/index.qmd`
 4. **Para recursos**: Subir archivo a `public/recursos/` y actualizar array en `page.tsx`
-5. **Renderizar blog**: `cd public/blog/blog_src && quarto render`
-6. **Deploy**: `git push origin main` (automático)
+5. **Deploy**: `git push origin main` (automático - incluye render de Quarto)
+
+**⚠️ IMPORTANTE**: Solo commitea archivos `.qmd` fuente, NO los HTML generados. GitHub Actions se encarga del render automáticamente.

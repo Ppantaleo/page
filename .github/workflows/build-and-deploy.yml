@@ -14,8 +14,16 @@ jobs:
         with:
           node-version: '18'
           
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
+        
+      - name: Render Quarto Blog
+        run: |
+          cd public/blog/blog_src
+          quarto render
         
       - name: Build
         run: npm run build
