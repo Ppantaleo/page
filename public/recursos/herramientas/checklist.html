@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de pre-publicación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .credit {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 0.9em;
+        }
+        
+        .credit a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(255,255,255,0.5);
+        }
+        
+        .content { padding: 40px; }
+        
+        .intro {
+            background: #f1f5f9;
+            padding: 20px;
+            border-left: 5px solid #3b82f6;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+        
+        .section { 
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .section-title {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 20px 25px;
+            margin: 0 0 0 0;
+            font-size: 1.5em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            user-select: none;
+            border-radius: 8px;
+        }
+        
+        .section-title:hover {
+            background: linear-gradient(135deg, #334155 0%, #475569 100%);
+        }
+        
+        .section-title::after {
+            content: "−";
+            position: absolute;
+            right: 30px;
+            font-size: 2em;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+        
+        .section-title.collapsed::after {
+            content: "+";
+        }
+        
+        .section-content {
+            max-height: 10000px;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease, padding 0.3s ease;
+            opacity: 1;
+            padding: 25px 0;
+        }
+        
+        .section-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+            padding: 0;
+        }
+        
+        .section-number {
+            background: rgba(59, 130, 246, 0.3);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .checklist { list-style: none; }
+        
+        .checklist-item {
+            position: relative;
+            padding: 14px 14px 14px 50px;
+            margin-bottom: 10px;
+            background: #f8fafc;
+            border-left: 4px solid #cbd5e1;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .checklist-item:hover {
+            background: #e0f2fe;
+            border-left-color: #3b82f6;
+            transform: translateX(3px);
+        }
+        
+        .checklist-item input[type="checkbox"] {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #10b981;
+        }
+        
+        .checklist-item.checked {
+            background: #d1fae5;
+            border-left-color: #10b981;
+            opacity: 0.8;
+        }
+        
+        .checklist-item.checked label {
+            text-decoration: line-through;
+            color: #64748b;
+        }
+        
+        .checklist-item label {
+            cursor: pointer;
+            display: block;
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+        
+        .detail {
+            font-size: 0.9em;
+            color: #64748b;
+            margin-top: 6px;
+            font-weight: 400;
+        }
+        
+        .priority-high {
+            border-left-color: #ef4444 !important;
+        }
+        
+        .priority-high::after {
+            content: "CRÍTICO";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ef4444;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+        
+        .priority-medium {
+            border-left-color: #f59e0b !important;
+        }
+        
+        .subsection {
+            margin: 20px 0 25px 25px;
+        }
+        
+        .subsection-title {
+            color: #1e293b;
+            font-size: 1.15em;
+            margin-bottom: 12px;
+            font-weight: 600;
+            padding-left: 15px;
+            border-left: 3px solid #3b82f6;
+        }
+        
+        .progress-container {
+            position: sticky;
+            top: 20px;
+            background: white;
+            padding: 20px;
+            margin: -40px -40px 30px -40px;
+            border-bottom: 3px solid #e2e8f0;
+            z-index: 100;
+            border-radius: 0;
+        }
+        
+        .progress-bar-container {
+            background: #e2e8f0;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .progress-text {
+            text-align: center;
+            margin-top: 10px;
+            color: #1e293b;
+            font-weight: 600;
+        }
+        
+        .tip {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .references {
+            background: #f1f5f9;
+            padding: 30px;
+            margin: 40px -40px 0 -40px;
+            border-top: 3px solid #e2e8f0;
+        }
+        
+        .references h2 {
+            color: #1e293b;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .references h3 {
+            color: #475569;
+            font-size: 1.1em;
+            margin: 25px 0 12px 0;
+            font-weight: 600;
+        }
+        
+        .references ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .references li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .references li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        
+        .references a {
+            color: #3b82f6;
+            text-decoration: none;
+            word-break: break-word;
+        }
+        
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        .actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #10b981;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #64748b;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #475569;
+        }
+
+        @media (max-width: 768px) {
+            .content { padding: 20px; }
+            .section-title {
+                margin: 0;
+                font-size: 1.2em;
+                padding: 15px 20px;
+            }
+            .section-title::after { right: 20px; }
+            header h1 { font-size: 1.6em; }
+            .references { margin: 40px -20px 0 -20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Checklist de pre-publicación</h1>
+            <p>Verificación sugerida para revistas académicas</p>
+            <div class="credit">
+                Recurso de <a href="https://patricio.pantaleo.ar/" target="_blank">patricio.pantaleo.ar</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="progress-container">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar">0%</div>
+                </div>
+                <div class="progress-text" id="progressText">0 de 0 items completados</div>
+            </div>
+
+            <div class="intro">
+                <p><strong>Objetivo:</strong> asegurar metadatos, prácticas y políticas correctas antes de aplicar.</p>
+                <p><strong>Base:</strong> criterios de DOAJ, Latindex, Redalyc, Scopus, WoS y PubMed.</p>
+                <p><strong>Tip:</strong> haz clic en cada sección para expandir/colapsar el contenido.</p>
+            </div>
+
+            <!-- SECCIÓN 1: METADATOS -->
+            <div class="section">
+                <div class="section-title" onclick="toggleSection(this)">
+                    <span class="section-number">1</span>
+                    <span>Metadatos de artículos</span>
+                </div>
+                <div class="section-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">Metadatos del artículo</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m1">
+                                <label for="m1">Título completo en idioma original</label>
+                                <div class="detail">Sin errores ortográficos, sin abreviaturas no estándar. No colocar todo en mayúscula.</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m2">
+                                <label for="m2">Título traducido a segundo idioma (inglés preferentemente)</label>
+                                <div class="detail">DOAJ y Scopus lo valoran positivamente</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m3">
+                                <label for="m3">Resumen en idioma original (150-250 palabras)</label>
+                                <div class="detail">Estructurado cuando sea posible (objetivo, métodos, resultados, conclusiones)</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m4">
+                                <label for="m4">Abstract en inglés (150-250 palabras)</label>
+                                <div class="detail">Obligatorio para la mayoría de indexadores internacionales</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m5">
+                                <label for="m5">Palabras clave en idioma original: mínimo 3, ideal 5-6</label>
+                                <div class="detail">Usar tesauros reconocidos según disciplina (DeCS, MeSH, etc.)</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m6">
+                                <label for="m6">Keywords en inglés: mínimo 3, ideal 5-6</label>
+                                <div class="detail">Requerido por WoS, Scopus y PubMed</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m7">
+                                <label for="m7">Tipo de artículo especificado claramente</label>
+                                <div class="detail">Investigación original, revisión sistemática, caso de estudio, editorial, etc.</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m8">
+                                <label for="m8">Idioma del artículo especificado (código ISO 639-1)</label>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m9">
+                                <label for="m9">Fecha de recepción y aceptación del manuscrito</label>
+                                <div class="detail"></div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m10">
+                                <label for="m10">Fecha de publicación del manuscrito</label>
+                                <div class="detail">PubMed lo requiere</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m11">
+                                <label for="m11">Metadatos anteriores presentes en galerada PDF</label>
+                                <div class="detail">Fundamental que el PDF contenga los mismos metadatos</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Metadatos de autores</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m12">
+                                <label for="m12">Nombres completos de todos los autores</label>
+                                <div class="detail">Nombre(s) y apellido(s) completos, sin iniciales ni abreviaturas</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m13">
+                                <label for="m13">ORCID de cada autor registrado y validado</label>
+                                <div class="detail">Verificar que los enlaces a ORCID funcionen.    </div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m14">
+                                <label for="m14">Afiliación institucional completa de cada autor</label>
+                                <div class="detail">Nombre de institución, facultad/departamento, ciudad, país (sin abreviaturas ni siglas)</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m14b">
+                                <label for="m14b">ROR de cada autor</label>
+                                <div class="detail">Si la institución dispone y si tiene el plugin activado en OJS.</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m15">
+                                <label for="m15">Email institucional del autor corresponsal</label>
+                                <div class="detail">Preferentemente de todos los autores. Debe ser institucional, no personal</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m16">
+                                <label for="m16">Autor corresponsal claramente identificado</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m17">
+                                <label for="m17">Contribuciones de autoría especificadas (CRediT taxonomy)</label>
+                                <div class="detail">Cada vez más valorado. WoS y Scopus lo premian</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m18">
+                                <label for="m18">Biografía breve de autores (si la política de la revista lo requiere)</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m18b">
+                                <label for="m18b">Metadatos anteriores presentes en PDF (críticos y medios)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">DOI</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m19">
+                                <label for="m19">DOI asignado al artículo</label>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m20">
+                                <label for="m20">DOI registrado en Crossref o Datacite</label>
+                                <div class="detail">No solo asignado. Verificar resolución en https://doi.org/</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m21">
+                                <label for="m21">Metadata del DOI completo y actualizado</label>
+                                <div class="detail">Título, autores, resumen, referencias, financiamiento</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m22">
+                                <label for="m22">DOI visible en el PDF del artículo</label>
+                                <div class="detail">En encabezado, pie de página o primera página</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Referencias bibliográficas</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m23">
+                                <label for="m23">Referencias cargadas en OJS (no solo en PDF)</label>
+                                <div class="detail">Permite mejor descubrimiento, linking y análisis bibliométrico</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m24">
+                                <label for="m24">DOIs incluidos en referencias cuando estén disponibles</label>
+                                <div class="detail">Fundamental para citación cruzada.</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m25">
+                                <label for="m25">Formato de referencias consistente</label>
+                                <div class="detail">Según norma declarada (APA, Vancouver, Harvard, etc.). No "estilos propios"</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m26">
+                                <label for="m26">Referencias verificadas (sin errores obvios)</label>
+                                <div class="detail">Autores, año, título, fuente completos y correctos</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m27">
+                                <label for="m27">Referencias actualizadas (mayoría últimos 5-10 años)</label>
+                                <div class="detail">Especialmente importante en ciencias.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Información complementaria</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m28">
+                                <label for="m28">Información de financiamiento registrada</label>
+                                <div class="detail">Agencia, número de grant/proyecto. WoS, Scopus y PubMed lo requieren si aplica</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m29">
+                                <label for="m29">Declaración de conflictos de interés</label>
+                                <div class="detail">Obligatorio para PubMed. Debe estar explícita aunque no haya conflictos</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m30">
+                                <label for="m30">Aprobación ética registrada (cuando aplique)</label>
+                                <div class="detail">Para investigaciones con humanos/animales. Incluir número de comité</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m31">
+                                <label for="m31">Consentimiento informado (cuando aplique)</label>
+                                <div class="detail">Para estudios con participantes humanos</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m32">
+                                <label for="m32">Disponibilidad de datos declarada</label>
+                                <div class="detail">Dónde están los datos de investigación o si hay restricciones</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m33">
+                                <label for="m33">Agradecimientos incluidos (si aplican)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Archivos y formatos</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m34">
+                                <label for="m34">PDF final cargado correctamente</label>
+                                <div class="detail">Con paginación, encabezados, DOI visible, datos completos</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="m35">
+                                <label for="m35">Versión HTML o XML-JATS disponible</label>
+                                <div class="detail">Redalyc solo indexa con XML-JATS. DOAJ y otros lo valoran</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m36">
+                                <label for="m36">Archivos suplementarios identificados y etiquetados</label>
+                                <div class="detail">Datasets, código, videos, con descripciones claras</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="m37">
+                                <label for="m37">Licencia Creative Commons visible en el artículo</label>
+                                <div class="detail">Logo y texto. DOAJ lo requiere.</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="m38">
+                                <label for="m38">Metadata de licencia en propiedades del PDF</label>
+                                <div class="detail">Información legible por máquinas</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: PRÁCTICAS Y CONTENIDO -->
+            <div class="section">
+                <div class="section-title collapsed" onclick="toggleSection(this)">
+                    <span class="section-number">2</span>
+                    <span>Prácticas y contenido</span>
+                </div>
+                <div class="section-content collapsed">
+                    <div class="subsection">
+                        <h3 class="subsection-title">Exogeneidad y diversidad</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p1">
+                                <label for="p1">Al menos 80% de autores externos a institución editora</label>
+                                <div class="detail">Al inicio, se recomienda lo mínimo</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p2">
+                                <label for="p2">Presencia de autores de diferentes instituciones</label>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p3">
+                                <label for="p3">Diversidad geográfica de autores</label>
+                                <div class="detail">WoS valora especialmente autores internacionales</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p4">
+                                <label for="p4">Evaluadores externos a la institución participaron</label>
+                                <div class="detail">Redalyc y WoS lo requieren explícitamente</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p5">
+                                <label for="p5">Consejo editorial: mínimo 75% externo</label>
+                                <div class="detail">Redalyc lo exige. Scopus y WoS lo valoran</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p6">
+                                <label for="p6">Diversidad internacional en consejo editorial</label>
+                                <div class="detail">WoS lo valora positivamente</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Proceso de revisión por pares</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p7">
+                                <label for="p7">Artículo sometido a revisión por pares</label>
+                                <div class="detail">Requisito básico de todos los indexadores</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p8">
+                                <label for="p8">Tipo de revisión especificado y aplicado</label>
+                                <div class="detail">Doble ciego, simple ciego, abierta. DOAJ y Redalyc lo requieren</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p9">
+                                <label for="p9">Mínimo 2 evaluadores por artículo</label>
+                                <div class="detail">Estándar esperado por PubMed, WoS y Scopus</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p10">
+                                <label for="p10">Evaluadores con expertise en el tema del artículo</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p11">
+                                <label for="p11">Tiempos de evaluación coherentes con lo declarado</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Periodicidad y volumen</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p12">
+                                <label for="p12">Publicación puntual según periodicidad declarada</label>
+                                <div class="detail">Fascículo online al inicio del periodo. Redalyc, Latindex, Scopus lo verifican</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p13">
+                                <label for="p13">Mínimo de artículos publicados anualmente</label>
+                                <div class="detail">Redalyc evalúa volumen. WoS considera producción científica</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p14">
+                                <label for="p14">Homogeneidad en artículos por fascículo</label>
+                                <div class="detail">Salvo publicación continua o flujo editorial declarado</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p15">
+                                <label for="p15">Revista con mínimo 1 año de antigüedad</label>
+                                <div class="detail">Redalyc, Latindex, DOAJ lo requieren</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p16">
+                                <label for="p16">Mayoría del contenido son artículos de investigación</label>
+                                <div class="detail">Vs contenido editorial/divulgativo. Redalyc lo evalúa</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Calidad científica</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p17">
+                                <label for="p17">Artículo es original e inédito</label>
+                                <div class="detail">No publicado ni postulado simultáneamente en otras revistas</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p18">
+                                <label for="p18">Verificado con software de detección de similitud</label>
+                                <div class="detail">Scopus y WoS lo esperan. Documentar umbral usado</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p19">
+                                <label for="p19">Artículo cumple estándares metodológicos de la disciplina</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p20">
+                                <label for="p20">Rigor en análisis de datos y conclusiones</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p21">
+                                <label for="p21">Referencias bibliográficas actualizadas y pertinentes</label>
+                                <div class="detail">WoS analiza actualidad de referencias</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Navegabilidad y usabilidad del sitio web</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p22">
+                                <label for="p22">Revista tiene URL propia o subdominio independiente</label>
+                                <div class="detail">Redalyc lo recomienda. Facilita identificación y SEO</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p23">
+                                <label for="p23">Navegación eficiente (máximo 3 clics a contenidos)</label>
+                                <div class="detail">Redalyc lo evalúa como criterio de usabilidad</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p24">
+                                <label for="p24">Motor de búsqueda interno funcional</label>
+                                <div class="detail">Permite búsqueda por autor, título, palabras clave. Redalyc lo valora</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p25">
+                                <label for="p25">Descarga individual de artículos habilitada</label>
+                                <div class="detail">Sin necesidad de registro obligatorio</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p26">
+                                <label for="p26">Todos los números digitales en un solo sitio</label>
+                                <div class="detail">Colección integrada. Redalyc lo requiere</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p27">
+                                <label for="p27">Sitio responsive (adaptable a dispositivos móviles)</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p28">
+                                <label for="p28">Tiempos de carga adecuados (menos de 3 segundos)</label>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p29">
+                                <label for="p29">Estadísticas de descarga/vistas disponibles</label>
+                                <div class="detail">Redalyc lo valora. Puede ser del propio sitio o servicio externo</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p29b">
+                                <label for="p29b">SSL activo</label>
+                                <div class="detail">Conexión desde https</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="p29c">
+                                <label for="p29c">/js | /cache y otros directorios de OJS prohibidos</label>
+                                <div class="detail">Estos directorios deben dar Forbidden. Si son listados, implica un peligro</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Interoperabilidad y tecnología</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p30">
+                                <label for="p30">Protocolo OAI-PMH activo y funcional</label>
+                                <div class="detail">Crítico para harvesters. Verificar en: tu-revista/oai</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p31">
+                                <label for="p31">Gestor editorial usado para control del proceso</label>
+                                <div class="detail">OJS u otro. Redalyc lo valora. No solo como plataforma de publicación</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p32">
+                                <label for="p32">Metadatos de Dublin Core correctamente expuestos</label>
+                                <div class="detail">Verificar en código fuente de la página</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p33">
+                                <label for="p33">Múltiples formatos de lectura disponibles</label>
+                                <div class="detail">PDF + HTML/XML. ePub es plus. Redalyc lo valora</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Impacto y visibilidad</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="p34">
+                                <label for="p34">Revista publica indicadores de desempeño</label>
+                                <div class="detail">Tasa rechazo, descargas, citas, tiempo evaluación</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p35">
+                                <label for="p35">Presencia en redes académicas</label>
+                                <div class="detail">ResearchGate, Academia.edu, Google Scholar, etc.</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="p36">
+                                <label for="p36">Artículos tienen altmetrics o métricas alternativas</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3: POLÍTICAS -->
+            <div class="section">
+                <div class="section-title collapsed" onclick="toggleSection(this)">
+                    <span class="section-number">3</span>
+                    <span>Políticas editoriales</span>
+                </div>
+                <div class="section-content collapsed">
+                    <div class="subsection">
+                        <h3 class="subsection-title">Políticas de acceso abierto</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol1">
+                                <label for="pol1">Política de acceso abierto inmediato (AA) declarada</label>
+                                <div class="detail">DOAJ y Redalyc lo exigen</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol2">
+                                <label for="pol2">Sin cobro de APC (Article Processing Charges)</label>
+                                <div class="detail">Requisito de Redalyc. DOAJ y Latindex lo documentan</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol3">
+                                <label for="pol3">Política de autoarchivo explícita</label>
+                                <div class="detail">Permite depositar en repositorios. DOAJ lo valora. Importante para mandatos</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol4">
+                                <label for="pol4">Licenciamiento Creative Commons especificado</label>
+                                <div class="detail">CC-BY, CC-BY-NC, CC-BY-SA recomendadas. DOAJ lo requiere</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol5">
+                                <label for="pol5">Derechos de autor (copyright) claros</label>
+                                <div class="detail">Especificar quién retiene derechos: autor o revista</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol6">
+                                <label for="pol6">Fuentes de financiamiento de la revista declaradas</label>
+                                <div class="detail">Si recibe fondos externos. Redalyc lo pide</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Políticas éticas y de integridad científica</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol7">
+                                <label for="pol7">Adhesión a código de ética publicado</label>
+                                <div class="detail">COPE, CSE, CSIC. DOAJ, Scopus, WoS lo requieren. Debe estar en el sitio</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol8">
+                                <label for="pol8">Política de detección de plagio documentada</label>
+                                <div class="detail">Software usado, umbrales, procedimiento. Redalyc y Scopus lo valoran</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol9">
+                                <label for="pol9">Política sobre conflictos de interés</label>
+                                <div class="detail">Esencial para PubMed. WoS lo espera</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol10">
+                                <label for="pol10">Política de correcciones, erratas y retractaciones</label>
+                                <div class="detail">COPE lo requiere. WoS y Scopus lo esperan. Debe estar publicada</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol11">
+                                <label for="pol11">Política sobre originalidad y publicación redundante</label>
+                                <div class="detail">Aclarar si acepta preprints y bajo qué condiciones</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol12">
+                                <label for="pol12">Política sobre autoría (quién puede ser autor)</label>
+                                <div class="detail">Criterios para atribución de autoría</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol13">
+                                <label for="pol13">Política sobre ética en investigación con humanos/animales</label>
+                                <div class="detail">Cuándo se requiere aprobación de comité ético</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Políticas de revisión por pares</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol14">
+                                <label for="pol14">Proceso de revisión por pares detalladamente documentado</label>
+                                <div class="detail">Tipo, fases, posibles resultados, criterios. DOAJ y Redalyc lo exigen</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol15">
+                                <label for="pol15">Tiempos estimados de evaluación publicados</label>
+                                <div class="detail">Desde recepción hasta decisión. Redalyc lo requiere</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol16">
+                                <label for="pol16">Formulario de evaluación disponible o público</label>
+                                <div class="detail">Redalyc lo valora positivamente</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol17">
+                                <label for="pol17">Política de exogeneidad de evaluadores</label>
+                                <div class="detail">Externos a institución editora. Redalyc lo requiere</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol18">
+                                <label for="pol18">Procedimiento de resolución de controversias</label>
+                                <div class="detail">Qué hacer ante desacuerdos evaluadores-autores-editores</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Políticas de preservación y datos</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol19">
+                                <label for="pol19">Política de preservación digital especificada</label>
+                                <div class="detail">LOCKSS, CLOCKSS, Portico u otra. DOAJ lo requiere</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol20">
+                                <label for="pol20">Política sobre datos de investigación (data sharing)</label>
+                                <div class="detail">Cada vez más requerido. PubMed y WoS lo valoran</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol21">
+                                <label for="pol21">Política sobre materiales suplementarios</label>
+                                <div class="detail">Cómo se gestionan datasets, código, videos</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol22">
+                                <label for="pol22">Política de versionado de artículos</label>
+                                <div class="detail">Cómo se gestionan correcciones post-publicación</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Información institucional y transparencia</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol23">
+                                <label for="pol23">Institución editora claramente identificada</label>
+                                <div class="detail">Académica, sin fines de lucro. Nombre completo sin abreviaturas</div>
+                            </li>
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol24">
+                                <label for="pol24">Objetivos y alcance claramente definidos</label>
+                                <div class="detail">Público, disciplinas, tipos de artículos. Todos los indexadores lo requieren</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol25">
+                                <label for="pol25">Especificidad temática de la revista</label>
+                                <div class="detail">Enfoque disciplinar claro. Redalyc lo evalúa</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol26">
+                                <label for="pol26">Equipo editorial con funciones/roles claros</label>
+                                <div class="detail">Editor, editores asociados, asistentes. Redalyc lo valora</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol27">
+                                <label for="pol27">Consejo editorial con afiliaciones completas</label>
+                                <div class="detail">Nombre completo, institución, país. Sin abreviaturas. Redalyc lo exige</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol28">
+                                <label for="pol28">Datos de contacto completos y actualizados</label>
+                                <div class="detail">Contacto, institución, ciudad, país, email institucional</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol29">
+                                <label for="pol29">ISSN impreso y/o electrónico visible</label>
+                                <div class="detail">Básico. Debe estar en portada y pie de cada página</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol30">
+                                <label for="pol30">Membrete bibliográfico completo en artículos</label>
+                                <div class="detail">Revista, ISSN, vol., núm., período, páginas, autores</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Políticas de indexación</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol31">
+                                <label for="pol31">Indexaciones actuales listadas y diferenciadas</label>
+                                <div class="detail">Distinguir directorios vs bases de datos evaluadas. Redalyc lo requiere</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol32">
+                                <label for="pol32">Enlaces directos a master lists de indexadores</label>
+                                <div class="detail">Donde se verifica presencia de la revista</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Instrucciones para autores</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item priority-high">
+                                <input type="checkbox" id="pol33">
+                                <label for="pol33">Instrucciones para autores completas y actualizadas</label>
+                                <div class="detail">Proceso envío, estructura artículo, formato citas, requisitos</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol34">
+                                <label for="pol34">Instrucciones en dos idiomas (español e inglés)</label>
+                                <div class="detail">Redalyc lo requiere para internacionalización</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol35">
+                                <label for="pol35">Estilo de citación claramente especificado</label>
+                                <div class="detail">APA, Vancouver, Harvard. No "estilos propios". Redalyc lo verifica</div>
+                            </li>
+                            <li class="checklist-item priority-medium">
+                                <input type="checkbox" id="pol36">
+                                <label for="pol36">Estilo de referencias bibliográficas especificado</label>
+                                <div class="detail">Con ejemplos. Coherente con estilo de citación</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol37">
+                                <label for="pol37">Requisitos de metadatos explícitos</label>
+                                <div class="detail">ORCID obligatorio, formato afiliaciones, palabras clave tesauradas</div>
+                            </li>
+                            <li class="checklist-item">
+                                <input type="checkbox" id="pol38">
+                                <label for="pol38">Tabla de contenido bilingüe en cada número</label>
+                                <div class="detail">Títulos en idioma original + traducción. Redalyc lo valora</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Importante:</strong> este checklist integra 80+ criterios de DOAJ, Latindex, Redalyc, Scopus, WoS y PubMed. Los items CRÍTICOS son indispensables para la mayoría de indexadores. Los demás mejoran significativamente las posibilidades de indexación.
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary" onclick="window.print()">📄 Imprimir checklist</button>
+                <button class="btn btn-secondary" onclick="resetChecklist()">🔄 Reiniciar todo</button>
+            </div>
+
+            <div class="references">
+                <h2>Referencias y recursos</h2>
+                
+                <h3>Criterios de indexadores principales</h3>
+                <ul>
+                    <li><strong>DOAJ:</strong> <a href="https://doaj.org/apply/guide/" target="_blank">https://doaj.org/apply/guide/</a></li>
+                    <li><strong>Latindex Catálogo 2.0:</strong> <a href="https://latindex.org/latindex/postulacion/postulacionCatalogo" target="_blank">https://latindex.org/latindex/postulacion/postulacionCatalogo</a></li>
+                    <li><strong>Redalyc:</strong> <a href="https://www.redalyc.org/postulacion.oa?q=criterios" target="_blank">https://www.redalyc.org/postulacion.oa?q=criterios</a></li>
+                    <li><strong>Scopus:</strong> <a href="https://www.elsevier.com/products/scopus/content/content-policy-and-selection" target="_blank">https://www.elsevier.com/products/scopus/content/content-policy-and-selection</a></li>
+                    <li><strong>Web of Science:</strong> <a href="https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/editorial-selection-process/journal-evaluation-process-selection-criteria/" target="_blank">Criterios WoS</a></li>
+                    <li><strong>PubMed Central:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/pub/addjournal/" target="_blank">https://pmc.ncbi.nlm.nih.gov/pub/addjournal/</a></li>
+                    <li><strong>PubMed Guidelines:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/about/guidelines/" target="_blank">https://pmc.ncbi.nlm.nih.gov/about/guidelines/</a></li>
+                </ul>
+
+                <h3>Guías especializadas (Paideia Studio)</h3>
+                <ul>
+                    <li>Geraldine Trujillo. (8 mayo, 2023). PubMed: historia, proceso para indexar tu revista y otras cosas que debes saber. <em>Paideia Studio</em> [Blog]. <a href="https://doi.org/10.62059/paideia.studio.12096" target="_blank">https://doi.org/10.62059/paideia.studio.12096</a></li>
+                    <li>Geraldine Trujillo. (6 febrero, 2023). Web Of Science Core Collection: cómo y dónde aplicar para indexar mi revista. <em>Paideia Studio</em> [Blog]. <a href="https://doi.org/10.62059/paideia.studio.10605" target="_blank">https://doi.org/10.62059/paideia.studio.10605</a></li>
+                    <li>Geraldine Trujillo. (16 enero, 2023). Scopus: ¿Cómo y dónde indexar mi revista? <em>Paideia Studio</em> [Blog]. <a href="https://doi.org/10.62059/paideia.studio.10368" target="_blank">https://doi.org/10.62059/paideia.studio.10368</a></li>
+                </ul>
+
+                <h3>Documentación oficial PKP</h3>
+                <ul>
+                    <li>Learning OJS 3: <a href="https://docs.pkp.sfu.ca/learning-ojs/" target="_blank">https://docs.pkp.sfu.ca/learning-ojs/</a></li>
+                    <li>PKP School (cursos gratuitos): <a href="https://pkpschool.sfu.ca/" target="_blank">https://pkpschool.sfu.ca/</a></li>
+                    <li>PKP Forum (comunidad): <a href="https://forum.pkp.sfu.ca/" target="_blank">https://forum.pkp.sfu.ca/</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Patricio Pantaleo</strong></p>
+            <p>Especialista en gestión de metadatos y publicación académica | Sponsor de Crossref</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">
+                <a href="https://patricio.pantaleo.ar/" target="_blank">patricio.pantaleo.ar</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        
+        // Toggle accordion sections
+        function toggleSection(titleElement) {
+            const content = titleElement.nextElementSibling;
+            const isCollapsed = content.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                content.classList.remove('collapsed');
+                titleElement.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                titleElement.classList.add('collapsed');
+            }
+        }
+        
+        // Load saved state
+        function loadState() {
+            checkboxes.forEach(cb => {
+                if (localStorage.getItem(cb.id) === 'true') {
+                    cb.checked = true;
+                    cb.closest('.checklist-item').classList.add('checked');
+                }
+            });
+            updateProgress();
+        }
+        
+        // Update progress bar
+        function updateProgress() {
+            const total = checkboxes.length;
+            const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const pct = Math.round((checked / total) * 100);
+            
+            progressBar.style.width = pct + '%';
+            progressBar.textContent = pct + '%';
+            progressText.textContent = `${checked} de ${total} items completados`;
+            
+            if (pct === 100) progressBar.style.background = 'linear-gradient(135deg, #10b981 0%, #34d399 100%)';
+            else if (pct >= 75) progressBar.style.background = 'linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%)';
+            else if (pct >= 50) progressBar.style.background = 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)';
+            else progressBar.style.background = 'linear-gradient(135deg, #ef4444 0%, #f87171 100%)';
+        }
+        
+        // Checkbox event listeners
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', function() {
+                this.closest('.checklist-item').classList.toggle('checked', this.checked);
+                localStorage.setItem(this.id, this.checked);
+                updateProgress();
+            });
+        });
+        
+        // Reset checklist
+        function resetChecklist() {
+            if (confirm('¿Estás seguro de que quieres reiniciar el checklist completo? Se perderá todo el progreso.')) {
+                checkboxes.forEach(cb => {
+                    cb.checked = false;
+                    cb.closest('.checklist-item').classList.remove('checked');
+                    localStorage.removeItem(cb.id);
+                });
+                updateProgress();
+            }
+        }
+        
+        // Initialize
+        loadState();
+    </script>
+</body>
+</html>
