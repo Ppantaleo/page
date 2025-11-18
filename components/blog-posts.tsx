@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Clock, Calendar, Tag, BookOpen, PenTool } from "lucide-react"
+import { ArrowRight, Clock, Calendar, Tag, BookOpen, PenTool, FileText } from "lucide-react"
 
 interface BlogPost {
   title: string
@@ -301,6 +301,15 @@ export default function BlogPosts() {
           >
             <Tag className="w-4 h-4" />
             View aphorisms
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          
+          <Link
+            href="/recursos"
+            className="inline-flex items-center gap-2 bg-slate-600 text-white px-6 py-3 rounded-full hover:bg-slate-700 transition-colors"
+          >
+            <FileText className="w-4 h-4" />
+            Resources
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

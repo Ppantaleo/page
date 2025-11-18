@@ -46,6 +46,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <NavLink href="#about" label="ABOUT" />
             <NavLink href="https://patricio.pantaleo.ar/blog" label="BLOG" />
+            <NavLink href="/recursos" label="RESOURCES" />
           {/*  <NavLink href="#skills" label="SKILLS" />
             <NavLink href="#projects" label="PROJECTS" />
             <NavLink href="#interests" label="INTERESTS" /> */}
@@ -96,6 +97,7 @@ export default function Header() {
             <nav className="flex flex-col space-y-4">
               <MobileNavLink href="#about" label="ABOUT" onClick={closeMenu} />
               <MobileNavLink href="https://patricio.pantaleo.ar/blog" label="BLOG" onClick={closeMenu} />
+              <MobileNavLink href="/recursos" label="RESOURCES" onClick={closeMenu} />
           {/*    <MobileNavLink href="#skills" label="SKILLS" onClick={closeMenu} />
               <MobileNavLink href="#projects" label="PROJECTS" onClick={closeMenu} />
               <MobileNavLink href="#interests" label="INTERESTS" onClick={closeMenu} /> */}

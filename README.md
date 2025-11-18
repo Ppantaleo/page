@@ -13,11 +13,18 @@ El proyecto combina dos tecnologías principales:
 
 ```
 ├── app/                    # Aplicación Next.js principal
+│   ├── recursos/          # Página de recursos académicos
+│   │   └── page.tsx       # Página principal de recursos
 ├── components/             # Componentes React reutilizables
 │   ├── LinkedInFeed.tsx   # Componente de posts de LinkedIn
 │   └── ui/                # Componentes shadcn/ui
 ├── public/
 │   ├── blog/              # ✅ OUTPUT del proyecto Quarto (HTML compilado)
+│   ├── recursos/          # 📁 Archivos de recursos descargables
+│   │   ├── presentaciones/ # Presentaciones PPT, PDF
+│   │   ├── documentos/    # Documentos, guías, manuales
+│   │   ├── herramientas/  # Scripts, plantillas, utilidades
+│   │   └── datasets/      # Conjuntos de datos
 │   └── images/            # Imágenes del sitio principal
 ├── public/blog/blog_src/  # 📝 FUENTES del blog en Quarto
 │   ├── posts/             # Posts del blog (.qmd)
@@ -347,10 +354,70 @@ Este proyecto está bajo la licencia GPL-3.0. Ver [LICENSE](LICENSE) para más d
 
 **Nota**: El blog se genera con Quarto desde `public/blog/blog_src/` y el output se coloca en `public/blog/`. No editar directamente los archivos HTML del blog.
 
+## 📁 Gestión de Recursos
+
+### Estructura de Recursos
+
+La sección de recursos está implementada en Next.js y organizada por categorías:
+
+1. **Presentaciones**: Slides de conferencias, talleres y charlas
+2. **Documentos**: Guías, manuales, referencias y papers
+3. **Herramientas**: Scripts, plantillas, utilidades y código
+4. **Datasets**: Conjuntos de datos para investigación
+
+### Agregar un Nuevo Recurso
+
+1. **Subir archivo** a la carpeta correspondiente:
+   ```bash
+   # Ejemplo para una presentación
+   cp mi-presentacion.pptx public/recursos/presentaciones/
+   ```
+
+2. **Actualizar el código** en `app/recursos/page.tsx`:
+   ```typescript
+   const resources: Resource[] = [
+     {
+       id: 'unique-id',
+       title: 'Título del Recurso',
+       description: 'Descripción breve del contenido',
+       type: 'presentation', // 'document', 'tool', 'dataset'
+       format: 'PPT', // 'PDF', 'HTML', 'ZIP', etc.
+       url: '/recursos/presentaciones/mi-archivo.pptx',
+       date: '2024-01-15',
+       tags: ['tag1', 'tag2', 'tag3']
+     },
+     // ... otros recursos
+   ]
+   ```
+
+3. **Hacer deploy**:
+   ```bash
+   git add .
+   git commit -m "Add new resource: [nombre]"
+   git push origin main
+   ```
+
+### Tipos de Recursos Soportados
+
+- **Presentaciones**: `.pptx`, `.pdf`, `.key`
+- **Documentos**: `.pdf`, `.docx`, `.html`, `.epub`
+- **Herramientas**: `.zip`, `.tar.gz`, `.py`, `.js`, `.r`
+- **Datasets**: `.csv`, `.json`, `.xlsx`, `.zip`
+
+### Características de la Página de Recursos
+
+- **Diseño responsive** con grid adaptativo
+- **Categorización visual** con iconos y colores
+- **Sistema de tags** para filtrado
+- **Enlaces de descarga** directos
+- **Metadatos** (fecha, formato, tipo)
+- **Estado vacío** elegante cuando no hay recursos
+
 ### 📖 Flujo de Trabajo Recomendado
 
 1. **Para posts académicos**: Crear nueva carpeta en `posts/` con metadatos completos
 2. **Para cuentos**: Crear nueva carpeta en `posts/` con categoría `cuentos`
 3. **Para aforismos**: Editar directamente `posts/aforismos/index.qmd`
-4. **Renderizar**: `cd public/blog/blog_src && quarto render`
-5. **Deploy**: `git push origin main` (automático)
+4. **Para recursos**: Subir archivo a `public/recursos/` y actualizar array en `page.tsx`
+5. **Renderizar blog**: `cd public/blog/blog_src && quarto render`
+6. **Deploy**: `git push origin main` (automático)
