@@ -17,13 +17,16 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         
+      - name: Install TinyTeX
+        run: quarto install tinytex
+        
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
         
       - name: Render Quarto Blog
         run: |
           cd public/blog/blog_src
-          quarto render
+          quarto render --to html
         
       - name: Build
         run: npm run build
