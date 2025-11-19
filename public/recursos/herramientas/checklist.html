@@ -228,13 +228,14 @@
         
         .progress-container {
             position: sticky;
-            top: 20px;
+            top: 0;
             background: white;
             padding: 20px;
             margin: -40px -40px 30px -40px;
             border-bottom: 3px solid #e2e8f0;
             z-index: 100;
             border-radius: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
         .progress-bar-container {
@@ -363,6 +364,37 @@
         .btn-secondary:hover {
             background: #475569;
         }
+        
+        .citation-section {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .citation-section h2 {
+            color: #1e293b;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .citation-box {
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        
+        .citation-box p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .citation-box p:last-child {
+            margin-bottom: 0;
+        }
 
         @media (max-width: 768px) {
             .content { padding: 20px; }
@@ -383,7 +415,8 @@
             <h1>Checklist de pre-publicación</h1>
             <p>Verificación sugerida para revistas académicas</p>
             <div class="credit">
-                Recurso de <a href="https://patricio.pantaleo.ar/" target="_blank">patricio.pantaleo.ar</a>
+                Recurso de <a href="https://patricio.pantaleo.ar/" target="_blank">patricio.pantaleo.ar</a> | 
+                DOI: <a href="https://doi.org/10.62059/example.checklist" target="_blank">10.62059/example.checklist</a>
             </div>
         </header>
 
@@ -1123,6 +1156,20 @@
                 <button class="btn btn-secondary" onclick="resetChecklist()">🔄 Reiniciar todo</button>
             </div>
 
+            <div class="citation-section">
+                <h2>Cómo citar este recurso</h2>
+                <div class="citation-box">
+                    <p><strong>APA:</strong></p>
+                    <p>Pantaleo, P. I. (2024). <em>Checklist de pre-publicación para revistas académicas</em>. https://doi.org/10.62059/example.checklist</p>
+                    
+                    <p><strong>Vancouver:</strong></p>
+                    <p>Pantaleo PI. Checklist de pre-publicación para revistas académicas [Internet]. 2024 [citado YYYY Mes DD]. Disponible en: https://doi.org/10.62059/example.checklist</p>
+                    
+                    <p><strong>Chicago:</strong></p>
+                    <p>Pantaleo, Patricio Iván. "Checklist de pre-publicación para revistas académicas." Accedido [fecha]. https://doi.org/10.62059/example.checklist.</p>
+                </div>
+            </div>
+
             <div class="references">
                 <h2>Referencias y recursos</h2>
                 
@@ -1155,9 +1202,9 @@
 
         <div class="footer">
             <p><strong>Patricio Pantaleo</strong></p>
-            <p>Especialista en gestión de metadatos y publicación académica | Sponsor de Crossref</p>
+            <p>Especialista en gestión de metadatos y publicación académica | Director Paideia Studio</p>
             <p style="font-size: 0.9em; margin-top: 10px;">
-                <a href="https://patricio.pantaleo.ar/" target="_blank">patricio.pantaleo.ar</a>
+                <a href="https://patricio.pantaleo.ar/" target="_blank" style="color:white;">patricio.pantaleo.ar</a>
             </p>
         </div>
     </div>
