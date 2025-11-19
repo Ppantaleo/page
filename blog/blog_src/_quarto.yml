@@ -20,6 +20,8 @@ website:
         href: https://patricio.pantaleo.ar
       - text: "Blog"
         href: https://patricio.pantaleo.ar/blog
+      - text: "Resources"
+        href: https://patricio.pantaleo.ar/recursos
       - text: "Contact"
         href: https://patricio.pantaleo.ar/#contact
       - icon: rss
