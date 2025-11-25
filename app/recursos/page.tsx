@@ -37,10 +37,19 @@ const resources: Resource[] = [
     type: 'tool',
     format: 'HTML',
     url: '/recursos/herramientas/checklist.html',
-    date: '2024-12-16',
+    date: '2025-11-16',
     tags: ['checklist', 'research', 'workflow', 'productivity']
   },
-  // Add more resources here
+  {
+    id: '3',
+    title: 'Calidad editorial y prácticas de metadatos en revistas académicas chilenas',
+    description: 'Un análisis de instalaciones OJS mediante informes de calidad Dialnet, Open Alex y Crossref en el año 2025',
+    type: 'document',
+    format: 'HTML',
+    url: '/recursos/documentos/metadatos-chile-2025/Informe.html',
+    date: '2025-11-24',
+    tags: ['metadatos', 'chile', '2025', 'ojs', 'dialnet', 'open alex', 'crossref']
+  }
 ]
 
 const getTypeIcon = (type: Resource['type']) => {
