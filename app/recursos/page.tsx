@@ -20,7 +20,7 @@ interface Resource {
 
 const resources: Resource[] = [
   // Example resources - add your own here
-  {
+  /*{
     id: '1',
     title: 'Introduction to Digital Humanities',
     description: 'Presentation on the fundamentals and methodologies of digital humanities.',
@@ -29,16 +29,16 @@ const resources: Resource[] = [
     url: '/recursos/presentaciones/intro-digital-humanities.pptx',
     date: '2024-03-15',
     tags: ['digital humanities', 'methodology', 'research']
-  },
+  },*/
   {
     id: '2',
-    title: 'Research Checklist',
-    description: 'Interactive checklist for academic research workflow and best practices.',
+    title: 'Checklist de pre-publicación',
+    description: 'Verificación sugerida para revistas académicas antes de aplicar a índices o bases de datos',
     type: 'tool',
     format: 'HTML',
     url: '/recursos/herramientas/checklist.html',
     date: '2025-11-16',
-    tags: ['checklist', 'research', 'workflow', 'productivity']
+    tags: ['checklist', 'publicación', 'revistas académicas', 'índices', 'bases de datos']
   },
   {
     id: '3',
