@@ -1,9 +1,7 @@
 [
   {
-    "listing": "/aforismos.html",
-    "items": [
-      "/posts/aforismos/index.html"
-    ]
+    "listing": "/cuentos.html",
+    "items": []
   },
   {
     "listing": "/index.html",
@@ -14,7 +12,9 @@
     ]
   },
   {
-    "listing": "/cuentos.html",
-    "items": []
+    "listing": "/aforismos.html",
+    "items": [
+      "/posts/aforismos/index.html"
+    ]
   }
 ]
