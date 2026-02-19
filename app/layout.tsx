@@ -4,7 +4,7 @@ import { Montserrat } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
-import MailChimpScript from "@/components/mailchimp-script"
+// import MailChimpScript from "@/components/mailchimp-script"
 import Script from "next/script"
 
 const montserrat = Montserrat({
@@ -84,7 +84,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body className={`${montserrat.variable} font-sans`}>
-        <MailChimpScript />
+        {/* <MailChimpScript /> */}
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
           {children}
