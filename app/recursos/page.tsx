@@ -32,8 +32,8 @@ const resources: Resource[] = [
   },*/
   {
     id: '1',
-    title: 'OJS y LatinREV 2026',
-    description: 'Presentación sobre Open Journal Systems en el marco de LatinREV 2026',
+    title: 'OJS en la X Jornada de LatinREV',
+    description: 'Presentación sobre Open Journal Systems en la X Jornada de LatinREV',
     type: 'presentation',
     format: 'PDF',
     url: '/recursos/presentaciones/OJS_LatinREV_2026.pdf',
