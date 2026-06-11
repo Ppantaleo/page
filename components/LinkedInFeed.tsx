@@ -3,6 +3,11 @@ import { ExternalLink, Linkedin } from 'lucide-react'
 // Only update these 3 LinkedIn iframe URLs
 const linkedinEmbeds = [
   {
+    id: 4,
+    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7470811943109312512?collapsed=1",
+    title: "New LinkedIn post"
+  },
+  {
     id: 1,
     src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7356725220063199233?collapsed=1",
     title: "Post about digital humanities"
@@ -16,11 +21,6 @@ const linkedinEmbeds = [
     id: 3,
     src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7367255402171764736?collapsed=1", // Change for your third URL
     title: "Post about Open Journal Systems"
-  },
-  {
-    id: 4,
-    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7470811943109312512?collapsed=1",
-    title: "New LinkedIn post"
   }
 ]
 
