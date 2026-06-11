@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n27 min\n\n\nposts\n\nscholarly-publishing\n\nspanish\n\n\n\n\n\n\n\n\n\n\n\n\n\n20 min\n\n\nposts\n\nscholarly-publishing\n\nenglish\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#post",
+    "href": "index.html#post",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n27 min\n\n\nposts\n\nscholarly-publishing\n\nspanish\n\n\n\n\n\n\n\n\n\n\n\n\n\n20 min\n\n\nposts\n\nscholarly-publishing\n\nenglish\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#short-stories",
+    "href": "index.html#short-stories",
+    "title": "Blog",
+    "section": "Short Stories",
+    "text": "Short Stories\n\nBrief tales that delve into the complexities of human experience, ranging from intimate daily moments to journeys into the realm of the extraordinary.\n\n\n\n\n\nNo matching items\n\n\nExplore all stories →"
+  },
+  {
+    "objectID": "index.html#aphorisms-reflections",
+    "href": "index.html#aphorisms-reflections",
+    "title": "Blog",
+    "section": "Aphorisms & Reflections",
+    "text": "Aphorisms & Reflections\n\nBrief thoughts and reflections on life, knowledge, and human experience, updated regularly with new insights.\n\n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\n\n\n\n\n\nAforismos y Reflexiones\n\n\nAug 4, 2025\n\n\n\n\n\n\nNo matching items\n\n\nRead all aphorisms →"
+  },
+  {
     "objectID": "posts/ia-descentralizada/index.html",
     "href": "posts/ia-descentralizada/index.html",
     "title": "Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes",
@@ -33,6 +61,13 @@
     "title": "Inteligencia artificial descentralizada (DeAI): perspectivas de un desarrollo en ciernes",
     "section": "Notas",
     "text": "Notas\n\n\nFlooding (inundación) es una técnica donde un nodo envía la consulta de búsqueda a todos sus vecinos conectados, que la reenvían a todos sus vecinos, propagándose como ondas en un estanque. Ofrece alta probabilidad de encontrar contenido pero consume mucho ancho de banda debido al tráfico exponencial generado.↩︎\nRandom walks (caminatas aleatorias) es una técnica donde la consulta “camina” por la red saltando de un nodo a otro de forma aleatoria, siguiendo un camino único en lugar de multiplicarse. Consume menos ancho de banda que flooding pero tiene menor probabilidad de encontrar contenido raro.↩︎\nBottom-up approach se refiere aquí a construir la comprensión de los sistemas DeAI (DEAI en el artículo) partiendo de sus componentes más básicos (bloques de construcción) para luego entender cómo se combinan en arquitecturas más complejas, en lugar de analizar sistemas completos desde el principio.↩︎\nWorkloads se refiere a las cargas de trabajo computacionales específicas de IA, como entrenamiento de modelos, inferencia y procesamiento de datos, que requieren recursos intensivos y mecanismos de validación distribuida especializados.↩︎\nLa edge intelligence es un paradigma computacional que ejecuta algoritmos de IA directamente en dispositivos ubicados en el “borde” de la red (smartphones, sensores IoT, cámaras inteligentes), cerca de donde se generan los datos, eliminando la necesidad de enviarlos a servidores centralizados para su procesamiento.↩︎"
+  },
+  {
+    "objectID": "aforismos.html",
+    "href": "aforismos.html",
+    "title": "Aphorisms & Reflections",
+    "section": "",
+    "text": "A curated collection of aphorisms, brief reflections, and thoughtful maxims exploring various aspects of human experience and wisdom.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nDate\n\n\n\n\n\n\n\n\nAforismos y Reflexiones\n\n\nColección de aforismos, reflexiones breves y sentencias que exploran diferentes aspectos de la experiencia humana, el conocimiento y la vida cotidiana. \n\n\nAug 4, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/autorship-AI/index.html",
@@ -105,45 +140,10 @@
     "text": "Julio 2021\n23 de julio\n\n“La poesía goza de una cautividad en la atención humana que la tecnología siempre va a envidiar. Una, es una mezcla de atención y emancipación, libertad, autonomía. La otra, una combinación con automatismo y ausencia.”"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n27 min\n\n\nposts\n\nscholarly-publishing\n\nspanish\n\n\n\n\n\n\n\n\n\n\n\n\n\n20 min\n\n\nposts\n\nscholarly-publishing\n\nenglish\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#post",
-    "href": "index.html#post",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n27 min\n\n\nposts\n\nscholarly-publishing\n\nspanish\n\n\n\n\n\n\n\n\n\n\n\n\n\n20 min\n\n\nposts\n\nscholarly-publishing\n\nenglish\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#short-stories",
-    "href": "index.html#short-stories",
-    "title": "Blog",
-    "section": "Short Stories",
-    "text": "Short Stories\n\nBrief tales that delve into the complexities of human experience, ranging from intimate daily moments to journeys into the realm of the extraordinary.\n\n\n\n\n\nNo matching items\n\n\nExplore all stories →"
-  },
-  {
-    "objectID": "index.html#aphorisms-reflections",
-    "href": "index.html#aphorisms-reflections",
-    "title": "Blog",
-    "section": "Aphorisms & Reflections",
-    "text": "Aphorisms & Reflections\n\nBrief thoughts and reflections on life, knowledge, and human experience, updated regularly with new insights.\n\n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\n\n\n\n\n\nAforismos y Reflexiones\n\n\nAug 4, 2025\n\n\n\n\n\n\nNo matching items\n\n\nRead all aphorisms →"
-  },
-  {
     "objectID": "cuentos.html",
     "href": "cuentos.html",
     "title": "Short Stories",
     "section": "",
     "text": "Here you’ll find all the short stories and brief narratives, exploring different literary themes and narrative styles.\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "aforismos.html",
-    "href": "aforismos.html",
-    "title": "Aphorisms & Reflections",
-    "section": "",
-    "text": "A curated collection of aphorisms, brief reflections, and thoughtful maxims exploring various aspects of human experience and wisdom.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nDate\n\n\n\n\n\n\n\n\nAforismos y Reflexiones\n\n\nColección de aforismos, reflexiones breves y sentencias que exploran diferentes aspectos de la experiencia humana, el conocimiento y la vida cotidiana. \n\n\nAug 4, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
