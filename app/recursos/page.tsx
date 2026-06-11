@@ -31,6 +31,16 @@ const resources: Resource[] = [
     tags: ['digital humanities', 'methodology', 'research']
   },*/
   {
+    id: '1',
+    title: 'OJS y LatinREV 2026',
+    description: 'Presentación sobre Open Journal Systems en el marco de LatinREV 2026',
+    type: 'presentation',
+    format: 'PDF',
+    url: '/recursos/presentaciones/OJS_LatinREV_2026.pdf',
+    date: '2026-06-11',
+    tags: ['ojs', 'latinrev', 'presentación', '2026']
+  },
+  {
     id: '2',
     title: 'Checklist de pre-publicación',
     description: 'Verificación sugerida para revistas académicas antes de aplicar a índices o bases de datos',
