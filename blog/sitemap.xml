@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://patricio.pantaleo.ar/blog/cuentos.html</loc>
-    <lastmod>2026-02-19T12:08:32.875Z</lastmod>
-  </url>
-  <url>
     <loc>https://patricio.pantaleo.ar/blog/posts/ia-descentralizada/index.html</loc>
-    <lastmod>2026-02-19T12:08:32.888Z</lastmod>
-  </url>
-  <url>
-    <loc>https://patricio.pantaleo.ar/blog/index.html</loc>
-    <lastmod>2026-02-19T12:08:32.875Z</lastmod>
+    <lastmod>2026-06-11T12:38:34.813Z</lastmod>
   </url>
   <url>
     <loc>https://patricio.pantaleo.ar/blog/posts/autorship-AI/index.html</loc>
-    <lastmod>2026-02-19T12:08:32.885Z</lastmod>
+    <lastmod>2026-06-11T12:38:34.810Z</lastmod>
   </url>
   <url>
     <loc>https://patricio.pantaleo.ar/blog/posts/aforismos/index.html</loc>
-    <lastmod>2026-02-19T12:08:32.876Z</lastmod>
+    <lastmod>2026-06-11T12:38:34.801Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patricio.pantaleo.ar/blog/index.html</loc>
+    <lastmod>2026-06-11T12:38:34.801Z</lastmod>
+  </url>
+  <url>
+    <loc>https://patricio.pantaleo.ar/blog/cuentos.html</loc>
+    <lastmod>2026-06-11T12:38:34.801Z</lastmod>
   </url>
   <url>
     <loc>https://patricio.pantaleo.ar/blog/aforismos.html</loc>
-    <lastmod>2026-02-19T12:08:32.875Z</lastmod>
+    <lastmod>2026-06-11T12:38:34.801Z</lastmod>
   </url>
 </urlset>

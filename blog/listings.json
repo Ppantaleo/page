@@ -1,15 +1,15 @@
 [
   {
-    "listing": "/cuentos.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/ia-descentralizada/index.html",
       "/posts/autorship-AI/index.html",
       "/posts/aforismos/index.html"
     ]
+  },
+  {
+    "listing": "/cuentos.html",
+    "items": []
   },
   {
     "listing": "/aforismos.html",
