@@ -16,6 +16,11 @@ const linkedinEmbeds = [
     id: 3,
     src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7367255402171764736?collapsed=1", // Change for your third URL
     title: "Post about Open Journal Systems"
+  },
+  {
+    id: 4,
+    src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7470811943109312512?collapsed=1",
+    title: "New LinkedIn post"
   }
 ]
 
@@ -38,8 +43,8 @@ export default function LinkedInFeed() {
           </p>
         </div>
 
-        {/* LinkedIn Embeds Grid - Una sola fila de 3 cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {/* LinkedIn Embeds Grid - Una sola fila de 4 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {linkedinEmbeds.map(embed => (
             <div 
               key={embed.id} 
