@@ -31,6 +31,16 @@ const resources: Resource[] = [
     tags: ['digital humanities', 'methodology', 'research']
   },*/
   {
+    id: '4',
+    title: 'LatArXiv en CIRU 2026',
+    description: 'LatArXiv: experiencia, infraestructura y desafíos de un servidor de preprints para Iberoamérica. CIRU 2026, edición Argentina',
+    type: 'presentation',
+    format: 'PDF',
+    url: '/recursos/presentaciones/ciru_2026.pdf',
+    date: '2026-10-08',
+    tags: ['latarxiv', 'preprints', 'ciru', 'acceso abierto', '2026']
+  },
+  {
     id: '1',
     title: 'OJS en la X Jornada de LatinREV',
     description: 'Presentación sobre Open Journal Systems en la X Jornada de LatinREV',
